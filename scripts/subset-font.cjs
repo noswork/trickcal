@@ -46,11 +46,15 @@ const websiteText = `
   ABCDEFGHIJKLMNOPQRSTUVWXYZ
 `;
 
-// 從數據文件中提取角色名稱等
+// 從數據文件和 i18n 文件中提取文字
 function extractTextFromDataFiles() {
   const dataFiles = [
     'public/board/data.json',
     'public/sweep/data.json',
+    'src/i18n/locales/zh-TW.json',
+    'src/i18n/locales/zh-CN.json',
+    'src/i18n/locales/en.json',
+    'src/i18n/locales/ja.json',
   ];
   
   let extractedText = websiteText;
