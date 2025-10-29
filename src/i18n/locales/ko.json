@@ -70,7 +70,6 @@
   },
   "footer": {
     "description": "nos가 제작",
-    "license": "MIT License",
     "noCellsYet": "셀 없음",
     "costPerCell": "셀당 비용",
     "bonusPerCell": "셀당 보너스",

@@ -13,7 +13,6 @@
         <span class="footer-label">Discord：</span>
         <a href="https://discord.com/users/nos1130" target="_blank" rel="noopener noreferrer" class="footer-link">nos1130</a>
       </p>
-      <p class="footer-license">{{ $t('footer.license') }}</p>
     </div>
   </footer>
 </template>
@@ -69,12 +68,6 @@
   text-decoration: underline;
 }
 
-.footer-license {
-  margin: 0;
-  color: var(--text-tertiary);
-  font-size: 0.75rem;
-}
-
 @media (max-width: 768px) {
   .site-footer {
     padding: 1.5rem 1rem;
@@ -87,10 +80,6 @@
 
   .footer-text {
     font-size: 0.8125rem;
-  }
-
-  .footer-license {
-    font-size: 0.6875rem;
   }
 }
 </style>

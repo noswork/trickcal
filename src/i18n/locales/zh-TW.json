@@ -78,7 +78,6 @@
   },
   "footer": {
     "description": "此工具由 nos 創作",
-    "license": "MIT License",
     "noCellsYet": "尚無格子",
     "costPerCell": "每格成本",
     "bonusPerCell": "每格加成",

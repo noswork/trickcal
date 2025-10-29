@@ -74,7 +74,6 @@
   },
   "footer": {
     "description": "nos によって作成",
-    "license": "MIT License",
     "noCellsYet": "セルなし",
     "costPerCell": "セルあたりのコスト",
     "bonusPerCell": "セルあたりのボーナス",

@@ -74,7 +74,6 @@
   },
   "footer": {
     "description": "Created by nos",
-    "license": "MIT License",
     "noCellsYet": "No cells yet",
     "costPerCell": "Cost per Cell",
     "bonusPerCell": "Bonus per Cell",
