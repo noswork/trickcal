@@ -2,7 +2,7 @@
   <AppLayout>
     <div class="sweep-root">
       <video class="background-video" autoplay loop muted playsinline>
-        <source src="/assets/backgrounds/background.mp4" type="video/mp4">
+        <source :src="getAssetUrl('assets/backgrounds/background.mp4')" type="video/mp4">
       </video>
       <div class="background-overlay"></div>
 
@@ -100,6 +100,7 @@ import { useSweepStore } from '@/stores/sweep'
 import AppLayout from '@/components/Layout/AppLayout.vue'
 import MaterialCard from '@/components/Sweep/MaterialCard.vue'
 import MaterialChip from '@/components/Sweep/MaterialChip.vue'
+import { getAssetUrl } from '@/utils/assets'
 
 const { t } = useI18n()
 const sweepStore = useSweepStore()

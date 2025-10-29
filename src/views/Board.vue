@@ -10,7 +10,7 @@
         playsinline
         preload="auto"
       >
-        <source src="/assets/backgrounds/background.mp4" type="video/mp4">
+        <source :src="getAssetUrl('assets/backgrounds/background.mp4')" type="video/mp4">
       </video>
       <div class="background-overlay"></div>
       
@@ -160,6 +160,7 @@ import ResourceSummary from '@/components/Board/ResourceSummary.vue'
 import CharacterSettings from '@/components/Board/CharacterSettings.vue'
 import FloatingButton from '@/components/Board/FloatingButton.vue'
 import type { Character } from '@/stores/board'
+import { getAssetUrl } from '@/utils/assets'
 
 const boardStore = useBoardStore()
 const showSettings = ref(false)

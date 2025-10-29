@@ -9,7 +9,7 @@
     >
       <div class="current-tool">
         <img 
-          :src="currentTool.icon" 
+          :src="getAssetUrl(currentTool.icon)" 
           :alt="currentTool.name"
           class="tool-icon"
           loading="lazy"
@@ -48,7 +48,7 @@
             @click="selectTool(tool)"
           >
             <img 
-              :src="tool.icon" 
+              :src="getAssetUrl(tool.icon)" 
               :alt="tool.name"
               class="tool-icon"
               loading="lazy"
@@ -69,6 +69,7 @@
 import { ref, computed } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
+import { getAssetUrl } from '@/utils/assets'
 
 const router = useRouter()
 const route = useRoute()
@@ -83,7 +84,7 @@ const tools = [
     name: 'Home',
     nameKey: 'nav.home',
     descriptionKey: 'nav.homeDescription',
-    icon: '/assets/icons/home.png',
+    icon: 'assets/icons/home.png',
     badge: null as string | null
   },
   {
@@ -91,7 +92,7 @@ const tools = [
     name: 'Board',
     nameKey: 'nav.board',
     descriptionKey: 'nav.boardDescription',
-    icon: '/assets/icons/gold_crayon.png',
+    icon: 'assets/icons/gold_crayon.png',
     badge: null as string | null
   },
   {
@@ -99,7 +100,7 @@ const tools = [
     name: 'Sweep',
     nameKey: 'nav.sweep',
     descriptionKey: 'nav.sweepDescription',
-    icon: '/assets/icons/sweep.png',
+    icon: 'assets/icons/sweep.png',
     badge: null as string | null
   }
 ]

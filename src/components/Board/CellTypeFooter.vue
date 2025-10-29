@@ -2,7 +2,7 @@
   <div class="cell-footer">
     <div class="footer-left">
       <div class="footer-item">
-        <img src="/assets/icons/gold_crayon.png" alt="金蠟筆" class="footer-icon" />
+        <img :src="getIconUrl('gold_crayon')" alt="金蠟筆" class="footer-icon" />
         <span class="footer-label">{{ $t('footer.costPerCell') }}</span>
         <span class="footer-value">{{ costPerCell }}</span>
       </div>
@@ -16,7 +16,7 @@
         {{ $t('footer.totalBonus') }} <span class="bonus-value">+{{ totalBonus.toFixed(1) }}%</span>
       </div>
       <div class="crayon-needed">
-        <img src="/assets/icons/gold_crayon.png" alt="金蠟筆" class="crayon-icon" />
+        <img :src="getIconUrl('gold_crayon')" alt="金蠟筆" class="crayon-icon" />
         {{ $t('footer.crayonsNeeded') }} <span class="crayon-count">{{ crayonsNeeded }}</span>
       </div>
     </div>
@@ -26,6 +26,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useBoardStore } from '@/stores/board'
+import { getIconUrl } from '@/utils/assets'
 
 const props = defineProps<{
   cellType: string

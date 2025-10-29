@@ -2,7 +2,7 @@
   <AppLayout>
     <div class="home-root with-background">
       <video class="background-video" autoplay loop muted playsinline aria-hidden="true">
-        <source src="/assets/backgrounds/background.mp4" type="video/mp4" />
+        <source :src="getAssetUrl('assets/backgrounds/background.mp4')" type="video/mp4" />
       </video>
       <div class="background-overlay" aria-hidden="true"></div>
 
@@ -22,7 +22,7 @@
           <div class="tool-grid">
             <router-link to="/board" class="tool-card">
               <div class="tool-icon">
-                <img src="/assets/icons/gold_crayon.png" alt="" />
+                <img :src="getIconUrl('gold_crayon')" alt="" />
               </div>
               <div>
                 <h3>{{ $t('tools.board.name') }}</h3>
@@ -32,7 +32,7 @@
 
             <router-link to="/sweep" class="tool-card">
               <div class="tool-icon">
-                <img src="/assets/favicons/favicon.png" alt="" />
+                <img :src="getAssetUrl('assets/favicons/favicon.png')" alt="" />
               </div>
               <div>
                 <h3>{{ $t('tools.sweep.name') }}</h3>
@@ -48,6 +48,7 @@
 
 <script setup lang="ts">
 import AppLayout from '@/components/Layout/AppLayout.vue'
+import { getAssetUrl, getIconUrl } from '@/utils/assets'
 </script>
 
 <style scoped>

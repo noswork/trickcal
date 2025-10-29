@@ -17,7 +17,7 @@
         >
           <div class="card-image">
             <img 
-              :src="`/assets/characters/${char.en}.png`" 
+              :src="getCharacterImageUrl(char.en)" 
               :alt="char.name"
               @error="handleImageError"
             />
@@ -28,7 +28,7 @@
               <img 
                 v-for="n in char.stars" 
                 :key="n" 
-                src="/assets/icons/unit_star.png" 
+                :src="getIconUrl('unit_star')" 
                 alt="★" 
                 class="star-icon"
                 loading="lazy"
@@ -38,14 +38,14 @@
             <!-- 左側圖標 -->
             <div class="character-icons-left">
               <img 
-                :src="`/${personalityIcon(char.personality)}`" 
+                :src="getAssetUrl(personalityIcon(char.personality))" 
                 :alt="char.personality" 
                 :title="char.personality"
                 class="char-icon"
                 loading="lazy"
               />
               <img 
-                :src="`/${attackTypeIcon(char.attackType)}`" 
+                :src="getAssetUrl(attackTypeIcon(char.attackType))" 
                 :alt="char.attackType"
                 :title="char.attackType" 
                 class="char-icon"
@@ -56,7 +56,7 @@
             <!-- 右側圖標 -->
             <div class="character-icons-right">
               <img 
-                :src="`/${deployRowIcon(char.deployRow)}`" 
+                :src="getAssetUrl(deployRowIcon(char.deployRow))" 
                 :alt="char.deployRow"
                 :title="char.deployRow" 
                 class="char-icon"
@@ -80,6 +80,7 @@
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useBoardStore } from '@/stores/board'
+import { getAssetUrl, getCharacterImageUrl, getIconUrl } from '@/utils/assets'
 
 defineProps<{
   show: boolean

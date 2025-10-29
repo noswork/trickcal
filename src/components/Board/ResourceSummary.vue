@@ -3,13 +3,13 @@
     <h3>{{ $t('panel.resourceSummary') }}</h3>
     
     <div class="stat-row">
-      <img src="/assets/icons/gold_crayon.png" alt="金蠟筆" class="stat-icon">
+      <img :src="getIconUrl('gold_crayon')" alt="金蠟筆" class="stat-icon">
       <span class="stat-label">{{ $t('panel.currentLayerNeed') }}</span>
       <span class="stat-value resource">{{ currentLayerCrayons }}</span>
     </div>
     
     <div class="stat-row">
-      <img src="/assets/icons/gold_crayon.png" alt="金蠟筆" class="stat-icon">
+      <img :src="getIconUrl('gold_crayon')" alt="金蠟筆" class="stat-icon">
       <span class="stat-label">{{ $t('panel.allLayersNeed') }}</span>
       <span class="stat-value resource">{{ totalCrayons }}</span>
     </div>
@@ -28,6 +28,7 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
+import { getIconUrl } from '@/utils/assets'
 import { useBoardStore } from '@/stores/board'
 
 const boardStore = useBoardStore()

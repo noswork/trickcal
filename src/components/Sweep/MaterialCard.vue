@@ -7,7 +7,7 @@
   >
     <div class="card-image">
       <img
-        :src="`/assets/gears/${materialName}.png`"
+        :src="getGearImageUrl(materialName)"
         :alt="materialName"
         @error="handleImageError"
       />
@@ -18,6 +18,8 @@
 </template>
 
 <script setup lang="ts">
+import { getGearImageUrl } from '@/utils/assets'
+
 defineProps<{
   materialName: string
   selected: boolean

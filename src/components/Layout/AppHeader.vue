@@ -3,7 +3,7 @@
     <nav class="site-nav">
       <div class="nav-brand">
         <router-link to="/" class="brand-link">
-          <img src="/assets/favicons/favicon.png" alt="Trickcal" class="brand-icon" />
+          <img :src="getAssetUrl('assets/favicons/favicon.png')" alt="Trickcal" class="brand-icon" />
           <span class="brand-text">{{ $t('nav.title') }}</span>
         </router-link>
       </div>
@@ -65,6 +65,7 @@ import { ref, computed } from 'vue'
 import { useThemeStore } from '@/stores/theme'
 import LanguageSelector from './LanguageSelector.vue'
 import ToolSelector from './ToolSelector.vue'
+import { getAssetUrl } from '@/utils/assets'
 
 const themeStore = useThemeStore()
 

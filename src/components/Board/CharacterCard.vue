@@ -9,7 +9,7 @@
   >
     <div class="character-avatar">
       <img 
-        :src="`/assets/characters/${character.en}.png`" 
+        :src="getCharacterImageUrl(character.en)" 
         :alt="character.name"
         loading="lazy"
         decoding="async"
@@ -24,7 +24,7 @@
       <img 
         v-for="n in character.stars" 
         :key="n" 
-        src="/assets/icons/unit_star.png" 
+        :src="getIconUrl('unit_star')" 
         alt="★" 
         class="star-icon"
         loading="lazy"
@@ -35,7 +35,7 @@
     <div class="character-icons-left">
       <img 
         v-if="personalityIcon" 
-        :src="`/${personalityIcon}`" 
+        :src="getAssetUrl(personalityIcon)" 
         :alt="character.personality"
         :title="character.personality"
         class="char-icon"
@@ -44,7 +44,7 @@
       />
       <img 
         v-if="attackTypeIcon" 
-        :src="`/${attackTypeIcon}`" 
+        :src="getAssetUrl(attackTypeIcon)" 
         :alt="character.attackType"
         :title="character.attackType"
         class="char-icon"
@@ -56,7 +56,7 @@
     <div class="character-icons-right">
       <img 
         v-if="deployRowIcon" 
-        :src="`/${deployRowIcon}`" 
+        :src="getAssetUrl(deployRowIcon)" 
         :alt="character.deployRow"
         :title="character.deployRow"
         class="char-icon"
@@ -71,6 +71,7 @@
 import { computed } from 'vue'
 import { useBoardStore } from '@/stores/board'
 import type { Character } from '@/stores/board'
+import { getAssetUrl, getCharacterImageUrl, getIconUrl } from '@/utils/assets'
 
 const props = defineProps<{
   character: Character
