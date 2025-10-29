@@ -145,7 +145,6 @@ function handleImageError(event: Event) {
   border: 2px solid var(--border-color);
   border-radius: 6px;
   padding: 0;
-  cursor: pointer;
   transition: all 0.2s ease;
   overflow: visible;
 }

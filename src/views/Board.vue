@@ -311,7 +311,6 @@ watch(showSettings, (value) => {
   color: var(--text-secondary);
   font-size: 0.875rem;
   font-weight: 500;
-  cursor: pointer;
   transition: all 0.2s;
 }
 
@@ -367,7 +366,6 @@ watch(showSettings, (value) => {
   color: var(--text-primary);
   font-size: 0.875rem;
   font-weight: 500;
-  cursor: pointer;
   transition: all 0.2s;
 }
 
@@ -391,7 +389,6 @@ watch(showSettings, (value) => {
   color: var(--text-secondary);
   font-size: 0.875rem;
   font-weight: 500;
-  cursor: pointer;
   transition: all 0.2s;
 }
 
@@ -517,7 +514,6 @@ watch(showSettings, (value) => {
     border-radius: 8px;
     background: var(--hover-bg);
     color: var(--text-secondary);
-    cursor: pointer;
     transition: all 0.2s;
   }
 

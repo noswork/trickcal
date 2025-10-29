@@ -73,7 +73,6 @@ defineEmits<{
   background: var(--primary-color);
   color: white;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 8px 24px rgba(255, 95, 114, 0.3);
-  cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 100;
 }

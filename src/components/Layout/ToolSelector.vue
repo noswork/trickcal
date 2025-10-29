@@ -160,7 +160,6 @@ const vClickOutside = {
   background: var(--card-bg);
   border: 2px solid var(--border-color);
   border-radius: 8px;
-  cursor: pointer;
   transition: all 0.2s ease;
   font-family: var(--site-font);
   min-width: 140px;
@@ -246,7 +245,6 @@ const vClickOutside = {
   background: transparent;
   border: none;
   border-radius: 8px;
-  cursor: pointer;
   transition: all 0.2s ease;
   text-align: left;
   font-family: var(--site-font);

@@ -212,7 +212,6 @@ function deployRowIcon(deployRow: string) {
   border: 2px solid var(--border-color);
   border-radius: 6px;
   padding: 0;
-  cursor: pointer;
   transition: all 0.2s ease;
   overflow: visible;
 }
@@ -347,7 +346,6 @@ function deployRowIcon(deployRow: string) {
   border-radius: 8px;
   font-size: 0.875rem;
   font-weight: 600;
-  cursor: pointer;
   transition: all 0.2s;
 }
 

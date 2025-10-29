@@ -107,7 +107,6 @@ const vClickOutside = {
   color: var(--text-primary);
   font-size: 0.875rem;
   font-weight: 500;
-  cursor: pointer;
   transition: all 0.2s;
   min-width: 120px;
 }
@@ -155,7 +154,6 @@ const vClickOutside = {
   color: var(--text-primary);
   font-size: 0.875rem;
   text-align: left;
-  cursor: pointer;
   transition: background 0.2s;
 }
 

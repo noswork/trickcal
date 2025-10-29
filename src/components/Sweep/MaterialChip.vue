@@ -37,7 +37,6 @@ function handleImageError(event: Event) {
   border-radius: 50px;
   font-size: 0.75rem;
   color: var(--text-primary);
-  cursor: pointer;
   transition: all 0.2s;
 }
 

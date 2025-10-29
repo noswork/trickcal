@@ -185,7 +185,6 @@ function closeMobileMenu() {
   border-radius: 8px;
   background: transparent;
   color: var(--text-secondary);
-  cursor: pointer;
   transition: all 0.2s;
 }
 
@@ -201,7 +200,6 @@ function closeMobileMenu() {
   background: var(--input-bg);
   color: var(--text-primary);
   font-size: 0.875rem;
-  cursor: pointer;
   transition: all 0.2s;
 }
 

@@ -259,7 +259,6 @@ watch(searchTerm, (value) => {
   background: var(--button-bg);
   color: var(--text-primary);
   font-size: 0.875rem;
-  cursor: pointer;
   transition: all 0.2s;
 }
 
@@ -282,7 +281,6 @@ watch(searchTerm, (value) => {
   background: var(--button-bg);
   color: var(--text-primary);
   font-size: 1.25rem;
-  cursor: pointer;
   transition: all 0.2s;
 }
 
@@ -373,7 +371,6 @@ watch(searchTerm, (value) => {
 .plan-details summary {
   font-weight: 600;
   color: var(--text-primary);
-  cursor: pointer;
   margin-bottom: 1rem;
 }
 

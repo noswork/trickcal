@@ -47,7 +47,6 @@ function handleImageError(event: Event) {
   background: var(--card-bg);
   border: 2px solid var(--border-color);
   border-radius: 12px;
-  cursor: pointer;
   transition: all 0.2s;
   width: 100%;
 }
