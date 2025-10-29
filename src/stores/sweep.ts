@@ -1,5 +1,7 @@
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
+import { SweepSelectionStorage } from '@/utils/storage'
+import { Logger } from '@/utils/logger'
 
 export interface MaterialData {
   [materialName: string]: string[]
@@ -8,8 +10,6 @@ export interface MaterialData {
 export interface StageData {
   [stageName: string]: string[]
 }
-
-const SELECTION_KEY = 'trickcal_sweep_selected_materials'
 
 export const useSweepStore = defineStore('sweep', () => {
   const materials = ref<string[]>([])
@@ -28,7 +28,7 @@ export const useSweepStore = defineStore('sweep', () => {
       parseData(data)
       loadSelection()
     } catch (error) {
-      console.error('載入掃蕩數據失敗:', error)
+      Logger.error('載入掃蕩數據失敗:', error)
       throw error
     }
   }
@@ -60,25 +60,17 @@ export const useSweepStore = defineStore('sweep', () => {
 
   // 載入已選擇的素材
   function loadSelection() {
-    const saved = localStorage.getItem(SELECTION_KEY)
-    if (saved) {
-      try {
-        const parsed = JSON.parse(saved)
-        selectedMaterials.value = new Set(
-          parsed.filter((name: string) => materialData.value[name])
-        )
-      } catch {
-        selectedMaterials.value = new Set()
-      }
+    const saved = SweepSelectionStorage.get()
+    if (saved && saved.length > 0) {
+      selectedMaterials.value = new Set(
+        saved.filter((name: string) => materialData.value[name])
+      )
     }
   }
 
   // 保存選擇
   function saveSelection() {
-    localStorage.setItem(
-      SELECTION_KEY,
-      JSON.stringify([...selectedMaterials.value])
-    )
+    SweepSelectionStorage.set([...selectedMaterials.value])
   }
 
   // 切換素材選擇

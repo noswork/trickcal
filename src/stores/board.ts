@@ -1,5 +1,7 @@
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
+import { BoardProgressStorage } from '@/utils/storage'
+import { Logger } from '@/utils/logger'
 
 export interface Character {
   name: string
@@ -60,8 +62,6 @@ export interface UserProgress {
   activatedCells: Record<string, boolean>
 }
 
-const PROGRESS_KEY = 'trickcal_board_progress'
-
 export const useBoardStore = defineStore('board', () => {
   const gameData = ref<GameData | null>(null)
   const userProgress = ref<UserProgress>({
@@ -84,7 +84,7 @@ export const useBoardStore = defineStore('board', () => {
       normalizeAssetPaths(data)
       gameData.value = data
     } catch (error) {
-      console.error('載入遊戲數據失敗:', error)
+      Logger.error('載入遊戲數據失敗:', error)
       throw error
     }
   }
@@ -128,16 +128,15 @@ export const useBoardStore = defineStore('board', () => {
 
   // 載入用戶進度
   function loadUserProgress() {
-    const saved = localStorage.getItem(PROGRESS_KEY)
+    const saved = BoardProgressStorage.get()
     if (saved) {
       try {
-        const data = JSON.parse(saved)
         userProgress.value = {
-          ownedCharacters: new Set(data.ownedCharacters || []),
-          activatedCells: data.activatedCells || {}
+          ownedCharacters: new Set(saved.ownedCharacters || []),
+          activatedCells: saved.activatedCells || {}
         }
       } catch (error) {
-        console.error('載入用戶進度失敗:', error)
+        Logger.error('載入用戶進度失敗:', error)
       }
     }
   }
@@ -148,7 +147,7 @@ export const useBoardStore = defineStore('board', () => {
       ownedCharacters: Array.from(userProgress.value.ownedCharacters),
       activatedCells: userProgress.value.activatedCells
     }
-    localStorage.setItem(PROGRESS_KEY, JSON.stringify(data))
+    BoardProgressStorage.set(data)
   }
 
   // 切換角色擁有狀態

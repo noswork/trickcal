@@ -8,15 +8,17 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { createClient } from '@supabase/supabase-js'
+import { SUPABASE_CONFIG, API_CONFIG } from '@/constants'
+import { UsageStorage } from '@/utils/storage'
+import { createLogger } from '@/utils/logger'
+
+const logger = createLogger('UsageCounter')
 
 const props = defineProps<{
   pageType?: string
 }>()
 
-const SUPABASE_URL = 'https://phiemgvtolycpmpbgzan.supabase.co'
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBoaWVtZ3Z0b2x5Y3BtcGJnemFuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjA3NTQ5NDksImV4cCI6MjA3NjMzMDk0OX0.-nSfSQpKvD6Ye0GJ0BVJMamFWrHjqriQbXJ1n0T9Pas'
-
-const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
+const supabase = createClient(SUPABASE_CONFIG.URL, SUPABASE_CONFIG.ANON_KEY)
 
 const localCount = ref(0)
 const remoteCount = ref(0)
@@ -34,12 +36,12 @@ const pendingEvents: Array<{page_type: string; action_type: string; timestamp: n
 
 // 生成session ID
 function generateSessionId() {
-  const stored = localStorage.getItem('trickcal_usage_session_id')
+  const stored = UsageStorage.getSessionId()
   if (stored) {
     return stored
   }
   const newId = `session_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`
-  localStorage.setItem('trickcal_usage_session_id', newId)
+  UsageStorage.setSessionId(newId)
   return newId
 }
 
@@ -55,8 +57,8 @@ function track(actionType = 'page_view') {
     timestamp: Date.now()
   })
   
-  // 保存到localStorage
-  localStorage.setItem('trickcal_usage_pending_events', JSON.stringify(pendingEvents))
+  // 保存待同步事件
+  UsageStorage.setPendingEvents(pendingEvents)
   
   setTimeout(() => {
     isUpdating.value = false
@@ -72,13 +74,13 @@ async function loadRemoteCount() {
       .single()
     
     if (error) {
-      console.error('載入使用計數時發生錯誤:', error)
+      logger.error('載入使用計數時發生錯誤:', error)
       return 0
     }
     
     return data?.total_count || 0
   } catch (err) {
-    console.error('載入使用計數時發生錯誤:', err)
+    logger.error('載入使用計數時發生錯誤:', err)
     return 0
   }
 }
@@ -100,7 +102,7 @@ async function syncPendingEvents() {
       .insert(events)
     
     if (error) {
-      console.error('同步事件時發生錯誤:', error)
+      logger.error('同步事件時發生錯誤:', error)
       return
     }
     
@@ -110,11 +112,11 @@ async function syncPendingEvents() {
     // 清除待處理事件
     pendingEvents.length = 0
     localCount.value = 0
-    localStorage.removeItem('trickcal_usage_pending_events')
+    UsageStorage.clearPendingEvents()
     
-    console.log('事件同步成功')
+    logger.success('事件同步成功')
   } catch (err) {
-    console.error('同步事件時發生錯誤:', err)
+    logger.error('同步事件時發生錯誤:', err)
   }
 }
 
@@ -127,14 +129,13 @@ onMounted(async () => {
   
   // 載入本地待同步事件
   try {
-    const stored = localStorage.getItem('trickcal_usage_pending_events')
-    if (stored) {
-      const events = JSON.parse(stored)
+    const events = UsageStorage.getPendingEvents()
+    if (events.length > 0) {
       pendingEvents.push(...events)
       localCount.value = events.length
     }
   } catch (e) {
-    console.error('載入本地事件失敗:', e)
+    logger.error('載入本地事件失敗:', e)
   }
   
   // 追蹤頁面訪問
@@ -148,7 +149,7 @@ onMounted(async () => {
     if (pendingEvents.length > 0) {
       syncPendingEvents()
     }
-  }, 60000) // 每分鐘同步一次
+  }, API_CONFIG.SYNC_INTERVAL)
 })
 
 // 清理
@@ -167,17 +168,17 @@ onUnmounted(() => {
       created_at: new Date(event.timestamp).toISOString()
     }))
     
-    fetch(`${SUPABASE_URL}/rest/v1/usage_events`, {
+    fetch(`${SUPABASE_CONFIG.URL}/rest/v1/usage_events`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'apikey': SUPABASE_ANON_KEY,
-        'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+        'apikey': SUPABASE_CONFIG.ANON_KEY,
+        'Authorization': `Bearer ${SUPABASE_CONFIG.ANON_KEY}`,
         'Prefer': 'return=minimal'
       },
       body: JSON.stringify(events),
       keepalive: true
-    }).catch(err => console.error('發送最終事件時發生錯誤:', err))
+    }).catch(err => logger.error('發送最終事件時發生錯誤:', err))
   }
 })
 

@@ -1,21 +1,15 @@
 import { defineStore } from 'pinia'
 import { ref, watch } from 'vue'
+import { ThemeStorage } from '@/utils/storage'
 
 export type Theme = 'light' | 'dark'
 
-const STORAGE_KEY = 'trickcal_theme'
-
 export const useThemeStore = defineStore('theme', () => {
-  const currentTheme = ref<Theme>(getInitialTheme())
-
-  function getInitialTheme(): Theme {
-    const saved = localStorage.getItem(STORAGE_KEY)
-    return (saved === 'light' || saved === 'dark') ? saved : 'dark'
-  }
+  const currentTheme = ref<Theme>(ThemeStorage.get())
 
   function setTheme(theme: Theme) {
     currentTheme.value = theme
-    localStorage.setItem(STORAGE_KEY, theme)
+    ThemeStorage.set(theme)
     document.body.dataset.theme = theme
   }
 
