@@ -35,6 +35,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { getAssetUrl } from '@/utils/assets'
+import { useFoodTranslations } from '@/composables/useFoodTranslations'
 import type { FoodPreferenceLevel } from '@/stores/food'
 
 const props = defineProps<{
@@ -42,6 +43,8 @@ const props = defineProps<{
   selected?: boolean
   preferenceLevel?: FoodPreferenceLevel | null
 }>()
+
+const { preferenceLabels } = useFoodTranslations()
 
 function getFoodImageUrl(name: string) {
   return getAssetUrl(`assets/foods/${name}.webp`)
@@ -57,12 +60,7 @@ function getPreferenceIconUrl(level: FoodPreferenceLevel) {
 }
 
 function getPreferenceText(level: FoodPreferenceLevel) {
-  const textMap = {
-    veryLike: '非常喜欢',
-    like: '喜欢',
-    dislike: '不喜欢'
-  }
-  return textMap[level]
+  return preferenceLabels.value[level]
 }
 
 function handleImageError(event: Event) {

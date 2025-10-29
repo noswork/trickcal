@@ -102,7 +102,7 @@
     "summary": "共需 {stages} 个关卡",
     "detailSummary": "关卡细节",
     "energyPerStage": "体力 {energy}",
-    "warning": "有 {count} 个素材无法匹配任一关卡，请检查资料"
+    "warning": "有 {count} 个素材无法匹配任一关卡，请检查数据"
   },
   "loading": {
     "data": "载入游戏数据..."
@@ -118,7 +118,7 @@
   "errors": {
     "noData": "无数据可显示",
     "noCellType": "无此格子类型",
-    "usingCachedData": "无法载入最新数据，正在使用缓存资料。",
+    "usingCachedData": "无法载入最新数据，正在使用缓存数据。",
     "loadFailed": "载入数据失败，请检查网络连接后再试一次。"
   },
   "food": {

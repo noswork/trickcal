@@ -1,0 +1,41 @@
+{
+  "pageTitle": "Food Preferences - Trickcal",
+  "preferences": {
+    "veryLike": "Love",
+    "like": "Like",
+    "dislike": "Dislike"
+  },
+  "foods": {
+    "UFC炸胡蘿蔔": "UFC Fried Carrot",
+    "一口草生菜包": "Grass Lettuce Wrap",
+    "一碗米飯": "Bowl of Rice",
+    "南瓜濃湯": "Pumpkin Soup",
+    "哈蜜瓜博孔奇尼起司": "Melon Bocconcini Cheese",
+    "太空食品": "Space Food",
+    "寶石塔": "Gem Tower",
+    "巧克力冰淇淋": "Chocolate Ice Cream",
+    "幽靈布丁": "Ghost Pudding",
+    "扭結麵包": "Pretzel Bread",
+    "棉花糖馬卡龍": "Marshmallow Macaron",
+    "椰子松針粥": "Coconut Pine Needle Porridge",
+    "檸檬茶": "Lemon Tea",
+    "海藻沙拉": "Seaweed Salad",
+    "溫熱的冰美式咖啡": "Warm Iced Americano",
+    "烤漫畫肉": "Grilled Manga Meat",
+    "焦糖布丁": "Caramel Pudding",
+    "焦糖爆米花": "Caramel Popcorn",
+    "獸糧罐頭": "Beast Feed Can",
+    "石榴果實": "Pomegranate Fruit",
+    "秘密葡萄汁": "Secret Grape Juice",
+    "空氣炸豬排": "Air-Fried Pork Cutlet",
+    "肉桂口味糖果": "Cinnamon Candy",
+    "草莓蛋糕": "Strawberry Cake",
+    "薄荷巧克力冰淇淋": "Mint Chocolate Ice Cream",
+    "蜂蜜大蒜鮭魚": "Honey Garlic Salmon",
+    "蜂蜜罐": "Honey Jar",
+    "金糖葫蘆": "Golden Candied Fruit",
+    "麵茶": "Wheat Tea",
+    "龍族糖果": "Dragon Candy"
+  }
+}
+

@@ -38,8 +38,8 @@
           <template v-if="selectedFood">
             <div v-if="charactersForSelectedFood.veryLike.length > 0" class="character-group">
               <h3 class="group-title">
-                <img :src="getAssetUrl('assets/icons/food_verylike.webp')" alt="非常喜欢" class="group-icon" />
-                非常喜欢
+                <img :src="getAssetUrl('assets/icons/food_verylike.webp')" :alt="preferenceLabels.veryLike" class="group-icon" />
+                {{ preferenceLabels.veryLike }}
               </h3>
               <div class="character-grid">
                 <FoodCharacterCard
@@ -54,8 +54,8 @@
 
             <div v-if="charactersForSelectedFood.like.length > 0" class="character-group">
               <h3 class="group-title">
-                <img :src="getAssetUrl('assets/icons/food_like.webp')" alt="喜欢" class="group-icon" />
-                喜欢
+                <img :src="getAssetUrl('assets/icons/food_like.webp')" :alt="preferenceLabels.like" class="group-icon" />
+                {{ preferenceLabels.like }}
               </h3>
               <div class="character-grid">
                 <FoodCharacterCard
@@ -70,8 +70,8 @@
 
             <div v-if="charactersForSelectedFood.dislike.length > 0" class="character-group">
               <h3 class="group-title">
-                <img :src="getAssetUrl('assets/icons/food_dislike.webp')" alt="不喜欢" class="group-icon" />
-                不喜欢
+                <img :src="getAssetUrl('assets/icons/food_dislike.webp')" :alt="preferenceLabels.dislike" class="group-icon" />
+                {{ preferenceLabels.dislike }}
               </h3>
               <div class="character-grid">
                 <FoodCharacterCard
@@ -134,6 +134,7 @@ import { ref, computed, onMounted } from 'vue'
 import { useFoodStore } from '@/stores/food'
 import { useCharactersStore } from '@/stores/characters'
 import { useTracking } from '@/composables/useTracking'
+import { useFoodTranslations } from '@/composables/useFoodTranslations'
 import AppLayout from '@/components/Layout/AppLayout.vue'
 import FoodCard from '@/components/Food/FoodCard.vue'
 import FoodCharacterCard from '@/components/Food/FoodCharacterCard.vue'
@@ -142,6 +143,7 @@ import { getAssetUrl } from '@/utils/assets'
 const foodStore = useFoodStore()
 const charactersStore = useCharactersStore()
 const tracking = useTracking('food')
+const { loadTranslations, preferenceLabels } = useFoodTranslations()
 
 const characterSearchTerm = ref('')
 const foodSearchTerm = ref('')
@@ -269,7 +271,8 @@ function clearSelection() {
 onMounted(async () => {
   await Promise.all([
     foodStore.loadData(),
-    charactersStore.loadCharacters()
+    charactersStore.loadCharacters(),
+    loadTranslations()
   ])
 })
 </script>
