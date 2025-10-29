@@ -34,3 +34,6 @@ dist-ssr
 
 # Backup files
 *.backup
+
+# Cleanup folder (temporary)
+clearup/
