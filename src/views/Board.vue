@@ -1,17 +1,13 @@
 <template>
   <AppLayout>
     <div class="board-root with-background">
-      <!-- 背景視頻 -->
-      <video 
-        class="background-video" 
-        autoplay 
-        muted 
-        loop 
-        playsinline
-        preload="auto"
-      >
-        <source :src="getAssetUrl('assets/backgrounds/background.mp4')" type="video/mp4">
-      </video>
+      <!-- 背景圖片 -->
+      <img 
+        class="background-image" 
+        :src="getAssetUrl('assets/backgrounds/background.png')" 
+        alt=""
+        aria-hidden="true"
+      />
       <div class="background-overlay"></div>
       
       <main class="board-layout">
@@ -232,7 +228,7 @@ onMounted(async () => {
   overflow: hidden;
 }
 
-.background-video {
+.background-image {
   position: fixed;
   top: 0;
   left: 0;

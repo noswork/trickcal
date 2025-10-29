@@ -1,9 +1,12 @@
 <template>
   <AppLayout>
     <div class="home-root with-background">
-      <video class="background-video" autoplay loop muted playsinline aria-hidden="true">
-        <source :src="getAssetUrl('assets/backgrounds/background.mp4')" type="video/mp4" />
-      </video>
+      <img 
+        class="background-image" 
+        :src="getAssetUrl('assets/backgrounds/background.png')" 
+        alt=""
+        aria-hidden="true"
+      />
       <div class="background-overlay" aria-hidden="true"></div>
 
       <div class="site-container home-layout">
@@ -62,7 +65,7 @@ import { getAssetUrl, getIconUrl } from '@/utils/assets'
   overflow: hidden;
 }
 
-.background-video {
+.background-image {
   position: fixed;
   top: 0;
   left: 0;

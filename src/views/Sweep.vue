@@ -1,9 +1,12 @@
 <template>
   <AppLayout>
     <div class="sweep-root">
-      <video class="background-video" autoplay loop muted playsinline>
-        <source :src="getAssetUrl('assets/backgrounds/background.mp4')" type="video/mp4">
-      </video>
+      <img 
+        class="background-image" 
+        :src="getAssetUrl('assets/backgrounds/background.png')" 
+        alt=""
+        aria-hidden="true"
+      />
       <div class="background-overlay"></div>
 
       <main class="sweep-layout">
@@ -173,7 +176,7 @@ onMounted(async () => {
   min-height: calc(100vh - 140px);
 }
 
-.background-video {
+.background-image {
   position: fixed;
   top: 0;
   left: 0;

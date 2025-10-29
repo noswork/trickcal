@@ -9,6 +9,8 @@
       <img
         :src="getGearImageUrl(materialName)"
         :alt="materialName"
+        loading="lazy"
+        decoding="async"
         @error="handleImageError"
       />
       <div class="card-placeholder">?</div>
