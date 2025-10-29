@@ -131,6 +131,8 @@ body {
   color: var(--text-primary);
   font-family: var(--site-font);
   transition: background-color 0.3s, color 0.3s;
+  /* 自定義鼠標 */
+  cursor: url('/assets/cursors/cursor.png') 0 0, auto;
 }
 
 button,
@@ -138,6 +140,19 @@ input,
 select,
 textarea {
   font-family: var(--site-font);
+}
+
+/* 可點擊元素的鼠標樣式 */
+button,
+a,
+[role="button"],
+.clickable {
+  cursor: url('/assets/cursors/cursor.png') 0 0, pointer;
+}
+
+button:disabled,
+[disabled] {
+  cursor: not-allowed;
 }
 
 #app {
