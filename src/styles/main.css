@@ -33,12 +33,12 @@
   --personality-gloomy-bg: #a083e7;
   
   /* 背景 */
-  --body-bg: #f8f9fa;
-  --card-bg: rgba(255, 255, 255, 0.95);
+  --body-bg: #e8eaed;
+  --card-bg: rgba(255, 255, 255, 0.85);
   --panel-bg: rgba(248, 249, 250, 0.5);
-  --header-bg: rgba(255, 255, 255, 0.8);
-  --footer-bg: rgba(255, 255, 255, 0.8);
-  --overlay-bg: rgba(255, 255, 255, 0.7);
+  --header-bg: rgba(255, 255, 255, 0.75);
+  --footer-bg: rgba(255, 255, 255, 0.75);
+  --overlay-bg: rgba(255, 255, 255, 0.4);
   --hover-bg: rgba(0, 0, 0, 0.05);
   --button-bg: rgba(0, 0, 0, 0.03);
   --button-hover: rgba(0, 0, 0, 0.08);
@@ -80,11 +80,11 @@
   
   /* 背景 */
   --body-bg: #1a1a1a;
-  --card-bg: rgba(30, 30, 30, 0.95);
-  --panel-bg: rgba(40, 40, 40, 0.5);
-  --header-bg: rgba(30, 30, 30, 0.8);
-  --footer-bg: rgba(30, 30, 30, 0.8);
-  --overlay-bg: rgba(0, 0, 0, 0.5);
+  --card-bg: rgba(40, 40, 40, 0.85);
+  --panel-bg: rgba(50, 50, 50, 0.5);
+  --header-bg: rgba(40, 40, 40, 0.75);
+  --footer-bg: rgba(40, 40, 40, 0.75);
+  --overlay-bg: rgba(0, 0, 0, 0.4);
   --hover-bg: rgba(255, 255, 255, 0.05);
   --button-bg: rgba(255, 255, 255, 0.05);
   --button-hover: rgba(255, 255, 255, 0.1);

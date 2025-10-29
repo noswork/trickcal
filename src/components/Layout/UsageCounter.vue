@@ -1,6 +1,6 @@
 <template>
   <div class="usage-counter">
-    <span class="counter-label">總使用次數</span>
+    <span class="counter-label">{{ $t('footer.usageCount') }}</span>
     <span class="counter-value" :class="{ updating: isUpdating }">{{ formattedCount }}</span>
   </div>
 </template>

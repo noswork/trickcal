@@ -75,7 +75,10 @@
     "costPerCell": "Cost per Cell",
     "bonusPerCell": "Bonus per Cell",
     "totalBonus": "Total Bonus",
-    "crayonsNeeded": "Crayons Needed"
+    "crayonsNeeded": "Crayons Needed",
+    "author": "Author",
+    "copyright": "Copyright",
+    "usageCount": "Total Usage"
   },
   "catalog": {
     "title": "Material Catalog",

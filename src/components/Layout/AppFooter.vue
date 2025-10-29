@@ -1,28 +1,24 @@
 <template>
   <footer class="site-footer">
     <div class="footer-content">
-      <UsageCounter />
-      <div class="footer-info">
-        <p class="footer-text">
-          <span class="footer-label">工具製作：</span>
-          <span class="footer-value">nos</span>
-        </p>
-        <p class="footer-text">
-          <span class="footer-label">遊戲版權：</span>
-          <span class="footer-value">EpidGames</span>
-        </p>
-        <p class="footer-text">
-          <span class="footer-label">Discord：</span>
-          <a href="https://discord.com/users/nos1130" target="_blank" rel="noopener noreferrer" class="footer-link">nos1130</a>
-        </p>
-      </div>
-      <p class="footer-license">MIT License</p>
+      <p class="footer-text">
+        <span class="footer-label">{{ $t('footer.author') }}：</span>
+        <span class="footer-value">nos</span>
+      </p>
+      <p class="footer-text">
+        <span class="footer-label">{{ $t('footer.copyright') }}：</span>
+        <span class="footer-value">EpidGames</span>
+      </p>
+      <p class="footer-text">
+        <span class="footer-label">Discord：</span>
+        <a href="https://discord.com/users/nos1130" target="_blank" rel="noopener noreferrer" class="footer-link">nos1130</a>
+      </p>
+      <p class="footer-license">{{ $t('footer.license') }}</p>
     </div>
   </footer>
 </template>
 
 <script setup lang="ts">
-import UsageCounter from './UsageCounter.vue'
 </script>
 
 <style scoped>
@@ -36,17 +32,9 @@ import UsageCounter from './UsageCounter.vue'
 .footer-content {
   max-width: 1400px;
   margin: 0 auto;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  align-items: center;
-}
-
-.footer-info {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 2rem;
   justify-content: center;
   align-items: center;
 }
@@ -92,9 +80,9 @@ import UsageCounter from './UsageCounter.vue'
     padding: 1.5rem 1rem;
   }
 
-  .footer-info {
+  .footer-content {
+    gap: 1rem;
     flex-direction: column;
-    gap: 0.75rem;
   }
 
   .footer-text {

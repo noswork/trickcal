@@ -6,6 +6,7 @@
           <img :src="getAssetUrl('assets/favicons/favicon.webp')" alt="Trickcal" class="brand-icon" />
           <span class="brand-text">{{ $t('nav.title') }}</span>
         </router-link>
+        <UsageCounter class="desktop-only" />
       </div>
 
       <!-- 桌面端：工具選擇器 -->
@@ -65,6 +66,7 @@ import { ref, computed } from 'vue'
 import { useThemeStore } from '@/stores/theme'
 import LanguageSelector from './LanguageSelector.vue'
 import ToolSelector from './ToolSelector.vue'
+import UsageCounter from './UsageCounter.vue'
 import { getAssetUrl } from '@/utils/assets'
 
 const themeStore = useThemeStore()
@@ -106,6 +108,9 @@ function closeMobileMenu() {
 
 .nav-brand {
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .brand-link {

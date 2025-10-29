@@ -75,7 +75,10 @@
     "costPerCell": "セルあたりのコスト",
     "bonusPerCell": "セルあたりのボーナス",
     "totalBonus": "合計ボーナス",
-    "crayonsNeeded": "必要なクレヨン"
+    "crayonsNeeded": "必要なクレヨン",
+    "author": "作成者",
+    "copyright": "版権",
+    "usageCount": "総使用回数"
   },
   "catalog": {
     "title": "素材カタログ",

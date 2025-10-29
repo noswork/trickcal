@@ -75,7 +75,10 @@
     "costPerCell": "每格成本",
     "bonusPerCell": "每格加成",
     "totalBonus": "总加成",
-    "crayonsNeeded": "所需金蜡笔"
+    "crayonsNeeded": "所需金蜡笔",
+    "author": "工具制作",
+    "copyright": "游戏版权",
+    "usageCount": "总使用次数"
   },
   "catalog": {
     "title": "素材图鉴",

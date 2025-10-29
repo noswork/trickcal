@@ -83,7 +83,10 @@
     "costPerCell": "每格成本",
     "bonusPerCell": "每格加成",
     "totalBonus": "總加成",
-    "crayonsNeeded": "所需金蠟筆"
+    "crayonsNeeded": "所需金蠟筆",
+    "author": "工具製作",
+    "copyright": "遊戲版權",
+    "usageCount": "總使用次數"
   },
   "catalog": {
     "title": "素材圖鑑",
