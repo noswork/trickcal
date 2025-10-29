@@ -1,6 +1,5 @@
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
-import { useCharactersStore } from './characters'
 
 export type FoodPreferenceLevel = 'veryLike' | 'like' | 'dislike'
 export type FoodRarity = 'common' | 'uncommon' | 'rare' | 'epic' | 'legendary'
@@ -24,8 +23,6 @@ export interface FoodsMetadata {
 }
 
 export const useFoodStore = defineStore('food', () => {
-  const charactersStore = useCharactersStore()
-  
   // 状态
   const foodData = ref<FoodData>({})
   const foodsMetadata = ref<FoodsMetadata>({})
