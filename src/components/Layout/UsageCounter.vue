@@ -6,19 +6,26 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { ref, computed, watch, onMounted, onUnmounted } from 'vue'
+import { useRoute } from 'vue-router'
 import { createClient } from '@supabase/supabase-js'
 import { SUPABASE_CONFIG, API_CONFIG } from '@/constants'
 import { UsageStorage } from '@/utils/storage'
 import { createLogger } from '@/utils/logger'
 
 const logger = createLogger('UsageCounter')
-
-const props = defineProps<{
-  pageType?: string
-}>()
+const route = useRoute()
 
 const supabase = createClient(SUPABASE_CONFIG.URL, SUPABASE_CONFIG.ANON_KEY)
+
+// 根據路由自動獲取頁面類型
+const pageType = computed(() => {
+  const path = route.path
+  if (path === '/') return 'home'
+  if (path.startsWith('/board')) return 'board'
+  if (path.startsWith('/sweep')) return 'sweep'
+  return 'other'
+})
 
 const localCount = ref(0)
 const remoteCount = ref(0)
@@ -52,7 +59,7 @@ function track(actionType = 'page_view') {
   
   // 添加到待同步事件
   pendingEvents.push({
-    page_type: props.pageType || 'unknown',
+    page_type: pageType.value,
     action_type: actionType,
     timestamp: Date.now()
   })
@@ -138,7 +145,7 @@ onMounted(async () => {
     logger.error('載入本地事件失敗:', e)
   }
   
-  // 追蹤頁面訪問
+  // 追蹤首次頁面訪問
   track('page_view')
   
   // 立即同步一次
@@ -150,6 +157,15 @@ onMounted(async () => {
       syncPendingEvents()
     }
   }, API_CONFIG.SYNC_INTERVAL)
+})
+
+// 監聽路由變化，自動追蹤頁面訪問
+watch(() => route.path, (newPath, oldPath) => {
+  // 只在路由真的改變時追蹤
+  if (newPath !== oldPath) {
+    logger.info(`頁面切換: ${oldPath} → ${newPath} (${pageType.value})`)
+    track('page_view')
+  }
 })
 
 // 清理
