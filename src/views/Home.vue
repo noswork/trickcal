@@ -3,7 +3,7 @@
     <div class="home-root with-background">
       <img 
         class="background-image" 
-        :src="getAssetUrl('assets/backgrounds/background.png')" 
+        :src="getAssetUrl('assets/backgrounds/background.webp')" 
         alt=""
         aria-hidden="true"
       />

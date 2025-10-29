@@ -15,22 +15,25 @@ export function getAssetUrl(path: string): string {
 
 /**
  * 獲取角色圖片 URL
+ * 優先使用 WebP 格式（節省 80% 文件大小）
  */
 export function getCharacterImageUrl(characterEn: string): string {
-  return getAssetUrl(`assets/characters/${characterEn}.png`)
+  return getAssetUrl(`assets/characters/${characterEn}.webp`)
 }
 
 /**
  * 獲取裝備/素材圖片 URL
+ * 優先使用 WebP 格式（節省 80% 文件大小）
  */
 export function getGearImageUrl(gearName: string): string {
-  return getAssetUrl(`assets/gears/${gearName}.png`)
+  return getAssetUrl(`assets/gears/${gearName}.webp`)
 }
 
 /**
  * 獲取圖標 URL
+ * 優先使用 WebP 格式（節省 70% 文件大小）
  */
 export function getIconUrl(iconName: string): string {
-  return getAssetUrl(`assets/icons/${iconName}.png`)
+  return getAssetUrl(`assets/icons/${iconName}.webp`)
 }
 

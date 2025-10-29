@@ -4,7 +4,7 @@
       <!-- 背景圖片 -->
       <img 
         class="background-image" 
-        :src="getAssetUrl('assets/backgrounds/background.png')" 
+        :src="getAssetUrl('assets/backgrounds/background.webp')" 
         alt=""
         aria-hidden="true"
       />

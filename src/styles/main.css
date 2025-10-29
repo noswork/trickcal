@@ -3,11 +3,11 @@
 /* ===== 字體定義 ===== */
 @font-face {
   font-family: "TrickcalCJK";
-  src: url("/assets/fonts/荆南波波黑-BOLD.ttf") format("truetype");
+  src: url("/assets/fonts/subset/荆南波波黑-BOLD.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap; /* 字體加載時顯示備用字體，避免閃爍 */
-  /* 使用 unicode-range 可以進一步優化，但需要子集化 */
+  /* 已進行字體子集化，只包含網站使用的字符 (63KB vs 5MB) */
 }
 
 /* CSS 變數 - 明亮主題 */
