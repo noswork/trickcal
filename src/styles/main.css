@@ -142,17 +142,88 @@ textarea {
   font-family: var(--site-font);
 }
 
-/* 可點擊元素的鼠標樣式 */
+/* ===== 自定義鼠標樣式 ===== */
+
+/* 可點擊元素 */
 button,
 a,
 [role="button"],
-.clickable {
-  cursor: url('/assets/cursors/cursor.png') 0 0, pointer;
+.clickable,
+label,
+summary {
+  cursor: url('/assets/cursors/cursor.png') 0 0, pointer !important;
 }
 
+/* 輸入框和文字選擇 */
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="password"],
+input[type="url"],
+input[type="tel"],
+textarea,
+[contenteditable="true"] {
+  cursor: url('/assets/cursors/cursor.png') 0 0, text !important;
+}
+
+/* 拖曳元素 */
+[draggable="true"] {
+  cursor: url('/assets/cursors/cursor.png') 0 0, grab !important;
+}
+
+[draggable="true"]:active {
+  cursor: url('/assets/cursors/cursor.png') 0 0, grabbing !important;
+}
+
+/* 禁用狀態 */
 button:disabled,
-[disabled] {
-  cursor: not-allowed;
+[disabled],
+.disabled {
+  cursor: url('/assets/cursors/cursor.png') 0 0, not-allowed !important;
+  opacity: 0.5;
+}
+
+/* 選擇框 */
+select {
+  cursor: url('/assets/cursors/cursor.png') 0 0, pointer !important;
+}
+
+/* 幫助/問號 */
+[title],
+abbr {
+  cursor: url('/assets/cursors/cursor.png') 0 0, help !important;
+}
+
+/* 等待狀態 */
+.loading,
+[aria-busy="true"] {
+  cursor: url('/assets/cursors/cursor.png') 0 0, wait !important;
+}
+
+/* 移動元素 */
+.movable {
+  cursor: url('/assets/cursors/cursor.png') 0 0, move !important;
+}
+
+/* 縮放元素 */
+.zoomable {
+  cursor: url('/assets/cursors/cursor.png') 0 0, zoom-in !important;
+}
+
+.zoomable:active {
+  cursor: url('/assets/cursors/cursor.png') 0 0, zoom-out !important;
+}
+
+/* 確保所有元素都使用自定義鼠標 */
+* {
+  cursor: url('/assets/cursors/cursor.png') 0 0, auto !important;
+}
+
+/* 覆蓋所有可能的系統鼠標 */
+*:hover,
+*:active,
+*:focus {
+  cursor: url('/assets/cursors/cursor.png') 0 0, auto !important;
 }
 
 #app {
