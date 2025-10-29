@@ -30,14 +30,7 @@ dist-ssr
 .cursor/
 
 # Documentation (keep only main README.md)
-DEPLOY.md
-FIX_REPORT.md
-NETWORK_ACCESS.md
-QUICKSTART.md
-README-VUE.md
-STYLE_UNIFICATION.md
-assets/*/README.md
-public/*/README.md
+*.md
 
 # Backup files
 *.backup
