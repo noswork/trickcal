@@ -88,25 +88,6 @@ function closeMobileMenu() {
 </script>
 
 <style scoped>
-/* 強制使用自定義鼠標 */
-.site-header,
-.site-header *,
-.site-nav,
-.site-nav * {
-  cursor: url('/assets/cursors/cursor.png') 0 0, auto !important;
-}
-
-.site-header button,
-.site-header a,
-.site-nav button,
-.site-nav a,
-.brand-link,
-.nav-link,
-.icon-btn,
-.mobile-menu-btn {
-  cursor: url('/assets/cursors/cursor.png') 0 0, pointer !important;
-}
-
 .site-header {
   position: sticky;
   top: 0;

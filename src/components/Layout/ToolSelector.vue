@@ -147,18 +147,6 @@ const vClickOutside = {
 </script>
 
 <style scoped>
-/* 強制使用自定義鼠標 */
-.tool-selector,
-.tool-selector * {
-  cursor: url('/assets/cursors/cursor.png') 0 0, auto !important;
-}
-
-.tool-selector-trigger,
-.tool-item,
-.tool-selector button {
-  cursor: url('/assets/cursors/cursor.png') 0 0, pointer !important;
-}
-
 .tool-selector {
   position: relative;
   display: inline-block;
