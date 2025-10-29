@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "title": "Trickcal 도구 모음",
+    "boardTool": "골든 크레용 트래커",
+    "sweepTool": "소탕 도구",
+    "settings": "설정"
+  },
+  "hero": {
+    "eyebrow": "Trickcal 도구 모음",
+    "title": "각종 실용 도구",
+    "description": "간단하게 사용, 빠르고 편리",
+    "primary": "골든 크레용 트래커",
+    "secondary": "소탕 도구"
+  },
+  "tools": {
+    "heading": "도구 목록",
+    "board": {
+      "name": "골든 크레용 트래커",
+      "description": "캐릭터 소유 상태를 정리하고, 보드 칸 요구 사항과 보너스 통계를 확인합니다.",
+      "features": "캐릭터 수집, 칸 진행도, 스탯 보너스 계산기",
+      "update": "데이터 파일 릴리스 기준 업데이트",
+      "primary": "도구 열기",
+      "secondary": "데이터 편집기"
+    },
+    "sweep": {
+      "name": "소탕 도구",
+      "description": "재료 요구 사항과 일일 소탕 경로를 계산하여 체력을 절약합니다.",
+      "features": "재료 계산기, 스테이지 추천",
+      "update": "데이터 파일 릴리스 기준 업데이트",
+      "primary": "도구 열기",
+      "secondary": "데이터 내보내기"
+    },
+    "labels": {
+      "features": "핵심 기능",
+      "update": "최근 업데이트"
+    }
+  },
+  "footer": {
+    "description": "nos가 제작",
+    "license": "MIT License"
+  }
+}
+

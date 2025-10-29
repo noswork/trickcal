@@ -1,0 +1,192 @@
+{
+  "pageTitle": "크레용 트래커 - Trickcal",
+  "nav": {
+    "title": "금빛 노트",
+    "back": "뒤로",
+    "settings": "설정",
+    "theme": "테마 전환",
+    "language": "한국어",
+    "boardTool": "크레용 트래커",
+    "sweepTool": "소탕 툴"
+  },
+  "layers": {
+    "layer1": "1층",
+    "layer2": "2층",
+    "layer3": "3층"
+  },
+  "cellTypes": {
+    "attack": "공격력",
+    "crit": "치명타",
+    "hp": "HP",
+    "critResist": "치명 저항",
+    "defense": "방어력"
+  },
+  "panel": {
+    "layerSummary": "층 요약",
+    "activated": "활성화됨",
+    "totalBonus": "총 보너스",
+    "ownershipStats": "보유 통계",
+    "ownedCharacters": "보유 캐릭터",
+    "ownershipRate": "보유율",
+    "activatedCells": "활성화된 셀",
+    "cellCompletionRate": "셀 완성도",
+    "resourceSummary": "자원 요약",
+    "currentLayerNeed": "현재 층 필요 크레용",
+    "allLayersNeed": "모든 층 필요 크레용",
+    "currentLayerBonus": "현재 층 보너스",
+    "allLayersBonus": "전체 층 총 보너스"
+  },
+  "settings": {
+    "title": "캐릭터 설정",
+    "description": "캐릭터 아이콘을 클릭하여 소유 상태 전환",
+    "resetAll": "전체 초기화",
+    "close": "닫기",
+    "confirmReset": "모든 진행 상황을 초기화하시겠습니까?",
+    "sortBy": "정렬 기준:",
+    "sortDefault": "기본 순서",
+    "sortStars": "별 개수",
+    "sortRole": "역할",
+    "sortPersonality": "성격",
+    "sortAttackType": "공격 유형",
+    "sortDeployRow": "배치 행",
+    "sortRace": "종족",
+    "sortOrderAsc": "오름차순",
+    "sortOrderDesc": "내림차순"
+  },
+  "footer": {
+    "costPerCell": "셀당 비용",
+    "bonusPerCell": "셀당 보너스",
+    "totalBonus": "총 보너스",
+    "crayonsNeeded": "필요한 크레용",
+    "noCellsYet": "아직 셀이 없습니다",
+    "description": "이 도구는 nos가 제작했습니다",
+    "license": "MIT 라이선스"
+  },
+  "home": {
+    "title": "Trickcal 도구",
+    "subtitle": "골든 크레용 트래커 및 유틸리티",
+    "boardTool": {
+      "title": "골든 크레용 트래커",
+      "description": "캐릭터 소유 추적, 보드 셀 진행 상황 기록, 스탯 보너스 계산.",
+      "badge": "주요 도구"
+    },
+    "bulkGenerator": {
+      "title": "일괄 데이터 생성기",
+      "description": "CSV 형식을 사용하여 일괄적으로 캐릭터 데이터를 빠르게 생성하고 내보내기.",
+      "badge": "도우미 도구"
+    },
+    "editor": {
+      "title": "개발자 편집기",
+      "description": "캐릭터 데이터 관리, 시스템 옵션 구성, 데이터 백업 가져오기/내보내기.",
+      "badge": "개발 도구"
+    },
+    "resources": "문서 및 리소스",
+    "quickStart": "빠른 시작",
+    "readme": "전체 가이드",
+    "overview": "프로젝트 개요",
+    "testReport": "테스트 보고서",
+    "example": "캐릭터 예제",
+    "assets": "자산 폴더",
+    "version": "버전",
+    "lastUpdate": "마지막 업데이트"
+  },
+  "editor": {
+    "title": "개발자 편집기",
+    "backToHome": "홈으로 돌아가기",
+    "tabs": {
+      "characters": "캐릭터 관리",
+      "config": "구성",
+      "importExport": "가져오기/내보내기"
+    },
+    "characters": {
+      "title": "캐릭터 관리",
+      "description": "캐릭터 데이터 추가, 편집 또는 삭제",
+      "addCharacter": "캐릭터 추가",
+      "edit": "편집",
+      "delete": "삭제"
+    },
+    "config": {
+      "title": "구성 관리",
+      "description": "시스템 구성 옵션 관리",
+      "personalities": "성격 목록 (쉼표로 구분):",
+      "races": "종족 목록 (쉼표로 구분):",
+      "attackTypes": "공격 유형 (쉼표로 구분):",
+      "deployRows": "배치 행 (쉼표로 구분):",
+      "roles": "역할 유형 (쉼표로 구분):",
+      "saveConfig": "구성 저장"
+    },
+    "importExport": {
+      "title": "데이터 가져오기/내보내기",
+      "description": "데이터 백업 또는 복원",
+      "exportData": "데이터 내보내기",
+      "importData": "데이터 가져오기",
+      "clearData": "모든 데이터 지우기",
+      "jsonPreview": "JSON 데이터 미리보기:"
+    },
+    "form": {
+      "addCharacter": "캐릭터 추가",
+      "editCharacter": "캐릭터 편집",
+      "characterName": "캐릭터 이름:",
+      "characterImage": "캐릭터 이미지:",
+      "personality": "성격:",
+      "stars": "별:",
+      "attackType": "공격 유형:",
+      "deployRow": "배치 행:",
+      "role": "역할:",
+      "race": "종족:",
+      "boardConfig": "보드 구성",
+      "uploadImage": "이미지 선택",
+      "removeImage": "이미지 제거",
+      "clickToUpload": "이미지 업로드를 클릭",
+      "recommendedSize": "권장 크기: 200x200 px",
+      "imageFilename": "이미지 파일 이름:",
+      "imageHint": "팁: 저장 후 이미지가 자동으로 다운로드됩니다. assets/characters/ 폴더에 파일을 넣으세요",
+      "cancel": "취소",
+      "save": "저장"
+    }
+  },
+  "bulkGenerator": {
+    "title": "일괄 캐릭터 데이터 생성기",
+    "description": "이 도구는 캐릭터 데이터를 일괄적으로 빠르게 생성하는 데 도움이 됩니다. CSV 형식으로 캐릭터 정보를 입력하면 도구가 자동으로 JSON 형식으로 변환하여 골든 크레용 트래커에 직접 가져올 수 있습니다.",
+    "tip": "팁:",
+    "tipText": "예제 형식에 따라 데이터를 입력하세요. 각 줄은 하나의 캐릭터를 나타내며 필드는 쉼표로 구분됩니다.",
+    "inputCSV": "CSV 데이터 입력",
+    "formatDesc": "형식 설명:",
+    "cellCodes": "셀 코드:",
+    "convert": "JSON으로 변환",
+    "loadExample": "예제 로드",
+    "clear": "지우기",
+    "convertSuccess": "✓ 변환 성공!",
+    "jsonOutput": "JSON 출력",
+    "copyToClipboard": "클립보드에 복사",
+    "downloadJSON": "JSON 파일 다운로드",
+    "usage": "사용 지침",
+    "step1": "형식에 따라 입력 필드에 캐릭터 데이터 입력",
+    "step2": "'JSON으로 변환' 버튼 클릭",
+    "step3": "생성된 JSON 데이터 복사 또는 다운로드",
+    "step4": "골든 크레용 트래커에서 '데이터 가져오기' 클릭",
+    "step5": "다운로드한 JSON 파일 선택 또는 데이터 직접 붙여넣기",
+    "totalCharacters": "총 캐릭터",
+    "avgStars": "평균 별",
+    "mostCommonRace": "가장 흔한 종족"
+  },
+  "loading": {
+    "data": "게임 데이터를 불러오는 중..."
+  },
+  "warning": "경고",
+  "errors": {
+    "usingCachedData": "최신 데이터를 불러오지 못했습니다. 캐시를 사용합니다.",
+    "loadFailed": "데이터를 불러오지 못했습니다. 네트워크를 확인해주세요.",
+    "noData": "보드 데이터를 찾을 수 없습니다.",
+    "noCellType": "해당 셀 유형을 찾을 수 없습니다."
+  },
+  "common": {
+    "confirm": "확인",
+    "cancel": "취소",
+    "yes": "예",
+    "no": "아니요",
+    "save": "저장",
+    "close": "닫기"
+  }
+}
+

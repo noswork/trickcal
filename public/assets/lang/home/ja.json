@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "title": "Trickcal ツール集",
+    "boardTool": "ゴールデンクレヨン記録",
+    "sweepTool": "掃討ツール",
+    "settings": "設定"
+  },
+  "hero": {
+    "eyebrow": "Trickcal ツール集",
+    "title": "各種実用ツール",
+    "description": "シンプルに使える、便利で迅速",
+    "primary": "ゴールデンクレヨン記録",
+    "secondary": "掃討ツール"
+  },
+  "tools": {
+    "heading": "ツール一覧",
+    "board": {
+      "name": "ゴールデンクレヨン記録",
+      "description": "キャラクターの所有状況を整理し、ボードセルの必要数とボーナス統計を確認します。",
+      "features": "キャラクターコレクション、セル進行状況、ステータスボーナス計算",
+      "update": "データファイルのリリースに基づいて更新",
+      "primary": "ツールを開く",
+      "secondary": "データ編集"
+    },
+    "sweep": {
+      "name": "掃討ツール",
+      "description": "素材の必要数と毎日の掃討ルートを計算し、スタミナを節約します。",
+      "features": "素材計算、ステージ提案",
+      "update": "データファイルのリリースに基づいて更新",
+      "primary": "ツールを開く",
+      "secondary": "データエクスポート"
+    },
+    "labels": {
+      "features": "コア機能",
+      "update": "最近の更新"
+    }
+  },
+  "footer": {
+    "description": "nos が作成",
+    "license": "MIT License"
+  }
+}
+

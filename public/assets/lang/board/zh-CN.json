@@ -1,0 +1,74 @@
+{
+  "pageTitle": "金蜡笔记录本 - Trickcal",
+  "nav": {
+    "title": "金蜡笔笔记本",
+    "settings": "设置",
+    "boardTool": "金蜡笔笔记本",
+    "sweepTool": "扫荡工具"
+  },
+  "footer": {
+    "description": "此工具由 nos 创作",
+    "license": "MIT License",
+    "noCellsYet": "暂无格子",
+    "costPerCell": "每格成本",
+    "bonusPerCell": "每格加成",
+    "totalBonus": "总加成",
+    "crayonsNeeded": "所需金蜡笔"
+  },
+  "loading": {
+    "data": "正在载入游戏数据..."
+  },
+  "warning": "警告",
+  "errors": {
+    "usingCachedData": "无法载入最新数据，正在使用缓存资料。",
+    "loadFailed": "载入数据失败，请检查网络连接后重试。",
+    "noData": "暂无棋盘资料。",
+    "noCellType": "找不到指定的格子类型。"
+  },
+  "settings": {
+    "sortBy": "排序方式：",
+    "sortDefault": "默认顺序",
+    "sortStars": "星级",
+    "sortRole": "类型",
+    "sortPersonality": "性格",
+    "sortAttackType": "攻击类型",
+    "sortDeployRow": "部署列",
+    "sortRace": "种族",
+    "sortOrderAsc": "升序",
+    "sortOrderDesc": "降序",
+    "confirmReset": "确定要重置所有进度吗？"
+  },
+  "cellTypes": {
+    "attack": "攻击力",
+    "crit": "暴击",
+    "hp": "HP",
+    "critResist": "暴击抵抗",
+    "defense": "防御力"
+  },
+  "layers": {
+    "layer1": "第一层",
+    "layer2": "第二层",
+    "layer3": "第三层"
+  },
+  "panel": {
+    "activated": "已激活",
+    "totalBonus": "总加成",
+    "ownershipStats": "拥有统计",
+    "ownedCharacters": "已拥有角色",
+    "ownershipRate": "拥有率",
+    "activatedCells": "已激活格子",
+    "cellCompletionRate": "格子完成率",
+    "resourceSummary": "资源总览",
+    "currentLayerNeed": "当前层所需金蜡笔",
+    "allLayersNeed": "所有层所需金蜡笔",
+    "currentLayerBonus": "当前层加成",
+    "allLayersBonus": "所有层总加成"
+  },
+  "footerStats": {
+    "costPerCell": "每格成本",
+    "bonusPerCell": "每格加成",
+    "totalBonus": "总加成",
+    "crayonsNeeded": "所需金蜡笔"
+  }
+}
+
