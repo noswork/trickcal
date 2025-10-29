@@ -35,7 +35,7 @@ export function trackAction(actionType: string, pageType?: string, metadata?: Re
     let actualPageType = pageType
     if (!actualPageType) {
       if (typeof window !== 'undefined') {
-        actualPageType = getPageType(window.location.pathname.replace('/trickcal', ''))
+        actualPageType = getPageType(window.location.pathname)
       } else {
         actualPageType = 'unknown'
       }
