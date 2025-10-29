@@ -6,7 +6,11 @@
     "sweep": "扫荡工具",
     "settings": "设置",
     "theme": "切换主题",
-    "language": "简体中文"
+    "language": "简体中文",
+    "selectTool": "选择工具",
+    "homeDescription": "工具集首页",
+    "boardDescription": "角色管理与格子统计",
+    "sweepDescription": "素材需求计算"
   },
   "hero": {
     "eyebrow": "Trickcal 工具集",

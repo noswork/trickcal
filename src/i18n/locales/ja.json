@@ -6,7 +6,11 @@
     "sweep": "スイープツール",
     "settings": "設定",
     "theme": "テーマ切替",
-    "language": "日本語"
+    "language": "日本語",
+    "selectTool": "ツール選択",
+    "homeDescription": "ツール集ホーム",
+    "boardDescription": "キャラクター管理とセル統計",
+    "sweepDescription": "素材計算機"
   },
   "hero": {
     "eyebrow": "Trickcal ツール",

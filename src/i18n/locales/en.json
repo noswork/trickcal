@@ -6,7 +6,11 @@
     "sweep": "Sweep Tool",
     "settings": "Settings",
     "theme": "Toggle Theme",
-    "language": "English"
+    "language": "English",
+    "selectTool": "Select Tool",
+    "homeDescription": "Tool Collection Homepage",
+    "boardDescription": "Character Management & Cell Statistics",
+    "sweepDescription": "Material Requirement Calculator"
   },
   "hero": {
     "eyebrow": "Trickcal Tools",
