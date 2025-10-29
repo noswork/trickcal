@@ -4,13 +4,15 @@
     "home": "ホーム",
     "board": "クレヨンボード",
     "sweep": "スイープツール",
+    "food": "食べ物の好み",
     "settings": "設定",
     "theme": "テーマ切替",
     "language": "日本語",
     "selectTool": "ツール選択",
     "homeDescription": "ツール集ホーム",
     "boardDescription": "キャラクター管理とセル統計",
-    "sweepDescription": "素材計算機"
+    "sweepDescription": "素材計算機",
+    "foodDescription": "キャラクターの食べ物の好みを確認"
   },
   "hero": {
     "eyebrow": "Trickcal ツール",
@@ -26,6 +28,10 @@
     "sweep": {
       "name": "スイープツール",
       "description": "素材の必要量と毎日のスイープルートを計算してエネルギーを節約します。"
+    },
+    "food": {
+      "name": "食べ物の好み",
+      "description": "キャラクターの食べ物の好みを確認し、各キャラクターが好きな食べ物を発見します。"
     }
   },
   "layers": {
@@ -114,6 +120,18 @@
     "noCellType": "セルタイプが見つかりません",
     "usingCachedData": "最新データを読み込めません、キャッシュデータを使用しています。",
     "loadFailed": "データの読み込みに失敗しました、接続を確認してもう一度お試しください。"
+  },
+  "food": {
+    "characters": "キャラクター",
+    "foods": "食べ物",
+    "clear": "選択をクリア",
+    "searchCharacter": "キャラクター検索",
+    "searchCharacterPlaceholder": "キャラクター名を入力",
+    "searchFood": "食べ物検索",
+    "searchFoodPlaceholder": "食べ物名を入力",
+    "veryLike": "大好き",
+    "like": "好き",
+    "dislike": "嫌い"
   }
 }
 

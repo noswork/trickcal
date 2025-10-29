@@ -38,9 +38,9 @@ export const useCharactersStore = defineStore('characters', () => {
     }
   }
 
-  // 根據英文名稱獲取角色資訊
-  function getCharacter(en: string): CharacterInfo | undefined {
-    return charactersData.value[en]
+  // 根據中文名稱獲取角色資訊
+  function getCharacter(name: string): CharacterInfo | undefined {
+    return charactersData.value[name]
   }
 
   // 獲取所有角色（以陣列形式）

@@ -1,272 +1,510 @@
 {
   "characterBoards": {
-    "Allet": {
-      "layer1": ["crit", "critResist"],
+    "阿萊特": {
+      "layer1": [
+        "crit",
+        "critResist"
+      ],
       "layer2": [],
       "layer3": []
     },
-    "Amelia": {
-      "layer1": ["critResist", "defense"],
+    "艾蜜莉雅": {
+      "layer1": [
+        "critResist",
+        "defense"
+      ],
       "layer2": [],
       "layer3": []
     },
-    "Aya": {
-      "layer1": ["attack", "defense"],
+    "綾": {
+      "layer1": [
+        "attack",
+        "defense"
+      ],
+      "layer2": [
+        "attack",
+        "hp",
+        "defense"
+      ],
+      "layer3": []
+    },
+    "貝麗塔": {
+      "layer1": [
+        "crit",
+        "hp"
+      ],
       "layer2": [],
       "layer3": []
     },
-    "Belita": {
-      "layer1": ["crit", "hp"],
+    "班尼": {
+      "layer1": [
+        "crit",
+        "hp"
+      ],
       "layer2": [],
       "layer3": []
     },
-    "Beni": {
-      "layer1": ["crit", "hp"],
+    "大木頭": {
+      "layer1": [
+        "attack",
+        "hp"
+      ],
       "layer2": [],
       "layer3": []
     },
-    "BigWood": {
-      "layer1": ["attack", "hp"],
+    "康娜": {
+      "layer1": [
+        "critResist",
+        "defense"
+      ],
       "layer2": [],
       "layer3": []
     },
-    "Canna": {
-      "layer1": ["critResist", "defense"],
+    "卡蓮": {
+      "layer1": [
+        "crit",
+        "critResist"
+      ],
       "layer2": [],
       "layer3": []
     },
-    "Carren": {
-      "layer1": ["crit", "critResist"],
+    "庫洛艾": {
+      "layer1": [
+        "crit",
+        "hp"
+      ],
+      "layer2": [
+        "crit",
+        "defense",
+        "critResist"
+      ],
+      "layer3": []
+    },
+    "橋菲": {
+      "layer1": [
+        "critResist",
+        "defense"
+      ],
       "layer2": [],
       "layer3": []
     },
-    "Chloe": {
-      "layer1": ["crit", "hp"],
+    "路易": {
+      "layer1": [
+        "attack",
+        "hp"
+      ],
       "layer2": [],
       "layer3": []
     },
-    "Chopi": {
-      "layer1": ["critResist", "defense"],
+    "蒂亞娜": {
+      "layer1": [
+        "crit",
+        "critResist"
+      ],
       "layer2": [],
       "layer3": []
     },
-    "Kyuri": {
-      "layer1": ["attack", "hp"],
+    "艾爾芬": {
+      "layer1": [
+        "attack",
+        "defense"
+      ],
       "layer2": [],
       "layer3": []
     },
-    "Diana": {
-      "layer1": ["crit", "critResist"],
+    "艾斯皮": {
+      "layer1": [
+        "crit",
+        "critResist"
+      ],
       "layer2": [],
       "layer3": []
     },
-    "Erpin": {
-      "layer1": ["attack", "defense"],
+    "佩斯塔": {
+      "layer1": [
+        "attack",
+        "defense"
+      ],
       "layer2": [],
       "layer3": []
     },
-    "Espi": {
-      "layer1": ["crit", "critResist"],
+    "芙莉可": {
+      "layer1": [
+        "attack",
+        "hp"
+      ],
       "layer2": [],
       "layer3": []
     },
-    "Festa": {
-      "layer1": ["attack", "defense"],
+    "加薇雅": {
+      "layer1": [
+        "attack",
+        "hp"
+      ],
       "layer2": [],
       "layer3": []
     },
-    "Fricle": {
-      "layer1": ["attack", "hp"],
+    "海莉": {
+      "layer1": [
+        "critResist",
+        "defense"
+      ],
       "layer2": [],
       "layer3": []
     },
-    "Gabia": {
-      "layer1": ["attack", "hp"],
+    "伊弗利特": {
+      "layer1": [
+        "critResist",
+        "defense"
+      ],
       "layer2": [],
       "layer3": []
     },
-    "Haley": {
-      "layer1": ["critResist", "defense"],
+    "傑德": {
+      "layer1": [
+        "critResist",
+        "defense"
+      ],
       "layer2": [],
       "layer3": []
     },
-    "Ifrit": {
-      "layer1": ["critResist", "defense"],
+    "茱蜜": {
+      "layer1": [
+        "attack",
+        "defense"
+      ],
+      "layer2": [
+        "attack",
+        "hp",
+        "critResist"
+      ],
+      "layer3": [
+        "attack",
+        "crit",
+        "hp",
+        "critResist"
+      ]
+    },
+    "基狄恩": {
+      "layer1": [
+        "critResist",
+        "defense"
+      ],
+      "layer2": [
+        "attack",
+        "crit",
+        "hp"
+      ],
+      "layer3": [
+        "attack",
+        "hp",
+        "defense",
+        "critResist"
+      ]
+    },
+    "柯米": {
+      "layer1": [
+        "critResist",
+        "defense"
+      ],
+      "layer2": [
+        "attack",
+        "crit",
+        "hp"
+      ],
+      "layer3": [
+        "attack",
+        "hp",
+        "defense",
+        "critResist"
+      ]
+    },
+    "雷吉": {
+      "layer1": [
+        "critResist",
+        "defense"
+      ],
       "layer2": [],
       "layer3": []
     },
-    "Jade": {
-      "layer1": ["critResist", "defense"],
+    "萊薇": {
+      "layer1": [
+        "crit",
+        "critResist"
+      ],
       "layer2": [],
       "layer3": []
     },
-    "Jubee": {
-      "layer1": ["attack", "defense"],
+    "大師2號": {
+      "layer1": [
+        "crit",
+        "hp"
+      ],
       "layer2": [],
       "layer3": []
     },
-    "Kidian": {
-      "layer1": ["critResist", "defense"],
+    "馬爾": {
+      "layer1": [
+        "attack",
+        "hp"
+      ],
       "layer2": [],
       "layer3": []
     },
-    "Kommy": {
-      "layer1": ["critResist", "defense"],
+    "梅森": {
+      "layer1": [
+        "crit",
+        "critResist"
+      ],
       "layer2": [],
       "layer3": []
     },
-    "Layze": {
-      "layer1": ["critResist", "defense"],
+    "瑪麗": {
+      "layer1": [
+        "attack",
+        "hp"
+      ],
       "layer2": [],
       "layer3": []
     },
-    "Levi": {
-      "layer1": ["crit", "critResist"],
+    "瑪約": {
+      "layer1": [
+        "critResist",
+        "defense"
+      ],
       "layer2": [],
       "layer3": []
     },
-    "MaestroMK2": {
-      "layer1": ["crit", "hp"],
+    "梅露娜": {
+      "layer1": [
+        "attack",
+        "hp"
+      ],
       "layer2": [],
       "layer3": []
     },
-    "Mago": {
-      "layer1": ["attack", "hp"],
+    "桃桃": {
+      "layer1": [
+        "attack",
+        "hp"
+      ],
+      "layer2": [
+        "attack",
+        "defense",
+        "critResist"
+      ],
+      "layer3": []
+    },
+    "米雪": {
+      "layer1": [
+        "attack",
+        "hp"
+      ],
       "layer2": [],
       "layer3": []
     },
-    "Maison": {
-      "layer1": ["crit", "critResist"],
+    "帕特拉": {
+      "layer1": [
+        "attack",
+        "defense"
+      ],
       "layer2": [],
       "layer3": []
     },
-    "Marie": {
-      "layer1": ["attack", "hp"],
+    "皮可菈": {
+      "layer1": [
+        "critResist",
+        "defense"
+      ],
       "layer2": [],
       "layer3": []
     },
-    "Mayo": {
-      "layer1": ["critResist", "defense"],
+    "珀榭": {
+      "layer1": [
+        "critResist",
+        "defense"
+      ],
+      "layer2": [
+        "attack",
+        "crit",
+        "hp"
+      ],
+      "layer3": []
+    },
+    "琳": {
+      "layer1": [
+        "crit",
+        "critResist"
+      ],
+      "layer2": [
+        "crit",
+        "hp",
+        "critResist"
+      ],
+      "layer3": []
+    },
+    "路德": {
+      "layer1": [
+        "crit",
+        "hp"
+      ],
       "layer2": [],
       "layer3": []
     },
-    "Meluna": {
-      "layer1": ["attack", "hp"],
+    "盧波": {
+      "layer1": [
+        "crit",
+        "critResist"
+      ],
       "layer2": [],
       "layer3": []
     },
-    "Momo": {
-      "layer1": ["attack", "hp"],
+    "莎莉": {
+      "layer1": [
+        "crit",
+        "hp"
+      ],
       "layer2": [],
       "layer3": []
     },
-    "Mynx": {
-      "layer1": ["attack", "hp"],
+    "謝蒂": {
+      "layer1": [
+        "attack",
+        "defense"
+      ],
       "layer2": [],
       "layer3": []
     },
-    "Patula": {
-      "layer1": ["attack", "defense"],
+    "希菲爾": {
+      "layer1": [
+        "crit",
+        "hp"
+      ],
+      "layer2": [
+        "crit",
+        "defense",
+        "critResist"
+      ],
+      "layer3": [
+        "attack",
+        "crit",
+        "hp",
+        "defense"
+      ]
+    },
+    "希瑟圖": {
+      "layer1": [
+        "crit",
+        "critResist"
+      ],
       "layer2": [],
       "layer3": []
     },
-    "Picora": {
-      "layer1": ["critResist", "defense"],
+    "斯皮奇": {
+      "layer1": [
+        "attack",
+        "defense"
+      ],
       "layer2": [],
       "layer3": []
     },
-    "Posher": {
-      "layer1": ["critResist", "defense"],
+    "希拉": {
+      "layer1": [
+        "attack",
+        "hp"
+      ],
+      "layer2": [
+        "attack",
+        "defense",
+        "critResist"
+      ],
+      "layer3": []
+    },
+    "泰達": {
+      "layer1": [
+        "attack",
+        "hp"
+      ],
       "layer2": [],
       "layer3": []
     },
-    "Rim": {
-      "layer1": ["crit", "critResist"],
+    "羽伊": {
+      "layer1": [
+        "crit",
+        "critResist"
+      ],
+      "layer2": [
+        "crit",
+        "hp",
+        "critResist"
+      ],
+      "layer3": []
+    },
+    "佩佩": {
+      "layer1": [
+        "crit",
+        "critResist"
+      ],
       "layer2": [],
       "layer3": []
     },
-    "Rudd": {
-      "layer1": ["crit", "hp"],
+    "貝魯": {
+      "layer1": [
+        "attack",
+        "defense"
+      ],
       "layer2": [],
       "layer3": []
     },
-    "Rufo": {
-      "layer1": ["crit", "critResist"],
+    "薇薇": {
+      "layer1": [
+        "crit",
+        "hp"
+      ],
+      "layer2": [
+        "crit",
+        "defense",
+        "critResist"
+      ],
+      "layer3": []
+    },
+    "劉美美": {
+      "layer1": [
+        "crit",
+        "hp"
+      ],
       "layer2": [],
       "layer3": []
     },
-    "Sari": {
-      "layer1": ["crit", "hp"],
-      "layer2": [],
+    "xX錫安Xx": {
+      "layer1": [
+        "critResist",
+        "defense"
+      ],
+      "layer2": [
+        "attack",
+        "crit",
+        "hp"
+      ],
       "layer3": []
     },
-    "Shadi": {
-      "layer1": ["attack", "defense"],
-      "layer2": [],
+    "優米": {
+      "layer1": [
+        "attack",
+        "defense"
+      ],
+      "layer2": [
+        "attack",
+        "hp",
+        "defense"
+      ],
       "layer3": []
     },
-    "Silphir": {
-      "layer1": ["crit", "hp"],
-      "layer2": [],
-      "layer3": []
-    },
-    "Sist": {
-      "layer1": ["crit", "critResist"],
-      "layer2": [],
-      "layer3": []
-    },
-    "Speaki": {
-      "layer1": ["attack", "defense"],
-      "layer2": [],
-      "layer3": []
-    },
-    "Sylla": {
-      "layer1": ["attack", "hp"],
-      "layer2": [],
-      "layer3": []
-    },
-    "Taida": {
-      "layer1": ["attack", "hp"],
-      "layer2": [],
-      "layer3": []
-    },
-    "Ui": {
-      "layer1": ["crit", "critResist"],
-      "layer2": [],
-      "layer3": []
-    },
-    "Velvet": {
-      "layer1": ["crit", "critResist"],
-      "layer2": [],
-      "layer3": []
-    },
-    "Veroo": {
-      "layer1": ["attack", "defense"],
-      "layer2": [],
-      "layer3": []
-    },
-    "Vivi": {
-      "layer1": ["crit", "hp"],
-      "layer2": [],
-      "layer3": []
-    },
-    "Yumimi": {
-      "layer1": ["crit", "hp"],
-      "layer2": [],
-      "layer3": []
-    },
-    "xXionx": {
-      "layer1": ["critResist", "defense"],
-      "layer2": [],
-      "layer3": []
-    },
-    "Yomi": {
-      "layer1": ["attack", "defense"],
-      "layer2": [],
-      "layer3": []
-    },
-    "Butter": {
-      "layer1": ["attack", "defense"],
+    "奶油": {
+      "layer1": [
+        "attack",
+        "defense"
+      ],
       "layer2": [],
       "layer3": []
     }

@@ -4,13 +4,15 @@
     "home": "首頁",
     "board": "金蠟筆筆記本",
     "sweep": "掃蕩工具",
+    "food": "食物喜好",
     "settings": "設置",
     "theme": "切換主題",
     "language": "繁體中文",
     "selectTool": "選擇工具",
     "homeDescription": "工具集首頁",
     "boardDescription": "角色管理與格子統計",
-    "sweepDescription": "素材需求計算"
+    "sweepDescription": "素材需求計算",
+    "foodDescription": "角色食物喜好查詢"
   },
   "hero": {
     "eyebrow": "Trickcal 工具集",
@@ -26,6 +28,10 @@
     "sweep": {
       "name": "掃蕩工具",
       "description": "計算素材需求與每日掃蕩路線，協助節省體力。"
+    },
+    "food": {
+      "name": "食物喜好",
+      "description": "查詢角色的食物喜好，了解每個角色喜歡什麼食物。"
     }
   },
   "layers": {
@@ -118,6 +124,18 @@
     "noCellType": "無此格子類型",
     "usingCachedData": "無法載入最新數據，正在使用緩存資料。",
     "loadFailed": "載入數據失敗，請檢查網路連線後再試一次。"
+  },
+  "food": {
+    "characters": "角色",
+    "foods": "食物",
+    "clear": "清除選擇",
+    "searchCharacter": "搜尋角色",
+    "searchCharacterPlaceholder": "輸入角色名稱",
+    "searchFood": "搜尋食物",
+    "searchFoodPlaceholder": "輸入食物名稱",
+    "veryLike": "非常喜歡",
+    "like": "喜歡",
+    "dislike": "不喜歡"
   }
 }
 

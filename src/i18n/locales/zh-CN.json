@@ -4,13 +4,15 @@
     "home": "首页",
     "board": "金蜡笔笔记本",
     "sweep": "扫荡工具",
+    "food": "食物喜好",
     "settings": "设置",
     "theme": "切换主题",
     "language": "简体中文",
     "selectTool": "选择工具",
     "homeDescription": "工具集首页",
     "boardDescription": "角色管理与格子统计",
-    "sweepDescription": "素材需求计算"
+    "sweepDescription": "素材需求计算",
+    "foodDescription": "角色食物喜好查询"
   },
   "hero": {
     "eyebrow": "Trickcal 工具集",
@@ -26,6 +28,10 @@
     "sweep": {
       "name": "扫荡工具",
       "description": "计算素材需求与每日扫荡路线，协助节省体力。"
+    },
+    "food": {
+      "name": "食物喜好",
+      "description": "查询角色的食物喜好，了解每个角色喜欢什么食物。"
     }
   },
   "layers": {
@@ -114,6 +120,18 @@
     "noCellType": "无此格子类型",
     "usingCachedData": "无法载入最新数据，正在使用缓存资料。",
     "loadFailed": "载入数据失败，请检查网络连接后再试一次。"
+  },
+  "food": {
+    "characters": "角色",
+    "foods": "食物",
+    "clear": "清除选择",
+    "searchCharacter": "搜索角色",
+    "searchCharacterPlaceholder": "输入角色名称",
+    "searchFood": "搜索食物",
+    "searchFoodPlaceholder": "输入食物名称",
+    "veryLike": "非常喜欢",
+    "like": "喜欢",
+    "dislike": "不喜欢"
   }
 }
 

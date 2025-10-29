@@ -42,6 +42,16 @@
                 <p>{{ $t('tools.sweep.description') }}</p>
               </div>
             </router-link>
+
+            <router-link to="/food" class="tool-card" @click="handleToolClick('food')">
+              <div class="tool-icon">
+                <img :src="getAssetUrl('assets/icons/food_like.webp')" alt="" />
+              </div>
+              <div>
+                <h3>{{ $t('tools.food.name') }}</h3>
+                <p>{{ $t('tools.food.description') }}</p>
+              </div>
+            </router-link>
           </div>
         </section>
       </div>

@@ -9,7 +9,7 @@
   >
     <div class="character-avatar">
       <img 
-        :src="getCharacterImageUrl(character.en)" 
+        :src="getCharacterImageUrl(character.name)" 
         :alt="character.name"
         loading="lazy"
         decoding="async"

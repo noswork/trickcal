@@ -17,8 +17,8 @@ export function getAssetUrl(path: string): string {
  * 獲取角色圖片 URL
  * 優先使用 WebP 格式（節省 80% 文件大小）
  */
-export function getCharacterImageUrl(characterEn: string): string {
-  return getAssetUrl(`assets/characters/${characterEn}.webp`)
+export function getCharacterImageUrl(characterName: string): string {
+  return getAssetUrl(`assets/characters/${characterName}.webp`)
 }
 
 /**

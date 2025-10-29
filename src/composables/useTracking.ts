@@ -122,6 +122,26 @@ export function useTracking(pageType?: string) {
   }
 
   /**
+   * Food 頁面操作追蹤
+   */
+  const foodActions = {
+    // 選擇角色
+    selectCharacter: (characterName: string) => trackAction('food_select_character', 'food', { characterName }),
+    
+    // 選擇食物
+    selectFood: (foodName: string) => trackAction('food_select_food', 'food', { foodName }),
+    
+    // 清除選擇
+    clearSelection: () => trackAction('food_clear_selection', 'food'),
+    
+    // 搜索角色
+    searchCharacter: (searchTerm: string) => trackAction('food_search_character', 'food', { searchTerm: searchTerm.substring(0, 20) }),
+    
+    // 搜索食物
+    searchFood: (searchTerm: string) => trackAction('food_search_food', 'food', { searchTerm: searchTerm.substring(0, 20) }),
+  }
+
+  /**
    * 通用操作追蹤
    */
   const commonActions = {
@@ -137,6 +157,7 @@ export function useTracking(pageType?: string) {
     board: boardActions,
     sweep: sweepActions,
     home: homeActions,
+    food: foodActions,
     common: commonActions,
   }
 }

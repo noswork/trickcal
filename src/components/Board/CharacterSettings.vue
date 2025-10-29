@@ -17,7 +17,7 @@
         >
           <div class="card-image">
             <img 
-              :src="getCharacterImageUrl(char.en)" 
+              :src="getCharacterImageUrl(char.name)" 
               :alt="char.name"
               @error="handleImageError"
             />

@@ -144,8 +144,8 @@ export const useBoardStore = defineStore('board', () => {
 
     const result: Character[] = []
     
-    for (const [en, boardTypes] of Object.entries(boardData.value.characterBoards)) {
-      const charInfo = charactersStore.getCharacter(en)
+    for (const [name, boardTypes] of Object.entries(boardData.value.characterBoards)) {
+      const charInfo = charactersStore.getCharacter(name)
       if (charInfo) {
         result.push({
           ...charInfo,

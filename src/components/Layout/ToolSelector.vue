@@ -102,6 +102,14 @@ const tools = [
     descriptionKey: 'nav.sweepDescription',
     icon: 'assets/icons/sweep.webp',
     badge: null as string | null
+  },
+  {
+    path: '/food',
+    name: 'Food',
+    nameKey: 'nav.food',
+    descriptionKey: 'nav.foodDescription',
+    icon: 'assets/icons/food_like.webp',
+    badge: null as string | null
   }
 ]
 

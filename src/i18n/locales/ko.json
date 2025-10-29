@@ -4,9 +4,15 @@
     "home": "홈",
     "board": "크레용 보드",
     "sweep": "스윕 도구",
+    "food": "음식 선호도",
     "settings": "설정",
     "theme": "테마 전환",
-    "language": "한국어"
+    "language": "한국어",
+    "selectTool": "도구 선택",
+    "homeDescription": "도구 모음 홈페이지",
+    "boardDescription": "캐릭터 관리 및 셀 통계",
+    "sweepDescription": "재료 요구 사항 계산기",
+    "foodDescription": "캐릭터 음식 선호도 조회"
   },
   "hero": {
     "eyebrow": "Trickcal 도구",
@@ -22,6 +28,10 @@
     "sweep": {
       "name": "스윕 도구",
       "description": "재료 요구 사항과 일일 스윕 경로를 계산하여 에너지를 절약합니다."
+    },
+    "food": {
+      "name": "음식 선호도",
+      "description": "캐릭터의 음식 선호도를 조회하고 각 캐릭터가 좋아하는 음식을 발견하세요."
     }
   },
   "layers": {
@@ -107,6 +117,18 @@
     "noCellType": "셀 유형을 찾을 수 없습니다",
     "usingCachedData": "최신 데이터를 로드할 수 없습니다, 캐시된 데이터를 사용합니다.",
     "loadFailed": "데이터 로드 실패, 연결을 확인하고 다시 시도하세요."
+  },
+  "food": {
+    "characters": "캐릭터",
+    "foods": "음식",
+    "clear": "선택 지우기",
+    "searchCharacter": "캐릭터 검색",
+    "searchCharacterPlaceholder": "캐릭터 이름 입력",
+    "searchFood": "음식 검색",
+    "searchFoodPlaceholder": "음식 이름 입력",
+    "veryLike": "매우 좋아함",
+    "like": "좋아함",
+    "dislike": "싫어함"
   }
 }
 

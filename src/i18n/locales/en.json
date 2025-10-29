@@ -4,13 +4,15 @@
     "home": "Home",
     "board": "Crayon Board",
     "sweep": "Sweep Tool",
+    "food": "Food Preferences",
     "settings": "Settings",
     "theme": "Toggle Theme",
     "language": "English",
     "selectTool": "Select Tool",
     "homeDescription": "Tool Collection Homepage",
     "boardDescription": "Character Management & Cell Statistics",
-    "sweepDescription": "Material Requirement Calculator"
+    "sweepDescription": "Material Requirement Calculator",
+    "foodDescription": "Character Food Preferences Lookup"
   },
   "hero": {
     "eyebrow": "Trickcal Tools",
@@ -26,6 +28,10 @@
     "sweep": {
       "name": "Sweep Tool",
       "description": "Calculate material requirements and daily sweep routes to save energy."
+    },
+    "food": {
+      "name": "Food Preferences",
+      "description": "Look up character food preferences and discover what each character likes."
     }
   },
   "layers": {
@@ -114,6 +120,18 @@
     "noCellType": "Cell type not found",
     "usingCachedData": "Cannot load latest data, using cached data.",
     "loadFailed": "Failed to load data, please check your connection and try again."
+  },
+  "food": {
+    "characters": "Characters",
+    "foods": "Foods",
+    "clear": "Clear Selection",
+    "searchCharacter": "Search Characters",
+    "searchCharacterPlaceholder": "Enter character name",
+    "searchFood": "Search Foods",
+    "searchFoodPlaceholder": "Enter food name",
+    "veryLike": "Love",
+    "like": "Like",
+    "dislike": "Dislike"
   }
 }
 
