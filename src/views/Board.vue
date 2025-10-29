@@ -168,9 +168,9 @@ const rightPanelOpen = ref(false)
 const cellTypes = ['attack', 'crit', 'hp', 'critResist', 'defense']
 
 const filteredCharacters = computed(() => {
-  if (!boardStore.gameData) return []
+  if (!boardStore.characters || boardStore.characters.length === 0) return []
   
-  return boardStore.gameData.characters.filter(char => {
+  return boardStore.characters.filter(char => {
     const boardTypes = char.boardTypes?.[boardStore.currentLayer]
     return boardTypes && boardTypes.includes(boardStore.currentCellType)
   })

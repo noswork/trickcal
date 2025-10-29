@@ -2,6 +2,7 @@ import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
 import { BoardProgressStorage } from '@/utils/storage'
 import { Logger } from '@/utils/logger'
+import { useCharactersStore } from './characters'
 
 export interface Character {
   name: string
@@ -19,8 +20,14 @@ export interface Character {
   }
 }
 
-export interface GameData {
-  characters: Character[]
+export interface BoardData {
+  characterBoards: {
+    [key: string]: {
+      layer1?: string[]
+      layer2?: string[]
+      layer3?: string[]
+    }
+  }
   boardConfig: {
     [key: string]: {
       name: string
@@ -63,7 +70,9 @@ export interface UserProgress {
 }
 
 export const useBoardStore = defineStore('board', () => {
-  const gameData = ref<GameData | null>(null)
+  const charactersStore = useCharactersStore()
+  
+  const boardData = ref<BoardData | null>(null)
   const userProgress = ref<UserProgress>({
     ownedCharacters: new Set(),
     activatedCells: {}
@@ -75,14 +84,17 @@ export const useBoardStore = defineStore('board', () => {
   // 載入遊戲數據
   async function loadGameData() {
     try {
+      // 確保角色數據已載入
+      await charactersStore.loadCharacters()
+      
       const baseUrl = import.meta.env.BASE_URL
       const response = await fetch(`${baseUrl}board/data.json`)
-      if (!response.ok) throw new Error('Failed to load game data')
+      if (!response.ok) throw new Error('Failed to load board data')
       const data = await response.json()
       
       // 正規化資源路徑
       normalizeAssetPaths(data)
-      gameData.value = data
+      boardData.value = data
     } catch (error) {
       Logger.error('載入遊戲數據失敗:', error)
       throw error
@@ -90,7 +102,7 @@ export const useBoardStore = defineStore('board', () => {
   }
 
   // 正規化資源路徑
-  function normalizeAssetPaths(data: GameData) {
+  function normalizeAssetPaths(data: BoardData) {
     const fix = (p: string | null | undefined): string | null => {
       if (!p || typeof p !== 'string') return p || null
       if (p.startsWith('/assets/')) return p
@@ -125,6 +137,25 @@ export const useBoardStore = defineStore('board', () => {
       })
     }
   }
+
+  // 合併角色資訊和格子數據
+  const characters = computed(() => {
+    if (!boardData.value || !charactersStore.isLoaded) return []
+
+    const result: Character[] = []
+    
+    for (const [en, boardTypes] of Object.entries(boardData.value.characterBoards)) {
+      const charInfo = charactersStore.getCharacter(en)
+      if (charInfo) {
+        result.push({
+          ...charInfo,
+          boardTypes
+        })
+      }
+    }
+
+    return result
+  })
 
   // 載入用戶進度
   function loadUserProgress() {
@@ -193,14 +224,14 @@ export const useBoardStore = defineStore('board', () => {
 
   // 計算統計數據
   const stats = computed(() => {
-    if (!gameData.value) return null
+    if (characters.value.length === 0) return null
 
-    const totalCharacters = gameData.value.characters.length
+    const totalCharacters = characters.value.length
     const ownedCharacters = userProgress.value.ownedCharacters.size
     const ownedRate = totalCharacters ? Math.round((ownedCharacters / totalCharacters) * 100) : 0
 
     const activatedCells = Object.values(userProgress.value.activatedCells).filter(Boolean).length
-    const totalCells = gameData.value.characters.reduce((sum, char) => {
+    const totalCells = characters.value.reduce((sum, char) => {
       const boards = char.boardTypes || {}
       return sum + Object.values(boards).reduce((acc, arr) => acc + (Array.isArray(arr) ? arr.length : 0), 0)
     }, 0)
@@ -217,7 +248,8 @@ export const useBoardStore = defineStore('board', () => {
   })
 
   return {
-    gameData,
+    boardData,
+    characters,
     userProgress,
     currentLayer,
     currentCellType,
@@ -230,4 +262,3 @@ export const useBoardStore = defineStore('board', () => {
     resetAllProgress
   }
 })
-

@@ -36,14 +36,14 @@ const boardStore = useBoardStore()
 const costMap: Record<string, number> = { 'layer1': 2, 'layer2': 4, 'layer3': 6 }
 
 const currentLayerCrayons = computed(() => {
-  if (!boardStore.gameData) return 0
+  if (!boardStore.boardData || boardStore.characters.length === 0) return 0
   const layer = boardStore.currentLayer
   const cost = costMap[layer] || 2
   
   let total = 0
   let activated = 0
   
-  boardStore.gameData.characters.forEach(char => {
+  boardStore.characters.forEach(char => {
     const types = char.boardTypes?.[layer]
     if (types && Array.isArray(types)) {
       total += types.length
@@ -58,14 +58,14 @@ const currentLayerCrayons = computed(() => {
 })
 
 const totalCrayons = computed(() => {
-  if (!boardStore.gameData) return 0
+  if (!boardStore.boardData || boardStore.characters.length === 0) return 0
   
-  return Object.keys(boardStore.gameData.boardConfig).reduce((sum, layer) => {
+  return Object.keys(boardStore.boardData.boardConfig).reduce((sum, layer) => {
     const cost = costMap[layer] || 2
     let total = 0
     let activated = 0
     
-    boardStore.gameData!.characters.forEach(char => {
+    boardStore.characters.forEach(char => {
       const types = char.boardTypes?.[layer]
       if (types && Array.isArray(types)) {
         total += types.length
@@ -81,12 +81,12 @@ const totalCrayons = computed(() => {
 })
 
 const currentLayerBonus = computed(() => {
-  if (!boardStore.gameData) return 0
+  if (!boardStore.boardData || boardStore.characters.length === 0) return 0
   const layer = boardStore.currentLayer
-  const bonusPerCell = boardStore.gameData.boardConfig[layer]?.bonusPerCell || 0
+  const bonusPerCell = boardStore.boardData.boardConfig[layer]?.bonusPerCell || 0
   
   let activated = 0
-  boardStore.gameData.characters.forEach(char => {
+  boardStore.characters.forEach(char => {
     const types = char.boardTypes?.[layer]
     if (types && Array.isArray(types)) {
       types.forEach(type => {
@@ -100,13 +100,13 @@ const currentLayerBonus = computed(() => {
 })
 
 const allLayersBonus = computed(() => {
-  if (!boardStore.gameData) return 0
+  if (!boardStore.boardData || boardStore.characters.length === 0) return 0
   
-  return Object.keys(boardStore.gameData.boardConfig).reduce((sum, layer) => {
-    const bonusPerCell = boardStore.gameData!.boardConfig[layer]?.bonusPerCell || 0
+  return Object.keys(boardStore.boardData.boardConfig).reduce((sum, layer) => {
+    const bonusPerCell = boardStore.boardData.boardConfig[layer]?.bonusPerCell || 0
     let activated = 0
     
-    boardStore.gameData!.characters.forEach(char => {
+    boardStore.characters.forEach(char => {
       const types = char.boardTypes?.[layer]
       if (types && Array.isArray(types)) {
         types.forEach(type => {

@@ -93,7 +93,7 @@ const emit = defineEmits<{
 const { t } = useI18n()
 const boardStore = useBoardStore()
 
-const characters = computed(() => boardStore.gameData?.characters || [])
+const characters = computed(() => boardStore.characters || [])
 
 function toggleOwnership(characterName: string) {
   boardStore.toggleCharacterOwnership(characterName)

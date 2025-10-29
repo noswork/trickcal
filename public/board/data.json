@@ -1,978 +1,276 @@
 {
-  "characters": [
-    {
-      "name": "阿萊特",
-      "en": "Allet",
-      "personality": "天真",
-      "stars": 2,
-      "attackType": "物理",
-      "deployRow": "前排",
-      "role": "坦克",
-      "race": "精靈",
-      "boardTypes": {
-        "layer1": [
-          "crit",
-          "critResist"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+  "characterBoards": {
+    "Allet": {
+      "layer1": ["crit", "critResist"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "艾蜜莉雅",
-      "en": "Amelia",
-      "personality": "冷靜",
-      "stars": 3,
-      "attackType": "物理",
-      "deployRow": "後排",
-      "role": "輔助",
-      "race": "精靈",
-      "boardTypes": {
-        "layer1": [
-          "critResist",
-          "defense"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Amelia": {
+      "layer1": ["critResist", "defense"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "綾",
-      "en": "Aya",
-      "personality": "冷靜",
-      "stars": 3,
-      "attackType": "魔法",
-      "deployRow": "中排",
-      "role": "輸出",
-      "race": "魔女",
-      "boardTypes": {
-        "layer1": [
-          "attack",
-          "defense"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Aya": {
+      "layer1": ["attack", "defense"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "貝麗塔",
-      "en": "Belita",
-      "personality": "狂亂",
-      "stars": 3,
-      "attackType": "魔法",
-      "deployRow": "後排",
-      "role": "輸出",
-      "race": "魔女",
-      "boardTypes": {
-        "layer1": [
-          "crit",
-          "hp"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Belita": {
+      "layer1": ["crit", "hp"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "班尼",
-      "en": "Beni",
-      "personality": "活潑",
-      "stars": 3,
-      "attackType": "物理",
-      "deployRow": "前排",
-      "role": "輸出",
-      "race": "獸人",
-      "boardTypes": {
-        "layer1": [
-          "crit",
-          "hp"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Beni": {
+      "layer1": ["crit", "hp"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "大木頭",
-      "en": "BigWood",
-      "personality": "天真",
-      "stars": 2,
-      "attackType": "物理",
-      "deployRow": "前排",
-      "role": "坦克",
-      "race": "魔靈",
-      "boardTypes": {
-        "layer1": [
-          "attack",
-          "hp"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "BigWood": {
+      "layer1": ["attack", "hp"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "康娜",
-      "en": "Canna",
-      "personality": "活潑",
-      "stars": 3,
-      "attackType": "物理",
-      "deployRow": "後排",
-      "role": "輸出",
-      "race": "精靈",
-      "boardTypes": {
-        "layer1": [
-          "critResist",
-          "defense"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Canna": {
+      "layer1": ["critResist", "defense"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "卡蓮",
-      "en": "Carren",
-      "personality": "活潑",
-      "stars": 2,
-      "attackType": "魔法",
-      "deployRow": "後排",
-      "role": "輔助",
-      "race": "妖精",
-      "boardTypes": {
-        "layer1": [
-          "crit",
-          "critResist"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Carren": {
+      "layer1": ["crit", "critResist"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "庫洛艾",
-      "en": "Chloe",
-      "personality": "狂亂",
-      "stars": 3,
-      "attackType": "魔法",
-      "deployRow": "前排",
-      "role": "坦克",
-      "race": "妖精",
-      "boardTypes": {
-        "layer1": [
-          "crit",
-          "hp"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Chloe": {
+      "layer1": ["crit", "hp"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "橋菲",
-      "en": "Chopi",
-      "personality": "憂鬱",
-      "stars": 2,
-      "attackType": "物理",
-      "deployRow": "中排",
-      "role": "輸出",
-      "race": "獸人",
-      "boardTypes": {
-        "layer1": [
-          "critResist",
-          "defense"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Chopi": {
+      "layer1": ["critResist", "defense"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "路易",
-      "en": "Kyuri",
-      "personality": "天真",
-      "stars": 1,
-      "attackType": "魔法",
-      "deployRow": "中排",
-      "role": "輔助",
-      "race": "妖精",
-      "boardTypes": {
-        "layer1": [
-          "attack",
-          "hp"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Kyuri": {
+      "layer1": ["attack", "hp"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "蒂亞娜",
-      "en": "Diana",
-      "personality": "狂亂",
-      "stars": 3,
-      "attackType": "魔法",
-      "deployRow": "中排",
-      "role": "輔助",
-      "race": "獸人",
-      "boardTypes": {
-        "layer1": [
-          "crit",
-          "critResist"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Diana": {
+      "layer1": ["crit", "critResist"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "艾爾芬",
-      "en": "Erpin",
-      "personality": "天真",
-      "stars": 3,
-      "attackType": "魔法",
-      "deployRow": "後排",
-      "role": "輸出",
-      "race": "妖精",
-      "boardTypes": {
-        "layer1": [
-          "attack",
-          "defense"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Erpin": {
+      "layer1": ["attack", "defense"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "艾斯皮",
-      "en": "Espi",
-      "personality": "冷靜",
-      "stars": 2,
-      "attackType": "魔法",
-      "deployRow": "中排",
-      "role": "輔助",
-      "race": "幽靈",
-      "boardTypes": {
-        "layer1": [
-          "crit",
-          "critResist"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Espi": {
+      "layer1": ["crit", "critResist"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "佩斯塔",
-      "en": "Festa",
-      "personality": "憂鬱",
-      "stars": 2,
-      "attackType": "物理",
-      "deployRow": "前排",
-      "role": "輔助",
-      "race": "精靈",
-      "boardTypes": {
-        "layer1": [
-          "attack",
-          "defense"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Festa": {
+      "layer1": ["attack", "defense"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "芙莉可",
-      "en": "Fricle",
-      "personality": "冷靜",
-      "stars": 3,
-      "attackType": "魔法",
-      "deployRow": "中排",
-      "role": "輸出",
-      "race": "魔女",
-      "boardTypes": {
-        "layer1": [
-          "attack",
-          "hp"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Fricle": {
+      "layer1": ["attack", "hp"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "加薇雅",
-      "en": "Gabia",
-      "personality": "天真",
-      "stars": 3,
-      "attackType": "魔法",
-      "deployRow": "中排",
-      "role": "輔助",
-      "race": "魔靈",
-      "boardTypes": {
-        "layer1": [
-          "attack",
-          "hp"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Gabia": {
+      "layer1": ["attack", "hp"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "海莉",
-      "en": "Haley",
-      "personality": "天真",
-      "stars": 3,
-      "attackType": "物理",
-      "deployRow": "中排",
-      "role": "輸出",
-      "race": "精靈",
-      "boardTypes": {
-        "layer1": [
-          "critResist",
-          "defense"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Haley": {
+      "layer1": ["critResist", "defense"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "伊弗利特",
-      "en": "Ifrit",
-      "personality": "狂亂",
-      "stars": 3,
-      "attackType": "魔法",
-      "deployRow": "前排",
-      "role": "輸出",
-      "race": "魔靈",
-      "boardTypes": {
-        "layer1": [
-          "critResist",
-          "defense"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Ifrit": {
+      "layer1": ["critResist", "defense"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "傑德",
-      "en": "Jade",
-      "personality": "冷靜",
-      "stars": 3,
-      "attackType": "魔法",
-      "deployRow": "中排",
-      "role": "輸出",
-      "race": "龍族",
-      "boardTypes": {
-        "layer1": [
-          "critResist",
-          "defense"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Jade": {
+      "layer1": ["critResist", "defense"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "茱蜜",
-      "en": "Jubee",
-      "personality": "活潑",
-      "stars": 2,
-      "attackType": "物理",
-      "deployRow": "中排",
-      "role": "輸出",
-      "race": "魔靈",
-      "boardTypes": {
-        "layer1": [
-          "attack",
-          "defense"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Jubee": {
+      "layer1": ["attack", "defense"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "基狄恩",
-      "en": "Kidian",
-      "personality": "憂鬱",
-      "stars": 3,
-      "attackType": "物理",
-      "deployRow": "前排",
-      "role": "輸出",
-      "race": "龍族",
-      "boardTypes": {
-        "layer1": [
-          "critResist",
-          "defense"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Kidian": {
+      "layer1": ["critResist", "defense"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "柯米",
-      "en": "Kommy",
-      "personality": "憂鬱",
-      "stars": 3,
-      "attackType": "物理",
-      "deployRow": "前排",
-      "role": "坦克",
-      "race": "獸人",
-      "boardTypes": {
-        "layer1": [
-          "critResist",
-          "defense"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Kommy": {
+      "layer1": ["critResist", "defense"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "雷吉",
-      "en": "Layze",
-      "personality": "冷靜",
-      "stars": 2,
-      "attackType": "物理",
-      "deployRow": "後排",
-      "role": "輸出",
-      "race": "精靈",
-      "boardTypes": {
-        "layer1": [
-          "critResist",
-          "defense"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Layze": {
+      "layer1": ["critResist", "defense"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "萊薇",
-      "en": "Levi",
-      "personality": "憂鬱",
-      "stars": 3,
-      "attackType": "物理",
-      "deployRow": "中排",
-      "role": "輸出",
-      "race": "魔女",
-      "boardTypes": {
-        "layer1": [
-          "crit",
-          "critResist"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Levi": {
+      "layer1": ["crit", "critResist"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "大師2號",
-      "en": "MaestroMK2",
-      "personality": "狂亂",
-      "stars": 2,
-      "attackType": "物理",
-      "deployRow": "前排",
-      "role": "坦克",
-      "race": "精靈",
-      "boardTypes": {
-        "layer1": [
-          "crit",
-          "hp"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "MaestroMK2": {
+      "layer1": ["crit", "hp"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "馬爾",
-      "en": "Mago",
-      "personality": "天真",
-      "stars": 3,
-      "attackType": "魔法",
-      "deployRow": "中排",
-      "role": "輔助",
-      "race": "獸人",
-      "boardTypes": {
-        "layer1": [
-          "attack",
-          "hp"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Mago": {
+      "layer1": ["attack", "hp"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "梅森",
-      "en": "Maison",
-      "personality": "狂亂",
-      "stars": 2,
-      "attackType": "物理",
-      "deployRow": "後排",
-      "role": "輸出",
-      "race": "幽靈",
-      "boardTypes": {
-        "layer1": [
-          "crit",
-          "critResist"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Maison": {
+      "layer1": ["crit", "critResist"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "瑪麗",
-      "en": "Marie",
-      "personality": "活潑",
-      "stars": 2,
-      "attackType": "物理",
-      "deployRow": "中排",
-      "role": "輸出",
-      "race": "妖精",
-      "boardTypes": {
-        "layer1": [
-          "attack",
-          "hp"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Marie": {
+      "layer1": ["attack", "hp"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "瑪約",
-      "en": "Mayo",
-      "personality": "狂亂",
-      "stars": 3,
-      "attackType": "物理",
-      "deployRow": "後排",
-      "role": "輸出",
-      "race": "妖精",
-      "boardTypes": {
-        "layer1": [
-          "critResist",
-          "defense"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Mayo": {
+      "layer1": ["critResist", "defense"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "梅露娜",
-      "en": "Meluna",
-      "personality": "冷靜",
-      "stars": 2,
-      "attackType": "魔法",
-      "deployRow": "後排",
-      "role": "輔助",
-      "race": "魔靈",
-      "boardTypes": {
-        "layer1": [
-          "attack",
-          "hp"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Meluna": {
+      "layer1": ["attack", "hp"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "桃桃",
-      "en": "Momo",
-      "personality": "活潑",
-      "stars": 3,
-      "attackType": "魔法",
-      "deployRow": "後排",
-      "role": "輸出",
-      "race": "獸人",
-      "boardTypes": {
-        "layer1": [
-          "attack",
-          "hp"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Momo": {
+      "layer1": ["attack", "hp"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "米雪",
-      "en": "Mynx",
-      "personality": "活潑",
-      "stars": 1,
-      "attackType": "物理",
-      "deployRow": "前排",
-      "role": "輸出",
-      "race": "獸人",
-      "boardTypes": {
-        "layer1": [
-          "attack",
-          "hp"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Mynx": {
+      "layer1": ["attack", "hp"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "帕特拉",
-      "en": "Patula",
-      "personality": "冷靜",
-      "stars": 1,
-      "attackType": "物理",
-      "deployRow": "前排",
-      "role": "輸出",
-      "race": "妖精",
-      "boardTypes": {
-        "layer1": [
-          "attack",
-          "defense"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Patula": {
+      "layer1": ["attack", "defense"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "皮可菈",
-      "en": "Picora",
-      "personality": "冷靜",
-      "stars": 3,
-      "attackType": "魔法",
-      "deployRow": "後排",
-      "role": "輔助",
-      "race": "魔女",
-      "boardTypes": {
-        "layer1": [
-          "critResist",
-          "defense"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Picora": {
+      "layer1": ["critResist", "defense"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "珀榭",
-      "en": "Posher",
-      "personality": "憂鬱",
-      "stars": 3,
-      "attackType": "魔法",
-      "deployRow": "後排",
-      "role": "輔助",
-      "race": "魔女",
-      "boardTypes": {
-        "layer1": [
-          "critResist",
-          "defense"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Posher": {
+      "layer1": ["critResist", "defense"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "琳",
-      "en": "Rim",
-      "personality": "憂鬱",
-      "stars": 3,
-      "attackType": "物理",
-      "deployRow": "前排",
-      "role": "輸出",
-      "race": "幽靈",
-      "boardTypes": {
-        "layer1": [
-          "crit",
-          "critResist"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Rim": {
+      "layer1": ["crit", "critResist"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "路德",
-      "en": "Rudd",
-      "personality": "活潑",
-      "stars": 3,
-      "attackType": "物理",
-      "deployRow": "前排",
-      "role": "坦克",
-      "race": "龍族",
-      "boardTypes": {
-        "layer1": [
-          "crit",
-          "hp"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Rudd": {
+      "layer1": ["crit", "hp"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "盧波",
-      "en": "Rufo",
-      "personality": "活潑",
-      "stars": 3,
-      "attackType": "物理",
-      "deployRow": "中排",
-      "role": "輸出",
-      "race": "獸人",
-      "boardTypes": {
-        "layer1": [
-          "crit",
-          "critResist"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Rufo": {
+      "layer1": ["crit", "critResist"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "莎莉",
-      "en": "Sari",
-      "personality": "天真",
-      "stars": 2,
-      "attackType": "物理",
-      "deployRow": "中排",
-      "role": "輸出",
-      "race": "幽靈",
-      "boardTypes": {
-        "layer1": [
-          "crit",
-          "hp"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Sari": {
+      "layer1": ["crit", "hp"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "謝蒂",
-      "en": "Shadi",
-      "personality": "狂亂",
-      "stars": 3,
-      "attackType": "物理",
-      "deployRow": "前排",
-      "role": "輸出",
-      "race": "幽靈",
-      "boardTypes": {
-        "layer1": [
-          "attack",
-          "defense"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Shadi": {
+      "layer1": ["attack", "defense"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "希菲爾",
-      "en": "Silphir",
-      "personality": "天真",
-      "stars": 3,
-      "attackType": "物理",
-      "deployRow": "中排",
-      "role": "輸出",
-      "race": "龍族",
-      "boardTypes": {
-        "layer1": [
-          "crit",
-          "hp"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Silphir": {
+      "layer1": ["crit", "hp"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "希瑟圖",
-      "en": "Sist",
-      "personality": "狂亂",
-      "stars": 3,
-      "attackType": "物理",
-      "deployRow": "中排",
-      "role": "輸出",
-      "race": "龍族",
-      "boardTypes": {
-        "layer1": [
-          "crit",
-          "critResist"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Sist": {
+      "layer1": ["crit", "critResist"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "斯皮奇",
-      "en": "Speaki",
-      "personality": "天真",
-      "stars": 3,
-      "attackType": "魔法",
-      "deployRow": "後排",
-      "role": "輸出",
-      "race": "幽靈",
-      "boardTypes": {
-        "layer1": [
-          "attack",
-          "defense"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Speaki": {
+      "layer1": ["attack", "defense"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "希拉",
-      "en": "Sylla",
-      "personality": "冷靜",
-      "stars": 3,
-      "attackType": "物理",
-      "deployRow": "後排",
-      "role": "輸出",
-      "race": "魔靈",
-      "boardTypes": {
-        "layer1": [
-          "attack",
-          "hp"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Sylla": {
+      "layer1": ["attack", "hp"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "泰達",
-      "en": "Taida",
-      "personality": "活潑",
-      "stars": 2,
-      "attackType": "物理",
-      "deployRow": "後排",
-      "role": "輸出",
-      "race": "精靈",
-      "boardTypes": {
-        "layer1": [
-          "attack",
-          "hp"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Taida": {
+      "layer1": ["attack", "hp"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "羽伊",
-      "en": "Ui",
-      "personality": "活潑",
-      "stars": 3,
-      "attackType": "魔法",
-      "deployRow": "中排",
-      "role": "輔助",
-      "race": "魔靈",
-      "boardTypes": {
-        "layer1": [
-          "crit",
-          "critResist"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Ui": {
+      "layer1": ["crit", "critResist"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "佩佩",
-      "en": "Velvet",
-      "personality": "冷靜",
-      "stars": 3,
-      "attackType": "物理",
-      "deployRow": "前排",
-      "role": "坦克",
-      "race": "魔女",
-      "boardTypes": {
-        "layer1": [
-          "crit",
-          "critResist"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Velvet": {
+      "layer1": ["crit", "critResist"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "貝魯",
-      "en": "Veroo",
-      "personality": "憂鬱",
-      "stars": 1,
-      "attackType": "物理",
-      "deployRow": "中排",
-      "role": "輸出",
-      "race": "幽靈",
-      "boardTypes": {
-        "layer1": [
-          "attack",
-          "defense"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Veroo": {
+      "layer1": ["attack", "defense"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "薇薇",
-      "en": "Vivi",
-      "personality": "天真",
-      "stars": 3,
-      "attackType": "魔法",
-      "deployRow": "前排",
-      "role": "坦克",
-      "race": "龍族",
-      "boardTypes": {
-        "layer1": [
-          "crit",
-          "hp"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Vivi": {
+      "layer1": ["crit", "hp"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "劉美美",
-      "en": "Yumimi",
-      "personality": "狂亂",
-      "stars": 2,
-      "attackType": "物理",
-      "deployRow": "後排",
-      "role": "輸出",
-      "race": "獸人",
-      "boardTypes": {
-        "layer1": [
-          "crit",
-          "hp"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Yumimi": {
+      "layer1": ["crit", "hp"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "xX錫安Xx",
-      "en": "xXionx",
-      "personality": "憂鬱",
-      "stars": 3,
-      "attackType": "物理",
-      "deployRow": "後排",
-      "role": "輸出",
-      "race": "幽靈",
-      "boardTypes": {
-        "layer1": [
-          "critResist",
-          "defense"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "xXionx": {
+      "layer1": ["critResist", "defense"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "優米",
-      "en": "Yomi",
-      "personality": "憂鬱",
-      "stars": 3,
-      "attackType": "魔法",
-      "deployRow": "後排",
-      "role": "輔助",
-      "race": "???",
-      "boardTypes": {
-        "layer1": [
-          "attack",
-          "defense"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Yomi": {
+      "layer1": ["attack", "defense"],
+      "layer2": [],
+      "layer3": []
     },
-    {
-      "name": "奶油",
-      "en": "Butter",
-      "personality": "活潑",
-      "stars": 3,
-      "attackType": "物理",
-      "deployRow": "後排",
-      "role": "輸出",
-      "race": "獸人",
-      "boardTypes": {
-        "layer1": [
-          "attack",
-          "defense"
-        ],
-        "layer2": [],
-        "layer3": []
-      }
+    "Butter": {
+      "layer1": ["attack", "defense"],
+      "layer2": [],
+      "layer3": []
     }
-  ],
+  },
   "boardConfig": {
     "layer1": {
       "name": "第一層",
@@ -1090,7 +388,7 @@
   },
   "roles": [
     "輸出",
-    "肉盾",
+    "坦克",
     "輔助"
   ]
 }

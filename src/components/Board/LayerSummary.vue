@@ -33,10 +33,10 @@ import { useBoardStore } from '@/stores/board'
 const boardStore = useBoardStore()
 
 const stats = computed(() => {
-  if (!boardStore.gameData) return { totalSlots: 0, activatedSlots: 0, completionRate: 0, totalBonus: 0 }
+  if (!boardStore.boardData || boardStore.characters.length === 0) return { totalSlots: 0, activatedSlots: 0, completionRate: 0, totalBonus: 0 }
   
   const layer = boardStore.currentLayer
-  const characters = boardStore.gameData.characters
+  const characters = boardStore.characters
   let totalSlots = 0
   let activatedSlots = 0
 
@@ -53,7 +53,7 @@ const stats = computed(() => {
     }
   })
 
-  const bonusPerCell = boardStore.gameData.boardConfig[layer]?.bonusPerCell || 0
+  const bonusPerCell = boardStore.boardData.boardConfig[layer]?.bonusPerCell || 0
   const totalBonus = activatedSlots * bonusPerCell
   const completionRate = totalSlots ? Math.round((activatedSlots / totalSlots) * 100) : 0
 

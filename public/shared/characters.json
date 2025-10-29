@@ -1,0 +1,543 @@
+{
+  "Allet": {
+    "name": "阿萊特",
+    "en": "Allet",
+    "personality": "天真",
+    "stars": 2,
+    "attackType": "物理",
+    "deployRow": "前排",
+    "role": "坦克",
+    "race": "精靈"
+  },
+  "Amelia": {
+    "name": "艾蜜莉雅",
+    "en": "Amelia",
+    "personality": "冷靜",
+    "stars": 3,
+    "attackType": "物理",
+    "deployRow": "後排",
+    "role": "輔助",
+    "race": "精靈"
+  },
+  "Aya": {
+    "name": "綾",
+    "en": "Aya",
+    "personality": "冷靜",
+    "stars": 3,
+    "attackType": "魔法",
+    "deployRow": "中排",
+    "role": "輸出",
+    "race": "魔女"
+  },
+  "Belita": {
+    "name": "貝麗塔",
+    "en": "Belita",
+    "personality": "狂亂",
+    "stars": 3,
+    "attackType": "魔法",
+    "deployRow": "後排",
+    "role": "輸出",
+    "race": "魔女"
+  },
+  "Beni": {
+    "name": "班尼",
+    "en": "Beni",
+    "personality": "活潑",
+    "stars": 3,
+    "attackType": "物理",
+    "deployRow": "前排",
+    "role": "輸出",
+    "race": "獸人"
+  },
+  "BigWood": {
+    "name": "大木頭",
+    "en": "BigWood",
+    "personality": "天真",
+    "stars": 2,
+    "attackType": "物理",
+    "deployRow": "前排",
+    "role": "坦克",
+    "race": "魔靈"
+  },
+  "Canna": {
+    "name": "康娜",
+    "en": "Canna",
+    "personality": "活潑",
+    "stars": 3,
+    "attackType": "物理",
+    "deployRow": "後排",
+    "role": "輸出",
+    "race": "精靈"
+  },
+  "Carren": {
+    "name": "卡蓮",
+    "en": "Carren",
+    "personality": "活潑",
+    "stars": 2,
+    "attackType": "魔法",
+    "deployRow": "後排",
+    "role": "輔助",
+    "race": "妖精"
+  },
+  "Chloe": {
+    "name": "庫洛艾",
+    "en": "Chloe",
+    "personality": "狂亂",
+    "stars": 3,
+    "attackType": "魔法",
+    "deployRow": "前排",
+    "role": "坦克",
+    "race": "妖精"
+  },
+  "Chopi": {
+    "name": "橋菲",
+    "en": "Chopi",
+    "personality": "憂鬱",
+    "stars": 2,
+    "attackType": "物理",
+    "deployRow": "中排",
+    "role": "輸出",
+    "race": "獸人"
+  },
+  "Kyuri": {
+    "name": "路易",
+    "en": "Kyuri",
+    "personality": "天真",
+    "stars": 1,
+    "attackType": "魔法",
+    "deployRow": "中排",
+    "role": "輔助",
+    "race": "妖精"
+  },
+  "Diana": {
+    "name": "蒂亞娜",
+    "en": "Diana",
+    "personality": "狂亂",
+    "stars": 3,
+    "attackType": "魔法",
+    "deployRow": "中排",
+    "role": "輔助",
+    "race": "獸人"
+  },
+  "Erpin": {
+    "name": "艾爾芬",
+    "en": "Erpin",
+    "personality": "天真",
+    "stars": 3,
+    "attackType": "魔法",
+    "deployRow": "後排",
+    "role": "輸出",
+    "race": "妖精"
+  },
+  "Espi": {
+    "name": "艾斯皮",
+    "en": "Espi",
+    "personality": "冷靜",
+    "stars": 2,
+    "attackType": "魔法",
+    "deployRow": "中排",
+    "role": "輔助",
+    "race": "幽靈"
+  },
+  "Festa": {
+    "name": "佩斯塔",
+    "en": "Festa",
+    "personality": "憂鬱",
+    "stars": 2,
+    "attackType": "物理",
+    "deployRow": "前排",
+    "role": "輔助",
+    "race": "精靈"
+  },
+  "Fricle": {
+    "name": "芙莉可",
+    "en": "Fricle",
+    "personality": "冷靜",
+    "stars": 3,
+    "attackType": "魔法",
+    "deployRow": "中排",
+    "role": "輸出",
+    "race": "魔女"
+  },
+  "Gabia": {
+    "name": "加薇雅",
+    "en": "Gabia",
+    "personality": "天真",
+    "stars": 3,
+    "attackType": "魔法",
+    "deployRow": "中排",
+    "role": "輔助",
+    "race": "魔靈"
+  },
+  "Haley": {
+    "name": "海莉",
+    "en": "Haley",
+    "personality": "天真",
+    "stars": 3,
+    "attackType": "物理",
+    "deployRow": "中排",
+    "role": "輸出",
+    "race": "精靈"
+  },
+  "Ifrit": {
+    "name": "伊弗利特",
+    "en": "Ifrit",
+    "personality": "狂亂",
+    "stars": 3,
+    "attackType": "魔法",
+    "deployRow": "前排",
+    "role": "輸出",
+    "race": "魔靈"
+  },
+  "Jade": {
+    "name": "傑德",
+    "en": "Jade",
+    "personality": "冷靜",
+    "stars": 3,
+    "attackType": "魔法",
+    "deployRow": "中排",
+    "role": "輸出",
+    "race": "龍族"
+  },
+  "Jubee": {
+    "name": "茱蜜",
+    "en": "Jubee",
+    "personality": "活潑",
+    "stars": 2,
+    "attackType": "物理",
+    "deployRow": "中排",
+    "role": "輸出",
+    "race": "魔靈"
+  },
+  "Kidian": {
+    "name": "基狄恩",
+    "en": "Kidian",
+    "personality": "憂鬱",
+    "stars": 3,
+    "attackType": "物理",
+    "deployRow": "前排",
+    "role": "輸出",
+    "race": "龍族"
+  },
+  "Kommy": {
+    "name": "柯米",
+    "en": "Kommy",
+    "personality": "憂鬱",
+    "stars": 3,
+    "attackType": "物理",
+    "deployRow": "前排",
+    "role": "坦克",
+    "race": "獸人"
+  },
+  "Layze": {
+    "name": "雷吉",
+    "en": "Layze",
+    "personality": "冷靜",
+    "stars": 2,
+    "attackType": "物理",
+    "deployRow": "後排",
+    "role": "輸出",
+    "race": "精靈"
+  },
+  "Levi": {
+    "name": "萊薇",
+    "en": "Levi",
+    "personality": "憂鬱",
+    "stars": 3,
+    "attackType": "物理",
+    "deployRow": "中排",
+    "role": "輸出",
+    "race": "魔女"
+  },
+  "MaestroMK2": {
+    "name": "大師2號",
+    "en": "MaestroMK2",
+    "personality": "狂亂",
+    "stars": 2,
+    "attackType": "物理",
+    "deployRow": "前排",
+    "role": "坦克",
+    "race": "精靈"
+  },
+  "Mago": {
+    "name": "馬爾",
+    "en": "Mago",
+    "personality": "天真",
+    "stars": 3,
+    "attackType": "魔法",
+    "deployRow": "中排",
+    "role": "輔助",
+    "race": "獸人"
+  },
+  "Maison": {
+    "name": "梅森",
+    "en": "Maison",
+    "personality": "狂亂",
+    "stars": 2,
+    "attackType": "物理",
+    "deployRow": "後排",
+    "role": "輸出",
+    "race": "幽靈"
+  },
+  "Marie": {
+    "name": "瑪麗",
+    "en": "Marie",
+    "personality": "活潑",
+    "stars": 2,
+    "attackType": "物理",
+    "deployRow": "中排",
+    "role": "輸出",
+    "race": "妖精"
+  },
+  "Mayo": {
+    "name": "瑪約",
+    "en": "Mayo",
+    "personality": "狂亂",
+    "stars": 3,
+    "attackType": "物理",
+    "deployRow": "後排",
+    "role": "輸出",
+    "race": "妖精"
+  },
+  "Meluna": {
+    "name": "梅露娜",
+    "en": "Meluna",
+    "personality": "冷靜",
+    "stars": 2,
+    "attackType": "魔法",
+    "deployRow": "後排",
+    "role": "輔助",
+    "race": "魔靈"
+  },
+  "Momo": {
+    "name": "桃桃",
+    "en": "Momo",
+    "personality": "活潑",
+    "stars": 3,
+    "attackType": "魔法",
+    "deployRow": "後排",
+    "role": "輸出",
+    "race": "獸人"
+  },
+  "Mynx": {
+    "name": "米雪",
+    "en": "Mynx",
+    "personality": "活潑",
+    "stars": 1,
+    "attackType": "物理",
+    "deployRow": "前排",
+    "role": "輸出",
+    "race": "獸人"
+  },
+  "Patula": {
+    "name": "帕特拉",
+    "en": "Patula",
+    "personality": "冷靜",
+    "stars": 1,
+    "attackType": "物理",
+    "deployRow": "前排",
+    "role": "輸出",
+    "race": "妖精"
+  },
+  "Picora": {
+    "name": "皮可菈",
+    "en": "Picora",
+    "personality": "冷靜",
+    "stars": 3,
+    "attackType": "魔法",
+    "deployRow": "後排",
+    "role": "輔助",
+    "race": "魔女"
+  },
+  "Posher": {
+    "name": "珀榭",
+    "en": "Posher",
+    "personality": "憂鬱",
+    "stars": 3,
+    "attackType": "魔法",
+    "deployRow": "後排",
+    "role": "輔助",
+    "race": "魔女"
+  },
+  "Rim": {
+    "name": "琳",
+    "en": "Rim",
+    "personality": "憂鬱",
+    "stars": 3,
+    "attackType": "物理",
+    "deployRow": "前排",
+    "role": "輸出",
+    "race": "幽靈"
+  },
+  "Rudd": {
+    "name": "路德",
+    "en": "Rudd",
+    "personality": "活潑",
+    "stars": 3,
+    "attackType": "物理",
+    "deployRow": "前排",
+    "role": "坦克",
+    "race": "龍族"
+  },
+  "Rufo": {
+    "name": "盧波",
+    "en": "Rufo",
+    "personality": "活潑",
+    "stars": 3,
+    "attackType": "物理",
+    "deployRow": "中排",
+    "role": "輸出",
+    "race": "獸人"
+  },
+  "Sari": {
+    "name": "莎莉",
+    "en": "Sari",
+    "personality": "天真",
+    "stars": 2,
+    "attackType": "物理",
+    "deployRow": "中排",
+    "role": "輸出",
+    "race": "幽靈"
+  },
+  "Shadi": {
+    "name": "謝蒂",
+    "en": "Shadi",
+    "personality": "狂亂",
+    "stars": 3,
+    "attackType": "物理",
+    "deployRow": "前排",
+    "role": "輸出",
+    "race": "幽靈"
+  },
+  "Silphir": {
+    "name": "希菲爾",
+    "en": "Silphir",
+    "personality": "天真",
+    "stars": 3,
+    "attackType": "物理",
+    "deployRow": "中排",
+    "role": "輸出",
+    "race": "龍族"
+  },
+  "Sist": {
+    "name": "希瑟圖",
+    "en": "Sist",
+    "personality": "狂亂",
+    "stars": 3,
+    "attackType": "物理",
+    "deployRow": "中排",
+    "role": "輸出",
+    "race": "龍族"
+  },
+  "Speaki": {
+    "name": "斯皮奇",
+    "en": "Speaki",
+    "personality": "天真",
+    "stars": 3,
+    "attackType": "魔法",
+    "deployRow": "後排",
+    "role": "輸出",
+    "race": "幽靈"
+  },
+  "Sylla": {
+    "name": "希拉",
+    "en": "Sylla",
+    "personality": "冷靜",
+    "stars": 3,
+    "attackType": "物理",
+    "deployRow": "後排",
+    "role": "輸出",
+    "race": "魔靈"
+  },
+  "Taida": {
+    "name": "泰達",
+    "en": "Taida",
+    "personality": "活潑",
+    "stars": 2,
+    "attackType": "物理",
+    "deployRow": "後排",
+    "role": "輸出",
+    "race": "精靈"
+  },
+  "Ui": {
+    "name": "羽伊",
+    "en": "Ui",
+    "personality": "活潑",
+    "stars": 3,
+    "attackType": "魔法",
+    "deployRow": "中排",
+    "role": "輔助",
+    "race": "魔靈"
+  },
+  "Velvet": {
+    "name": "佩佩",
+    "en": "Velvet",
+    "personality": "冷靜",
+    "stars": 3,
+    "attackType": "物理",
+    "deployRow": "前排",
+    "role": "坦克",
+    "race": "魔女"
+  },
+  "Veroo": {
+    "name": "貝魯",
+    "en": "Veroo",
+    "personality": "憂鬱",
+    "stars": 1,
+    "attackType": "物理",
+    "deployRow": "中排",
+    "role": "輸出",
+    "race": "幽靈"
+  },
+  "Vivi": {
+    "name": "薇薇",
+    "en": "Vivi",
+    "personality": "天真",
+    "stars": 3,
+    "attackType": "魔法",
+    "deployRow": "前排",
+    "role": "坦克",
+    "race": "龍族"
+  },
+  "Yumimi": {
+    "name": "劉美美",
+    "en": "Yumimi",
+    "personality": "狂亂",
+    "stars": 2,
+    "attackType": "物理",
+    "deployRow": "後排",
+    "role": "輸出",
+    "race": "獸人"
+  },
+  "xXionx": {
+    "name": "xX錫安Xx",
+    "en": "xXionx",
+    "personality": "憂鬱",
+    "stars": 3,
+    "attackType": "物理",
+    "deployRow": "後排",
+    "role": "輸出",
+    "race": "幽靈"
+  },
+  "Yomi": {
+    "name": "優米",
+    "en": "Yomi",
+    "personality": "憂鬱",
+    "stars": 3,
+    "attackType": "魔法",
+    "deployRow": "後排",
+    "role": "輔助",
+    "race": "???"
+  },
+  "Butter": {
+    "name": "奶油",
+    "en": "Butter",
+    "personality": "活潑",
+    "stars": 3,
+    "attackType": "物理",
+    "deployRow": "後排",
+    "role": "輸出",
+    "race": "獸人"
+  }
+}
+
