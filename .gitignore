@@ -7,7 +7,10 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies
 node_modules
+
+# Build output
 dist
 dist-ssr
 *.local
@@ -22,3 +25,19 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Cursor AI
+.cursor/
+
+# Documentation (keep only main README.md)
+DEPLOY.md
+FIX_REPORT.md
+NETWORK_ACCESS.md
+QUICKSTART.md
+README-VUE.md
+STYLE_UNIFICATION.md
+assets/*/README.md
+public/*/README.md
+
+# Backup files
+*.backup
