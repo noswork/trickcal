@@ -37,3 +37,6 @@ dist-ssr
 
 # Cleanup folder (temporary)
 clearup/
+
+# docs
+docs/
