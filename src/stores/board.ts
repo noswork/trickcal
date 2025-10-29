@@ -75,7 +75,8 @@ export const useBoardStore = defineStore('board', () => {
   // 載入遊戲數據
   async function loadGameData() {
     try {
-      const response = await fetch('/board/data.json')
+      const baseUrl = import.meta.env.BASE_URL
+      const response = await fetch(`${baseUrl}board/data.json`)
       if (!response.ok) throw new Error('Failed to load game data')
       const data = await response.json()
       

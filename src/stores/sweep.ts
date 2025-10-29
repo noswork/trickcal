@@ -20,7 +20,8 @@ export const useSweepStore = defineStore('sweep', () => {
   // 載入數據
   async function loadData() {
     try {
-      const response = await fetch('/sweep/data.json')
+      const baseUrl = import.meta.env.BASE_URL
+      const response = await fetch(`${baseUrl}sweep/data.json`)
       if (!response.ok) throw new Error('Failed to load sweep data')
       const data: MaterialData = await response.json()
       

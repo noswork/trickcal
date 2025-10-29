@@ -3,7 +3,7 @@
     <div class="cell-title">
       <div class="cell-icon" :class="cellType">
         <img 
-          :src="`/${cellTypeData.icon}`" 
+          :src="getAssetUrl(cellTypeData.icon)" 
           :alt="$t(`cellTypes.${cellType}`)"
           @error="handleImageError"
         />
@@ -23,6 +23,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useBoardStore } from '@/stores/board'
+import { getAssetUrl } from '@/utils/assets'
 
 const props = defineProps<{
   cellType: string
