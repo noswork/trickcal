@@ -230,6 +230,38 @@ abbr {
   min-height: 100vh;
 }
 
+/* ===== 超強鼠標樣式覆蓋（必須放在最後） ===== */
+/* 覆蓋所有可能的 scoped 樣式 */
+body *,
+body *::before,
+body *::after {
+  cursor: url('/assets/cursors/cursor.png') 0 0, auto !important;
+}
+
+body button,
+body a,
+body [role="button"],
+body .clickable,
+body label,
+body select,
+body summary,
+body .icon-btn,
+body .nav-link,
+body .footer-link,
+body .tool-card,
+body .character-card,
+body .material-card,
+body .material-chip,
+body .fab-button,
+body .page-btn,
+body .tab-btn,
+body .settings-btn,
+body .catalog-nav,
+body .language-btn,
+body .language-option {
+  cursor: url('/assets/cursors/cursor.png') 0 0, pointer !important;
+}
+
 /* ===== 滾動條樣式 ===== */
 
 ::-webkit-scrollbar {
