@@ -101,16 +101,17 @@ function closeMobileMenu() {
   max-width: 1400px;
   margin: 0 auto;
   padding: 1rem 2rem;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
   gap: 2rem;
 }
 
 .nav-brand {
-  flex-shrink: 0;
   display: flex;
   align-items: center;
   gap: 1rem;
+  justify-self: start;
 }
 
 .brand-link {
@@ -135,9 +136,9 @@ function closeMobileMenu() {
 }
 
 .nav-tools {
-  flex: 1;
   display: flex;
   justify-content: center;
+  justify-self: center;
 }
 
 .desktop-only {
@@ -171,6 +172,7 @@ function closeMobileMenu() {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  justify-self: end;
 }
 
 .icon-btn {
@@ -221,6 +223,7 @@ function closeMobileMenu() {
   .site-nav {
     padding: 0.75rem 1rem;
     gap: 0.5rem;
+    display: flex;
     flex-wrap: nowrap;
   }
 
