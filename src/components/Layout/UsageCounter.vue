@@ -204,6 +204,12 @@ defineExpose({
 </script>
 
 <style scoped>
+/* 強制使用自定義鼠標 */
+.usage-counter,
+.usage-counter * {
+  cursor: url('/assets/cursors/cursor.png') 0 0, auto !important;
+}
+
 .usage-counter {
   display: inline-flex;
   align-items: center;

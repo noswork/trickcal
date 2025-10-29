@@ -21,6 +21,19 @@
 </script>
 
 <style scoped>
+/* 強制使用自定義鼠標 */
+.site-footer,
+.site-footer *,
+.footer-content,
+.footer-content * {
+  cursor: url('/assets/cursors/cursor.png') 0 0, auto !important;
+}
+
+.site-footer a,
+.footer-link {
+  cursor: url('/assets/cursors/cursor.png') 0 0, pointer !important;
+}
+
 .site-footer {
   margin-top: auto;
   padding: 2rem;

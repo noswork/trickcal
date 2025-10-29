@@ -92,6 +92,18 @@ const vClickOutside = {
 </script>
 
 <style scoped>
+/* 強制使用自定義鼠標 */
+.language-selector,
+.language-selector * {
+  cursor: url('/assets/cursors/cursor.png') 0 0, auto !important;
+}
+
+.language-btn,
+.language-option,
+.language-selector button {
+  cursor: url('/assets/cursors/cursor.png') 0 0, pointer !important;
+}
+
 .language-selector {
   position: relative;
 }
