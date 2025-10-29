@@ -5,6 +5,7 @@
 
 import { UsageStorage } from '@/utils/storage'
 import { createLogger } from '@/utils/logger'
+import { useUsageStore } from '@/stores/usage'
 
 const logger = createLogger('Tracking')
 
@@ -49,6 +50,12 @@ export function trackAction(actionType: string, pageType?: string, metadata?: Re
     
     // 保存到 localStorage（將由 UsageCounter 同步）
     UsageStorage.setPendingEvents(trackingQueue)
+    
+    // 即時更新計數器（提供即時反饋）
+    if (typeof window !== 'undefined') {
+      const usageStore = useUsageStore()
+      usageStore.incrementLocalCount()
+    }
     
     // 開發環境日誌
     if (metadata) {

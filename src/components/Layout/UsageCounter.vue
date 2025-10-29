@@ -1,7 +1,7 @@
 <template>
   <div class="usage-counter">
     <span class="counter-label">{{ $t('footer.usageCount') }}</span>
-    <span class="counter-value" :class="{ updating: isUpdating }">{{ formattedCount }}</span>
+    <span class="counter-value" :class="{ updating: usageStore.isUpdating }">{{ formattedCount }}</span>
   </div>
 </template>
 
@@ -12,9 +12,11 @@ import { createClient } from '@supabase/supabase-js'
 import { SUPABASE_CONFIG, API_CONFIG } from '@/constants'
 import { UsageStorage } from '@/utils/storage'
 import { createLogger } from '@/utils/logger'
+import { useUsageStore } from '@/stores/usage'
 
 const logger = createLogger('UsageCounter')
 const route = useRoute()
+const usageStore = useUsageStore()
 
 const supabase = createClient(SUPABASE_CONFIG.URL, SUPABASE_CONFIG.ANON_KEY)
 
@@ -27,15 +29,10 @@ const pageType = computed(() => {
   return 'other'
 })
 
-const localCount = ref(0)
-const remoteCount = ref(0)
-const isUpdating = ref(false)
 const sessionId = ref('')
 
-const totalCount = computed(() => remoteCount.value + localCount.value)
-
 const formattedCount = computed(() => {
-  return new Intl.NumberFormat('en-US').format(totalCount.value)
+  return new Intl.NumberFormat('en-US').format(usageStore.totalCount)
 })
 
 let syncTimer: ReturnType<typeof setInterval> | null = null
@@ -54,8 +51,8 @@ function generateSessionId() {
 
 // 追蹤使用事件
 function track(actionType = 'page_view') {
-  localCount.value++
-  isUpdating.value = true
+  // 使用 store 增加計數（提供即時反饋）
+  usageStore.incrementLocalCount()
   
   // 添加到待同步事件
   pendingEvents.push({
@@ -66,10 +63,6 @@ function track(actionType = 'page_view') {
   
   // 保存待同步事件
   UsageStorage.setPendingEvents(pendingEvents)
-  
-  setTimeout(() => {
-    isUpdating.value = false
-  }, 300)
 }
 
 // 從Supabase載入計數
@@ -85,7 +78,9 @@ async function loadRemoteCount() {
       return 0
     }
     
-    return data?.total_count || 0
+    const count = data?.total_count || 0
+    usageStore.setRemoteCount(count)
+    return count
   } catch (err) {
     logger.error('載入使用計數時發生錯誤:', err)
     return 0
@@ -114,11 +109,12 @@ async function syncPendingEvents() {
     }
     
     // 更新遠端計數
-    remoteCount.value += pendingEvents.length
+    usageStore.setRemoteCount(usageStore.remoteCount + pendingEvents.length)
     
     // 清除待處理事件
     pendingEvents.length = 0
-    localCount.value = 0
+    usageStore.resetLocalCount()
+    usageStore.updateTotalCount()
     UsageStorage.clearPendingEvents()
     
     logger.success('事件同步成功')
@@ -132,14 +128,17 @@ onMounted(async () => {
   sessionId.value = generateSessionId()
   
   // 載入遠端計數
-  remoteCount.value = await loadRemoteCount()
+  await loadRemoteCount()
   
   // 載入本地待同步事件
   try {
     const events = UsageStorage.getPendingEvents()
     if (events.length > 0) {
       pendingEvents.push(...events)
-      localCount.value = events.length
+      // 更新 store 的本地計數
+      for (let i = 0; i < events.length; i++) {
+        usageStore.incrementLocalCount()
+      }
     }
   } catch (e) {
     logger.error('載入本地事件失敗:', e)
