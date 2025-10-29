@@ -23,7 +23,7 @@
             <h2 class="section-title">{{ $t('tools.heading') }}</h2>
           </header>
           <div class="tool-grid">
-            <router-link to="/board" class="tool-card">
+            <router-link to="/board" class="tool-card" @click="handleToolClick('board')">
               <div class="tool-icon">
                 <img :src="getIconUrl('gold_crayon')" alt="" />
               </div>
@@ -33,7 +33,7 @@
               </div>
             </router-link>
 
-            <router-link to="/sweep" class="tool-card">
+            <router-link to="/sweep" class="tool-card" @click="handleToolClick('sweep')">
               <div class="tool-icon">
                 <img :src="getAssetUrl('assets/favicons/favicon.webp')" alt="" />
               </div>
@@ -52,6 +52,13 @@
 <script setup lang="ts">
 import AppLayout from '@/components/Layout/AppLayout.vue'
 import { getAssetUrl, getIconUrl } from '@/utils/assets'
+import { useTracking } from '@/composables/useTracking'
+
+const tracking = useTracking('home')
+
+function handleToolClick(toolName: string) {
+  tracking.home.clickTool(toolName)
+}
 </script>
 
 <style scoped>
