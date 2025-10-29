@@ -60,11 +60,11 @@
 
           <template v-else>
             <div class="plan-summary">
-              {{ $t('plan.summary').replace('{stages}', String(sweepStore.plan.length)) }}
+              {{ $t('plan.summary', { stages: sweepStore.plan.length }) }}
             </div>
 
             <div v-if="sweepStore.missingMaterials.length > 0" class="plan-warning">
-              {{ $t('plan.warning').replace('{count}', String(sweepStore.missingMaterials.length)) }}
+              {{ $t('plan.warning', { count: sweepStore.missingMaterials.length }) }}
             </div>
 
             <details class="plan-details" open>
@@ -73,7 +73,7 @@
                 <li v-for="stage in sweepStore.plan" :key="stage">
                   <div class="stage-header">
                     <span>{{ stage }}</span>
-                    <span>{{ $t('plan.energyPerStage').replace('{energy}', '10') }}</span>
+                    <span>{{ $t('plan.energyPerStage', { energy: 10 }) }}</span>
                   </div>
                   <div class="stage-materials">
                     <MaterialChip
