@@ -1,0 +1,113 @@
+{
+  "nav": {
+    "title": "Trickcal 도구",
+    "home": "홈",
+    "board": "크레용 보드",
+    "sweep": "스윕 도구",
+    "settings": "설정",
+    "theme": "테마 전환",
+    "language": "한국어"
+  },
+  "hero": {
+    "eyebrow": "Trickcal 도구",
+    "title": "유용한 도구",
+    "description": "간단하고 편리함"
+  },
+  "tools": {
+    "heading": "도구 목록",
+    "board": {
+      "name": "골드 크레용 보드",
+      "description": "캐릭터 소유 상태를 관리하고 보드 진행 상황을 추적하며 보너스를 계산합니다."
+    },
+    "sweep": {
+      "name": "스윕 도구",
+      "description": "재료 요구 사항과 일일 스윕 경로를 계산하여 에너지를 절약합니다."
+    }
+  },
+  "layers": {
+    "layer1": "레이어 1",
+    "layer2": "레이어 2",
+    "layer3": "레이어 3"
+  },
+  "cellTypes": {
+    "attack": "공격력",
+    "crit": "치명타",
+    "hp": "HP",
+    "critResist": "치명타 저항",
+    "defense": "방어력"
+  },
+  "panel": {
+    "layerSummary": "레이어 요약",
+    "activated": "활성화됨",
+    "totalBonus": "총 보너스",
+    "ownershipStats": "소유 통계",
+    "ownedCharacters": "소유 캐릭터",
+    "ownershipRate": "소유율",
+    "activatedCells": "활성화된 셀",
+    "cellCompletionRate": "셀 완료율",
+    "resourceSummary": "리소스 요약",
+    "currentLayerNeed": "현재 레이어 필요량",
+    "allLayersNeed": "모든 레이어 필요량",
+    "currentLayerBonus": "현재 레이어 보너스",
+    "allLayersBonus": "모든 레이어 보너스"
+  },
+  "settings": {
+    "title": "캐릭터 설정",
+    "description": "캐릭터를 클릭하여 소유 상태 전환",
+    "resetAll": "모두 초기화",
+    "close": "닫기",
+    "confirmReset": "모든 진행 상황을 초기화하시겠습니까?",
+    "sortBy": "정렬 기준:",
+    "sortDefault": "기본",
+    "sortStars": "별",
+    "sortRole": "역할",
+    "sortPersonality": "성격",
+    "sortAttackType": "공격 유형",
+    "sortDeployRow": "배치 행",
+    "sortRace": "종족",
+    "sortOrderAsc": "오름차순",
+    "sortOrderDesc": "내림차순"
+  },
+  "footer": {
+    "description": "nos가 제작",
+    "license": "MIT License",
+    "noCellsYet": "셀 없음",
+    "costPerCell": "셀당 비용",
+    "bonusPerCell": "셀당 보너스",
+    "totalBonus": "총 보너스",
+    "crayonsNeeded": "필요한 크레용"
+  },
+  "catalog": {
+    "title": "재료 카탈로그",
+    "page": "{current} / {total} 페이지",
+    "searchLabel": "빠른 검색",
+    "searchPlaceholder": "재료 이름 입력",
+    "clear": "선택 지우기"
+  },
+  "plan": {
+    "title": "최적 에너지 계획",
+    "empty": "선택한 재료가 없습니다",
+    "summary": "총 {stages} 스테이지",
+    "detailSummary": "스테이지 세부 정보",
+    "energyPerStage": "에너지 {energy}",
+    "warning": "{count} 개의 재료가 일치하지 않습니다, 데이터를 확인하세요"
+  },
+  "loading": {
+    "data": "게임 데이터 로딩 중..."
+  },
+  "common": {
+    "confirm": "확인",
+    "cancel": "취소",
+    "yes": "예",
+    "no": "아니오",
+    "save": "저장",
+    "close": "닫기"
+  },
+  "errors": {
+    "noData": "표시할 데이터가 없습니다",
+    "noCellType": "셀 유형을 찾을 수 없습니다",
+    "usingCachedData": "최신 데이터를 로드할 수 없습니다, 캐시된 데이터를 사용합니다.",
+    "loadFailed": "데이터 로드 실패, 연결을 확인하고 다시 시도하세요."
+  }
+}
+

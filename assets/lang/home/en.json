@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "title": "Trickcal Tools",
+    "boardTool": "Golden Crayon Tracker",
+    "sweepTool": "Sweep Tool",
+    "settings": "Settings"
+  },
+  "hero": {
+    "eyebrow": "Trickcal Tools",
+    "title": "Useful Tools Collection",
+    "description": "Simple to use, quick and convenient",
+    "primary": "Golden Crayon Tracker",
+    "secondary": "Sweep Tool"
+  },
+  "tools": {
+    "heading": "Tool List",
+    "board": {
+      "name": "Golden Crayon Tracker",
+      "description": "Track character ownership status, check board cell requirements and bonus statistics.",
+      "features": "Character Collection, Cell Progress, Stat Bonus Calculator",
+      "update": "Updated based on data file releases",
+      "primary": "Open Tool",
+      "secondary": "Data Editor"
+    },
+    "sweep": {
+      "name": "Sweep Tool",
+      "description": "Calculate material requirements and daily sweep routes to save stamina.",
+      "features": "Material Calculator, Stage Suggestions",
+      "update": "Updated based on data file releases",
+      "primary": "Open Tool",
+      "secondary": "Export Data"
+    },
+    "labels": {
+      "features": "Core Features",
+      "update": "Recent Update"
+    }
+  },
+  "footer": {
+    "description": "Created by nos",
+    "license": "MIT License"
+  }
+}
+

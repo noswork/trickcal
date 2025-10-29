@@ -1,0 +1,113 @@
+{
+  "nav": {
+    "title": "Trickcal Tools",
+    "home": "Home",
+    "board": "Crayon Board",
+    "sweep": "Sweep Tool",
+    "settings": "Settings",
+    "theme": "Toggle Theme",
+    "language": "English"
+  },
+  "hero": {
+    "eyebrow": "Trickcal Tools",
+    "title": "Useful Tools",
+    "description": "Simple and convenient"
+  },
+  "tools": {
+    "heading": "Tools",
+    "board": {
+      "name": "Golden Crayon Board",
+      "description": "Manage character ownership, track board progress, and calculate bonuses."
+    },
+    "sweep": {
+      "name": "Sweep Tool",
+      "description": "Calculate material requirements and daily sweep routes to save energy."
+    }
+  },
+  "layers": {
+    "layer1": "Layer 1",
+    "layer2": "Layer 2",
+    "layer3": "Layer 3"
+  },
+  "cellTypes": {
+    "attack": "Attack",
+    "crit": "Crit",
+    "hp": "HP",
+    "critResist": "Crit Resist",
+    "defense": "Defense"
+  },
+  "panel": {
+    "layerSummary": "Layer Summary",
+    "activated": "Activated",
+    "totalBonus": "Total Bonus",
+    "ownershipStats": "Ownership Stats",
+    "ownedCharacters": "Owned Characters",
+    "ownershipRate": "Ownership Rate",
+    "activatedCells": "Activated Cells",
+    "cellCompletionRate": "Cell Completion",
+    "resourceSummary": "Resource Summary",
+    "currentLayerNeed": "Current Layer Need",
+    "allLayersNeed": "All Layers Need",
+    "currentLayerBonus": "Current Layer Bonus",
+    "allLayersBonus": "All Layers Bonus"
+  },
+  "settings": {
+    "title": "Character Settings",
+    "description": "Click character to toggle ownership",
+    "resetAll": "Reset All",
+    "close": "Close",
+    "confirmReset": "Reset all progress?",
+    "sortBy": "Sort by:",
+    "sortDefault": "Default",
+    "sortStars": "Stars",
+    "sortRole": "Role",
+    "sortPersonality": "Personality",
+    "sortAttackType": "Attack Type",
+    "sortDeployRow": "Deploy Row",
+    "sortRace": "Race",
+    "sortOrderAsc": "Ascending",
+    "sortOrderDesc": "Descending"
+  },
+  "footer": {
+    "description": "Created by nos",
+    "license": "MIT License",
+    "noCellsYet": "No cells yet",
+    "costPerCell": "Cost per Cell",
+    "bonusPerCell": "Bonus per Cell",
+    "totalBonus": "Total Bonus",
+    "crayonsNeeded": "Crayons Needed"
+  },
+  "catalog": {
+    "title": "Material Catalog",
+    "page": "Page {current} / {total}",
+    "searchLabel": "Quick Search",
+    "searchPlaceholder": "Enter material name",
+    "clear": "Clear Selection"
+  },
+  "plan": {
+    "title": "Optimal Energy Plan",
+    "empty": "No materials selected",
+    "summary": "Total {stages} stages",
+    "detailSummary": "Stage Details",
+    "energyPerStage": "Energy {energy}",
+    "warning": "{count} materials cannot be matched, please check data"
+  },
+  "loading": {
+    "data": "Loading game data..."
+  },
+  "common": {
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "yes": "Yes",
+    "no": "No",
+    "save": "Save",
+    "close": "Close"
+  },
+  "errors": {
+    "noData": "No data to display",
+    "noCellType": "Cell type not found",
+    "usingCachedData": "Cannot load latest data, using cached data.",
+    "loadFailed": "Failed to load data, please check your connection and try again."
+  }
+}
+

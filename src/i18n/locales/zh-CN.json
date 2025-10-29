@@ -1,0 +1,113 @@
+{
+  "nav": {
+    "title": "Trickcal 工具集",
+    "home": "首页",
+    "board": "金蜡笔笔记本",
+    "sweep": "扫荡工具",
+    "settings": "设置",
+    "theme": "切换主题",
+    "language": "简体中文"
+  },
+  "hero": {
+    "eyebrow": "Trickcal 工具集",
+    "title": "各种实用工具",
+    "description": "简单使用，方便快捷"
+  },
+  "tools": {
+    "heading": "工具列表",
+    "board": {
+      "name": "金蜡笔笔记本",
+      "description": "整理角色拥有状态、确认着色版格子需求与加成统计。"
+    },
+    "sweep": {
+      "name": "扫荡工具",
+      "description": "计算素材需求与每日扫荡路线，协助节省体力。"
+    }
+  },
+  "layers": {
+    "layer1": "第一层",
+    "layer2": "第二层",
+    "layer3": "第三层"
+  },
+  "cellTypes": {
+    "attack": "攻击力",
+    "crit": "暴击",
+    "hp": "HP",
+    "critResist": "暴击抵抗",
+    "defense": "防御力"
+  },
+  "panel": {
+    "layerSummary": "层级总览",
+    "activated": "已启动",
+    "totalBonus": "层级总加成",
+    "ownershipStats": "角色拥有概况",
+    "ownedCharacters": "已拥有角色",
+    "ownershipRate": "拥有率",
+    "activatedCells": "已启动格子",
+    "cellCompletionRate": "格子完成率",
+    "resourceSummary": "资源需求",
+    "currentLayerNeed": "当前层级需求",
+    "allLayersNeed": "全部层级需求",
+    "currentLayerBonus": "当前层级总加成",
+    "allLayersBonus": "全部层级总加成"
+  },
+  "settings": {
+    "title": "角色设置",
+    "description": "点击角色图片设定为已拥有/未拥有",
+    "resetAll": "重置全部",
+    "close": "关闭",
+    "confirmReset": "确定要重置所有进度吗？",
+    "sortBy": "排序方式：",
+    "sortDefault": "预设顺序",
+    "sortStars": "星级",
+    "sortRole": "类型",
+    "sortPersonality": "性格",
+    "sortAttackType": "攻击类型",
+    "sortDeployRow": "部署列",
+    "sortRace": "种族",
+    "sortOrderAsc": "升序",
+    "sortOrderDesc": "降序"
+  },
+  "footer": {
+    "description": "此工具由 nos 创作",
+    "license": "MIT License",
+    "noCellsYet": "尚无格子",
+    "costPerCell": "每格成本",
+    "bonusPerCell": "每格加成",
+    "totalBonus": "总加成",
+    "crayonsNeeded": "所需金蜡笔"
+  },
+  "catalog": {
+    "title": "素材图鉴",
+    "page": "第 {current} / {total} 页",
+    "searchLabel": "快速搜寻",
+    "searchPlaceholder": "输入素材名称",
+    "clear": "清除选择"
+  },
+  "plan": {
+    "title": "最省体力方案",
+    "empty": "尚未选择任何素材",
+    "summary": "共需 {stages} 个关卡",
+    "detailSummary": "关卡细节",
+    "energyPerStage": "体力 {energy}",
+    "warning": "有 {count} 个素材无法匹配任一关卡，请检查资料"
+  },
+  "loading": {
+    "data": "载入游戏数据..."
+  },
+  "common": {
+    "confirm": "确定",
+    "cancel": "取消",
+    "yes": "是",
+    "no": "否",
+    "save": "保存",
+    "close": "关闭"
+  },
+  "errors": {
+    "noData": "无数据可显示",
+    "noCellType": "无此格子类型",
+    "usingCachedData": "无法载入最新数据，正在使用缓存资料。",
+    "loadFailed": "载入数据失败，请检查网络连接后再试一次。"
+  }
+}
+

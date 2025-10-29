@@ -1,0 +1,121 @@
+{
+  "nav": {
+    "title": "Trickcal 工具集",
+    "home": "首頁",
+    "board": "金蠟筆筆記本",
+    "sweep": "掃蕩工具",
+    "settings": "設置",
+    "theme": "切換主題",
+    "language": "繁體中文",
+    "selectTool": "選擇工具",
+    "homeDescription": "工具集首頁",
+    "boardDescription": "角色管理與格子統計",
+    "sweepDescription": "素材需求計算"
+  },
+  "hero": {
+    "eyebrow": "Trickcal 工具集",
+    "title": "各種實用工具",
+    "description": "簡單使用，方便快捷"
+  },
+  "tools": {
+    "heading": "工具列表",
+    "board": {
+      "name": "金蠟筆記錄本",
+      "description": "整理角色擁有狀態、確認著色版格子需求與加成統計。"
+    },
+    "sweep": {
+      "name": "掃蕩工具",
+      "description": "計算素材需求與每日掃蕩路線，協助節省體力。"
+    }
+  },
+  "layers": {
+    "layer1": "第一層",
+    "layer2": "第二層",
+    "layer3": "第三層"
+  },
+  "cellTypes": {
+    "attack": "攻擊力",
+    "crit": "暴擊",
+    "hp": "HP",
+    "critResist": "暴擊抵抗",
+    "defense": "防禦力"
+  },
+  "board": {
+    "layerPanel": "層級選擇",
+    "statsPanel": "統計資訊"
+  },
+  "panel": {
+    "layerSummary": "層級總覽",
+    "activated": "已啟動",
+    "totalBonus": "層級總加成",
+    "ownershipStats": "角色擁有概況",
+    "ownedCharacters": "已擁有角色",
+    "ownershipRate": "擁有率",
+    "activatedCells": "已啟動格子",
+    "cellCompletionRate": "格子完成率",
+    "resourceSummary": "資源需求",
+    "currentLayerNeed": "當前層級需求",
+    "allLayersNeed": "全部層級需求",
+    "currentLayerBonus": "當前層級總加成",
+    "allLayersBonus": "全部層級總加成"
+  },
+  "settings": {
+    "title": "角色設置",
+    "description": "點擊角色圖片設定為已擁有/未擁有",
+    "resetAll": "重置全部",
+    "close": "關閉",
+    "confirmReset": "確定要重置所有進度嗎？",
+    "sortBy": "排序方式：",
+    "sortDefault": "預設順序",
+    "sortStars": "星級",
+    "sortRole": "類型",
+    "sortPersonality": "性格",
+    "sortAttackType": "攻擊類型",
+    "sortDeployRow": "部署列",
+    "sortRace": "種族",
+    "sortOrderAsc": "升序",
+    "sortOrderDesc": "降序"
+  },
+  "footer": {
+    "description": "此工具由 nos 創作",
+    "license": "MIT License",
+    "noCellsYet": "尚無格子",
+    "costPerCell": "每格成本",
+    "bonusPerCell": "每格加成",
+    "totalBonus": "總加成",
+    "crayonsNeeded": "所需金蠟筆"
+  },
+  "catalog": {
+    "title": "素材圖鑑",
+    "page": "第 {current} / {total} 頁",
+    "searchLabel": "快速搜尋",
+    "searchPlaceholder": "輸入素材名稱",
+    "clear": "清除選擇"
+  },
+  "plan": {
+    "title": "最省體力方案",
+    "empty": "尚未選擇任何素材",
+    "summary": "共需 {stages} 個關卡",
+    "detailSummary": "關卡細節",
+    "energyPerStage": "體力 {energy}",
+    "warning": "有 {count} 個素材無法匹配任一關卡，請檢查資料"
+  },
+  "loading": {
+    "data": "載入遊戲數據..."
+  },
+  "common": {
+    "confirm": "確定",
+    "cancel": "取消",
+    "yes": "是",
+    "no": "否",
+    "save": "保存",
+    "close": "關閉"
+  },
+  "errors": {
+    "noData": "無數據可顯示",
+    "noCellType": "無此格子類型",
+    "usingCachedData": "無法載入最新數據，正在使用緩存資料。",
+    "loadFailed": "載入數據失敗，請檢查網路連線後再試一次。"
+  }
+}
+

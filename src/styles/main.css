@@ -1,0 +1,292 @@
+/* ===== 全局樣式 ===== */
+
+/* ===== 字體定義 ===== */
+@font-face {
+  font-family: "TrickcalCJK";
+  src: url("/assets/fonts/荆南波波黑-BOLD.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* CSS 變數 - 明亮主題 */
+:root {
+  /* 字體 */
+  --site-font: "TrickcalCJK", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  /* 顏色 */
+  --primary-color: #ff5f72;
+  --primary-hover: #ff4562;
+  --primary-bg: rgba(255, 95, 114, 0.1);
+  --success-color: #51cf66;
+  --success-bg: rgba(81, 207, 102, 0.1);
+  --warning-color: #ffd93d;
+  --warning-bg: rgba(255, 217, 61, 0.1);
+  --warning-text: #c87e00;
+  --star-color: #ffd93d;
+  
+  /* 性格背景顏色 */
+  --personality-cool-bg: #85daec;
+  --personality-mad-bg: #eb817f;
+  --personality-naive-bg: #85d775;
+  --personality-jolly-bg: #ebda56;
+  --personality-gloomy-bg: #a083e7;
+  
+  /* 背景 */
+  --body-bg: #f8f9fa;
+  --card-bg: rgba(255, 255, 255, 0.95);
+  --panel-bg: rgba(248, 249, 250, 0.5);
+  --header-bg: rgba(255, 255, 255, 0.8);
+  --footer-bg: rgba(255, 255, 255, 0.8);
+  --overlay-bg: rgba(255, 255, 255, 0.7);
+  --hover-bg: rgba(0, 0, 0, 0.05);
+  --button-bg: rgba(0, 0, 0, 0.03);
+  --button-hover: rgba(0, 0, 0, 0.08);
+  --input-bg: white;
+  --image-bg: rgba(0, 0, 0, 0.02);
+  --placeholder-bg: rgba(0, 0, 0, 0.05);
+  --chip-bg: rgba(0, 0, 0, 0.03);
+  --chip-hover: rgba(0, 0, 0, 0.08);
+  --progress-bg: rgba(0, 0, 0, 0.1);
+  --secondary-bg: rgba(0, 0, 0, 0.05);
+  --secondary-hover: rgba(0, 0, 0, 0.1);
+  
+  /* 文字 */
+  --text-primary: #212529;
+  --text-secondary: #868e96;
+  --text-tertiary: #adb5bd;
+  
+  /* 邊框 */
+  --border-color: rgba(0, 0, 0, 0.1);
+  
+  /* 陰影 */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* CSS 變數 - 深色主題 */
+[data-theme="dark"] {
+  /* 顏色 */
+  --primary-color: #ff5f72;
+  --primary-hover: #ff7a8a;
+  --primary-bg: rgba(255, 95, 114, 0.15);
+  --success-color: #51cf66;
+  --success-bg: rgba(81, 207, 102, 0.15);
+  --warning-color: #ffd93d;
+  --warning-bg: rgba(255, 217, 61, 0.15);
+  --warning-text: #ffd93d;
+  --star-color: #ffd93d;
+  
+  /* 背景 */
+  --body-bg: #1a1a1a;
+  --card-bg: rgba(30, 30, 30, 0.95);
+  --panel-bg: rgba(40, 40, 40, 0.5);
+  --header-bg: rgba(30, 30, 30, 0.8);
+  --footer-bg: rgba(30, 30, 30, 0.8);
+  --overlay-bg: rgba(0, 0, 0, 0.5);
+  --hover-bg: rgba(255, 255, 255, 0.05);
+  --button-bg: rgba(255, 255, 255, 0.05);
+  --button-hover: rgba(255, 255, 255, 0.1);
+  --input-bg: rgba(255, 255, 255, 0.05);
+  --image-bg: rgba(255, 255, 255, 0.02);
+  --placeholder-bg: rgba(255, 255, 255, 0.05);
+  --chip-bg: rgba(255, 255, 255, 0.05);
+  --chip-hover: rgba(255, 255, 255, 0.1);
+  --progress-bg: rgba(255, 255, 255, 0.1);
+  --secondary-bg: rgba(255, 255, 255, 0.05);
+  --secondary-hover: rgba(255, 255, 255, 0.1);
+  
+  /* 文字 */
+  --text-primary: #f8f9fa;
+  --text-secondary: #adb5bd;
+  --text-tertiary: #868e96;
+  
+  /* 邊框 */
+  --border-color: rgba(255, 255, 255, 0.1);
+  
+  /* 陰影 */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* ===== 基礎樣式 ===== */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--site-font);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--body-bg);
+  color: var(--text-primary);
+  font-family: var(--site-font);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: var(--site-font);
+}
+
+#app {
+  min-height: 100vh;
+}
+
+/* ===== 滾動條樣式 ===== */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--panel-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-tertiary);
+}
+
+/* ===== 工具類 ===== */
+
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.text-tertiary {
+  color: var(--text-tertiary);
+}
+
+.bg-card {
+  background: var(--card-bg);
+}
+
+.bg-panel {
+  background: var(--panel-bg);
+}
+
+/* ===== 動畫 ===== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.slide-up {
+  animation: slideUp 0.3s ease-out;
+}
+
+.slide-down {
+  animation: slideDown 0.3s ease-out;
+}
+
+/* ===== 響應式 ===== */
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+/* ===== 輔助功能 ===== */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* ===== Vue 過渡效果 ===== */
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.slide-fade-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateY(20px);
+  opacity: 0;
+}
+

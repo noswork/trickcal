@@ -1,0 +1,113 @@
+{
+  "nav": {
+    "title": "Trickcal ツール",
+    "home": "ホーム",
+    "board": "クレヨンボード",
+    "sweep": "スイープツール",
+    "settings": "設定",
+    "theme": "テーマ切替",
+    "language": "日本語"
+  },
+  "hero": {
+    "eyebrow": "Trickcal ツール",
+    "title": "便利なツール",
+    "description": "シンプルで便利"
+  },
+  "tools": {
+    "heading": "ツール一覧",
+    "board": {
+      "name": "ゴールドクレヨンボード",
+      "description": "キャラクターの所有状況を管理し、ボードの進捗を追跡し、ボーナスを計算します。"
+    },
+    "sweep": {
+      "name": "スイープツール",
+      "description": "素材の必要量と毎日のスイープルートを計算してエネルギーを節約します。"
+    }
+  },
+  "layers": {
+    "layer1": "第1層",
+    "layer2": "第2層",
+    "layer3": "第3層"
+  },
+  "cellTypes": {
+    "attack": "攻撃力",
+    "crit": "クリティカル",
+    "hp": "HP",
+    "critResist": "クリティカル抵抗",
+    "defense": "防御力"
+  },
+  "panel": {
+    "layerSummary": "層の概要",
+    "activated": "アクティブ",
+    "totalBonus": "合計ボーナス",
+    "ownershipStats": "所有統計",
+    "ownedCharacters": "所有キャラクター",
+    "ownershipRate": "所有率",
+    "activatedCells": "アクティブセル",
+    "cellCompletionRate": "セル完了率",
+    "resourceSummary": "リソース概要",
+    "currentLayerNeed": "現在の層の必要量",
+    "allLayersNeed": "全層の必要量",
+    "currentLayerBonus": "現在の層のボーナス",
+    "allLayersBonus": "全層のボーナス"
+  },
+  "settings": {
+    "title": "キャラクター設定",
+    "description": "キャラクターをクリックして所有状態を切り替え",
+    "resetAll": "すべてリセット",
+    "close": "閉じる",
+    "confirmReset": "すべての進捗をリセットしますか？",
+    "sortBy": "並べ替え：",
+    "sortDefault": "デフォルト",
+    "sortStars": "星",
+    "sortRole": "役割",
+    "sortPersonality": "性格",
+    "sortAttackType": "攻撃タイプ",
+    "sortDeployRow": "配置列",
+    "sortRace": "種族",
+    "sortOrderAsc": "昇順",
+    "sortOrderDesc": "降順"
+  },
+  "footer": {
+    "description": "nos によって作成",
+    "license": "MIT License",
+    "noCellsYet": "セルなし",
+    "costPerCell": "セルあたりのコスト",
+    "bonusPerCell": "セルあたりのボーナス",
+    "totalBonus": "合計ボーナス",
+    "crayonsNeeded": "必要なクレヨン"
+  },
+  "catalog": {
+    "title": "素材カタログ",
+    "page": "{current} / {total} ページ",
+    "searchLabel": "クイック検索",
+    "searchPlaceholder": "素材名を入力",
+    "clear": "選択をクリア"
+  },
+  "plan": {
+    "title": "最適エネルギープラン",
+    "empty": "素材が選択されていません",
+    "summary": "合計 {stages} ステージ",
+    "detailSummary": "ステージ詳細",
+    "energyPerStage": "エネルギー {energy}",
+    "warning": "{count} 個の素材が一致しません、データを確認してください"
+  },
+  "loading": {
+    "data": "ゲームデータを読み込み中..."
+  },
+  "common": {
+    "confirm": "確認",
+    "cancel": "キャンセル",
+    "yes": "はい",
+    "no": "いいえ",
+    "save": "保存",
+    "close": "閉じる"
+  },
+  "errors": {
+    "noData": "表示するデータがありません",
+    "noCellType": "セルタイプが見つかりません",
+    "usingCachedData": "最新データを読み込めません、キャッシュデータを使用しています。",
+    "loadFailed": "データの読み込みに失敗しました、接続を確認してもう一度お試しください。"
+  }
+}
+
