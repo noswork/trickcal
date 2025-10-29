@@ -102,28 +102,28 @@ const personalityClass = computed(() => {
 
 const personalityIcon = computed(() => {
   const icons: Record<string, string> = {
-    '天真': 'assets/icons/unit_personality_naive.png',
-    '冷靜': 'assets/icons/unit_personality_cool.png',
-    '憂鬱': 'assets/icons/unit_personality_gloomy.png',
-    '活潑': 'assets/icons/unit_personality_jolly.png',
-    '狂亂': 'assets/icons/unit_personality_mad.png'
+    '天真': 'assets/icons/unit_personality_naive.webp',
+    '冷靜': 'assets/icons/unit_personality_cool.webp',
+    '憂鬱': 'assets/icons/unit_personality_gloomy.webp',
+    '活潑': 'assets/icons/unit_personality_jolly.webp',
+    '狂亂': 'assets/icons/unit_personality_mad.webp'
   }
   return icons[props.character.personality] || ''
 })
 
 const attackTypeIcon = computed(() => {
   const icons: Record<string, string> = {
-    '物理': 'assets/icons/unit_attack_physic.png',
-    '魔法': 'assets/icons/unit_attack_magic.png'
+    '物理': 'assets/icons/unit_attack_physic.webp',
+    '魔法': 'assets/icons/unit_attack_magic.webp'
   }
   return icons[props.character.attackType] || ''
 })
 
 const deployRowIcon = computed(() => {
   const icons: Record<string, string> = {
-    '前排': 'assets/icons/unit_position_front.png',
-    '中排': 'assets/icons/unit_position_middle.png',
-    '後排': 'assets/icons/unit_position_back.png'
+    '前排': 'assets/icons/unit_position_front.webp',
+    '中排': 'assets/icons/unit_position_middle.webp',
+    '後排': 'assets/icons/unit_position_back.webp'
   }
   return icons[props.character.deployRow] || ''
 })
@@ -186,7 +186,7 @@ function handleImageError(event: Event) {
   right: 3px;
   width: 18px;
   height: 18px;
-  background-image: url('/assets/icons/check.png');
+  background-image: url('/assets/icons/check.webp');
   background-size: 12px 12px;
   background-repeat: no-repeat;
   background-position: center;

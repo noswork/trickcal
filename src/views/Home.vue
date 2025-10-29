@@ -35,7 +35,7 @@
 
             <router-link to="/sweep" class="tool-card">
               <div class="tool-icon">
-                <img :src="getAssetUrl('assets/favicons/favicon.png')" alt="" />
+                <img :src="getAssetUrl('assets/favicons/favicon.webp')" alt="" />
               </div>
               <div>
                 <h3>{{ $t('tools.sweep.name') }}</h3>

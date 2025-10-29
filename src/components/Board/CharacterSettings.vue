@@ -127,28 +127,28 @@ function personalityClass(personality: string) {
 
 function personalityIcon(personality: string) {
   const icons: Record<string, string> = {
-    '天真': 'assets/icons/unit_personality_naive.png',
-    '冷靜': 'assets/icons/unit_personality_cool.png',
-    '憂鬱': 'assets/icons/unit_personality_gloomy.png',
-    '活潑': 'assets/icons/unit_personality_jolly.png',
-    '狂亂': 'assets/icons/unit_personality_mad.png'
+    '天真': 'assets/icons/unit_personality_naive.webp',
+    '冷靜': 'assets/icons/unit_personality_cool.webp',
+    '憂鬱': 'assets/icons/unit_personality_gloomy.webp',
+    '活潑': 'assets/icons/unit_personality_jolly.webp',
+    '狂亂': 'assets/icons/unit_personality_mad.webp'
   }
   return icons[personality] || ''
 }
 
 function attackTypeIcon(attackType: string) {
   const icons: Record<string, string> = {
-    '物理': 'assets/icons/unit_attack_physic.png',
-    '魔法': 'assets/icons/unit_attack_magic.png'
+    '物理': 'assets/icons/unit_attack_physic.webp',
+    '魔法': 'assets/icons/unit_attack_magic.webp'
   }
   return icons[attackType] || ''
 }
 
 function deployRowIcon(deployRow: string) {
   const icons: Record<string, string> = {
-    '前排': 'assets/icons/unit_position_front.png',
-    '中排': 'assets/icons/unit_position_middle.png',
-    '後排': 'assets/icons/unit_position_back.png'
+    '前排': 'assets/icons/unit_position_front.webp',
+    '中排': 'assets/icons/unit_position_middle.webp',
+    '後排': 'assets/icons/unit_position_back.webp'
   }
   return icons[deployRow] || ''
 }

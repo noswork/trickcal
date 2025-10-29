@@ -35,11 +35,11 @@ const boardStore = useBoardStore()
 
 const cellTypeData = computed(() => {
   const types: Record<string, { icon: string; color: string }> = {
-    attack: { icon: 'assets/icons/board_atk.png', color: '#ff6b6b' },
-    crit: { icon: 'assets/icons/board_crit.png', color: '#fab005' },
-    hp: { icon: 'assets/icons/board_hp.png', color: '#ff8787' },
-    critResist: { icon: 'assets/icons/board_critResist.png', color: '#74c0fc' },
-    defense: { icon: 'assets/icons/board_def.png', color: '#da77f2' }
+    attack: { icon: 'assets/icons/board_atk.webp', color: '#ff6b6b' },
+    crit: { icon: 'assets/icons/board_crit.webp', color: '#fab005' },
+    hp: { icon: 'assets/icons/board_hp.webp', color: '#ff8787' },
+    critResist: { icon: 'assets/icons/board_critResist.webp', color: '#74c0fc' },
+    defense: { icon: 'assets/icons/board_def.webp', color: '#da77f2' }
   }
   return types[props.cellType] || { icon: '', color: '#666' }
 })
@@ -74,7 +74,7 @@ function handleImageError(event: Event) {
   align-items: center;
   justify-content: center;
   border-radius: 8px;
-  background-image: url('/assets/icons/board_base_3.png');
+  background-image: url('/assets/icons/board_base_3.webp');
   background-size: cover;
   background-position: center;
 }

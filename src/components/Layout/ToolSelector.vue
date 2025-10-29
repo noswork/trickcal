@@ -84,7 +84,7 @@ const tools = [
     name: 'Home',
     nameKey: 'nav.home',
     descriptionKey: 'nav.homeDescription',
-    icon: 'assets/icons/home.png',
+    icon: 'assets/icons/home.webp',
     badge: null as string | null
   },
   {
@@ -92,7 +92,7 @@ const tools = [
     name: 'Board',
     nameKey: 'nav.board',
     descriptionKey: 'nav.boardDescription',
-    icon: 'assets/icons/gold_crayon.png',
+    icon: 'assets/icons/gold_crayon.webp',
     badge: null as string | null
   },
   {
@@ -100,7 +100,7 @@ const tools = [
     name: 'Sweep',
     nameKey: 'nav.sweep',
     descriptionKey: 'nav.sweepDescription',
-    icon: 'assets/icons/sweep.png',
+    icon: 'assets/icons/sweep.webp',
     badge: null as string | null
   }
 ]

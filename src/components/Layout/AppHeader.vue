@@ -3,7 +3,7 @@
     <nav class="site-nav">
       <div class="nav-brand">
         <router-link to="/" class="brand-link">
-          <img :src="getAssetUrl('assets/favicons/favicon.png')" alt="Trickcal" class="brand-icon" />
+          <img :src="getAssetUrl('assets/favicons/favicon.webp')" alt="Trickcal" class="brand-icon" />
           <span class="brand-text">{{ $t('nav.title') }}</span>
         </router-link>
       </div>
