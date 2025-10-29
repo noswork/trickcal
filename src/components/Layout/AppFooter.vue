@@ -7,7 +7,7 @@
       </p>
       <p class="footer-text">
         <span class="footer-label">{{ $t('footer.copyright') }}：</span>
-        <span class="footer-value">EpidGames</span>
+        <span class="footer-value">EpidGames&Bilibili</span>
       </p>
       <p class="footer-text">
         <span class="footer-label">Discord：</span>
