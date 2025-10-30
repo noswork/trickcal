@@ -136,6 +136,20 @@
     "veryLike": "非常喜歡",
     "like": "喜歡",
     "dislike": "不喜歡"
+  },
+  "changelog": {
+    "title": "開發日誌",
+    "description": "記錄專案的更新與改進歷程",
+    "latestVersion": "最新版本",
+    "loading": "載入中...",
+    "error": "載入失敗",
+    "noEntries": "目前沒有開發日誌",
+    "types": {
+      "feature": "新功能",
+      "fix": "修復",
+      "improvement": "改進",
+      "breaking": "重大變更"
+    }
   }
 }
 
