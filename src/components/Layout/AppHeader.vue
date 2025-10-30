@@ -25,6 +25,9 @@
         <router-link to="/sweep" class="nav-link" active-class="active" @click="closeMobileMenu">
           {{ $t('nav.sweep') }}
         </router-link>
+        <router-link to="/food" class="nav-link" active-class="active" @click="closeMobileMenu">
+          {{ $t('nav.food') }}
+        </router-link>
       </div>
 
       <div class="nav-actions">
