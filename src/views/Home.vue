@@ -18,6 +18,21 @@
           </div>
         </section>
 
+        <section class="video-section">
+          <div class="video-container">
+            <iframe 
+              width="560" 
+              height="315" 
+              src="https://www.youtube-nocookie.com/embed/VZ6VLYbBzGM" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+        </section>
+
         <section class="tool-section">
           <header>
             <h2 class="section-title">{{ $t('tools.heading') }}</h2>
@@ -148,6 +163,32 @@ function handleToolClick(toolName: string) {
   line-height: 1.6;
 }
 
+.video-section {
+  max-width: 900px;
+  margin: 0 auto 4rem;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 16px;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 16px;
+}
+
 .tool-section {
   max-width: 900px;
   margin: 0 auto;
@@ -227,6 +268,18 @@ function handleToolClick(toolName: string) {
 
   .hero-description {
     font-size: 1rem;
+  }
+
+  .video-section {
+    margin-bottom: 3rem;
+  }
+
+  .video-container {
+    border-radius: 12px;
+  }
+
+  .video-container iframe {
+    border-radius: 12px;
   }
 
   .tool-grid {
