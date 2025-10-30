@@ -11,7 +11,7 @@
       </p>
       <p class="footer-text">
         <span class="footer-label">Discord：</span>
-        <a href="https://discord.com/users/nos1130" target="_blank" rel="noopener noreferrer" class="footer-link">nos1130</a>
+        <a href="https://discord.com/users/noswork" target="_blank" rel="noopener noreferrer" class="footer-link">noswork</a>
       </p>
     </div>
   </footer>
