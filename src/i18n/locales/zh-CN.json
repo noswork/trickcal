@@ -132,6 +132,20 @@
     "veryLike": "非常喜欢",
     "like": "喜欢",
     "dislike": "不喜欢"
+  },
+  "changelog": {
+    "title": "开发日志",
+    "description": "追踪项目的更新与改进",
+    "latestVersion": "最新版本",
+    "loading": "载入中...",
+    "error": "载入失败",
+    "noEntries": "目前没有开发日志",
+    "types": {
+      "feature": "新功能",
+      "fix": "修复",
+      "improvement": "改进",
+      "breaking": "重大变更"
+    }
   }
 }
 

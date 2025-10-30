@@ -26,6 +26,12 @@ const routes: RouteRecordRaw[] = [
     meta: { title: '食物喜好' }
   },
   {
+    path: '/changelog',
+    name: 'Changelog',
+    component: () => import('@/views/Changelog.vue'),
+    meta: { title: '開發日誌' }
+  },
+  {
     path: '/:pathMatch(.*)*',
     redirect: '/'
   }

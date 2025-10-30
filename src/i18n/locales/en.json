@@ -132,6 +132,20 @@
     "veryLike": "Love",
     "like": "Like",
     "dislike": "Dislike"
+  },
+  "changelog": {
+    "title": "Changelog",
+    "description": "Track project updates and improvements",
+    "latestVersion": "Latest Version",
+    "loading": "Loading...",
+    "error": "Failed to load",
+    "noEntries": "No changelog entries yet",
+    "types": {
+      "feature": "Feature",
+      "fix": "Fix",
+      "improvement": "Improvement",
+      "breaking": "Breaking Change"
+    }
   }
 }
 
