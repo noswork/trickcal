@@ -94,7 +94,17 @@
     "page": "Page {current} / {total}",
     "searchLabel": "Quick Search",
     "searchPlaceholder": "Enter material name",
-    "clear": "Clear Selection"
+    "clear": "Clear Selection",
+    "rankFilterLabel": "Rank Filter",
+    "selectAll": "Select All",
+    "deselectAll": "Deselect All",
+    "rank1": "R1 Basic Materials",
+    "rank2": "R2 Blueprints",
+    "rank3": "R3 Blueprints",
+    "rank4": "R4 Blueprints",
+    "rank5": "R5 Blueprints",
+    "rank6": "R6 Blueprints",
+    "rank7": "R7 Blueprints"
   },
   "plan": {
     "title": "Optimal Energy Plan",
@@ -102,7 +112,9 @@
     "summary": "Total {stages} stages",
     "detailSummary": "Stage Details",
     "energyPerStage": "Energy {energy}",
-    "warning": "{count} materials cannot be matched, please check data"
+    "warning": "{count} materials cannot be matched, please check data",
+    "alternativeStagesHint": "💡 If you want to farm equipment blueprints too, consider these stages:",
+    "blueprints": "Equipment Blueprints"
   },
   "loading": {
     "data": "Loading game data..."

@@ -30,14 +30,16 @@
             </div>
           </header>
 
-          <div class="search-row">
-            <label for="material-search">{{ $t('catalog.searchLabel') }}</label>
-            <input
-              id="material-search"
-              v-model="searchTerm"
-              type="search"
-              :placeholder="$t('catalog.searchPlaceholder')"
-            />
+          <div class="filter-section">
+            <div class="search-row">
+              <label for="material-search">{{ $t('catalog.searchLabel') }}</label>
+              <input
+                id="material-search"
+                v-model="searchTerm"
+                type="search"
+                :placeholder="$t('catalog.searchPlaceholder')"
+              />
+            </div>
           </div>
 
           <div class="catalog-grid">
@@ -73,19 +75,49 @@
             <details class="plan-details" open>
               <summary>{{ $t('plan.detailSummary') }}</summary>
               <ul class="stage-list">
-                <li v-for="stage in sweepStore.plan" :key="stage">
-                  <div class="stage-header">
-                    <span>{{ stage }}</span>
-                    <span>{{ $t('plan.energyPerStage', { energy: 10 }) }}</span>
-                  </div>
-                  <div class="stage-materials">
-                    <MaterialChip
-                      v-for="material in getStageMaterials(stage)"
-                      :key="material"
-                      :material-name="material"
-                      @click="toggleMaterial(material)"
-                    />
-                  </div>
+                <li v-for="stage in sweepStore.plan" :key="stage" class="stage-item">
+                  <details class="stage-details" open>
+                    <summary class="stage-header">
+                      <div class="stage-title">
+                        <span>{{ stage }}</span>
+                      </div>
+                      <span class="stage-energy">{{ $t('plan.energyPerStage', { energy: 10 }) }}</span>
+                    </summary>
+                    
+                    <div class="stage-content">
+                      <div class="stage-materials">
+                        <MaterialChip
+                          v-for="material in getStageMaterials(stage)"
+                          :key="material"
+                          :material-name="material"
+                          @click="toggleMaterial(material)"
+                        />
+                      </div>
+                      
+                      <!-- 顯示替代關卡信息 -->
+                      <div v-if="sweepStore.alternativeStages.has(stage)" class="alternative-stages">
+                        <div class="alternative-header">
+                          {{ $t('plan.alternativeStagesHint') }}
+                        </div>
+                        <div class="alternative-stages-scroll">
+                          <div 
+                            v-for="alt in sweepStore.alternativeStages.get(stage)" 
+                            :key="alt.stage"
+                            class="alternative-item"
+                          >
+                            <div class="alternative-stage-name">{{ alt.stage }}</div>
+                            <div class="alternative-blueprints">
+                              <MaterialChip
+                                v-for="materialName in alt.materials"
+                                :key="materialName"
+                                :material-name="materialName"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </details>
                 </li>
               </ul>
             </details>
@@ -115,19 +147,22 @@ const currentPage = ref(1)
 const pageSize = 24
 
 const filteredMaterials = computed(() => {
-  if (!searchTerm.value) return sweepStore.materials
+  // 根據搜索詞過濾
+  let filtered = sweepStore.materials
   
-  const term = searchTerm.value.toLowerCase()
-  const filtered = sweepStore.materials.filter(name => 
-    name.toLowerCase().includes(term)
-  )
-  
-  // 搜索時重置到第一頁
-  if (currentPage.value > 1) {
-    currentPage.value = 1
+  if (searchTerm.value) {
+    const term = searchTerm.value.toLowerCase()
+    filtered = filtered.filter(name => 
+      name.toLowerCase().includes(term)
+    )
   }
   
   return filtered
+})
+
+// 監聽搜索條件變化，重置到第一頁
+watch(searchTerm, () => {
+  currentPage.value = 1
 })
 
 const totalPages = computed(() => 
@@ -222,7 +257,7 @@ watch(searchTerm, (value) => {
   margin: 0 auto;
   padding: 2rem;
   display: grid;
-  grid-template-columns: 1fr 400px;
+  grid-template-columns: 1fr 480px;
   gap: 2rem;
 }
 
@@ -230,17 +265,17 @@ watch(searchTerm, (value) => {
   background: var(--card-bg);
   border: 1px solid var(--border-color);
   border-radius: 16px;
-  padding: 2rem;
+  padding: 1.5rem;
   backdrop-filter: blur(10px);
 }
 
 .panel header {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .panel header h2 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 600;
   color: var(--text-primary);
 }
@@ -299,11 +334,14 @@ watch(searchTerm, (value) => {
   white-space: nowrap;
 }
 
+.filter-section {
+  margin-bottom: 1.5rem;
+}
+
 .search-row {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  margin-bottom: 1.5rem;
 }
 
 .search-row label {
@@ -343,35 +381,36 @@ watch(searchTerm, (value) => {
 }
 
 .plan-summary {
-  padding: 1.5rem;
+  padding: 1rem;
   background: var(--panel-bg);
-  border-radius: 12px;
+  border-radius: 8px;
   text-align: center;
   color: var(--text-secondary);
-  font-size: 0.875rem;
-  margin-bottom: 1rem;
+  font-size: 0.8125rem;
+  margin-bottom: 0.75rem;
 }
 
 .plan-warning {
-  padding: 1rem;
+  padding: 0.75rem;
   background: var(--warning-bg);
-  border-left: 4px solid var(--warning-color);
-  border-radius: 8px;
+  border-left: 3px solid var(--warning-color);
+  border-radius: 6px;
   color: var(--warning-text);
-  font-size: 0.875rem;
-  margin-bottom: 1rem;
+  font-size: 0.8125rem;
+  margin-bottom: 0.75rem;
 }
 
 .plan-details {
   background: var(--panel-bg);
-  border-radius: 12px;
-  padding: 1rem;
+  border-radius: 8px;
+  padding: 0.75rem;
 }
 
 .plan-details summary {
   font-weight: 600;
   color: var(--text-primary);
-  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
 }
 
 .stage-list {
@@ -381,31 +420,149 @@ watch(searchTerm, (value) => {
 }
 
 .stage-list li {
-  padding: 1rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
   background: var(--card-bg);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 .stage-list li:last-child {
   margin-bottom: 0;
 }
 
+.stage-details {
+  border: none;
+}
+
+.stage-details[open] > summary::before {
+  transform: rotate(90deg);
+}
+
 .stage-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 0.75rem;
+  padding: 0.75rem;
   font-weight: 600;
   color: var(--text-primary);
   font-size: 0.875rem;
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+  position: relative;
+}
+
+.stage-header::-webkit-details-marker {
+  display: none;
+}
+
+.stage-header::before {
+  content: '▶';
+  position: absolute;
+  left: -0.5rem;
+  font-size: 0.625rem;
+  color: var(--text-secondary);
+  transition: transform 0.2s ease;
+}
+
+.stage-header:hover {
+  background: var(--panel-bg);
+}
+
+.stage-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.stage-energy {
+  color: var(--text-secondary);
+}
+
+.stage-content {
+  padding: 0 0.75rem 0.75rem 0.75rem;
 }
 
 .stage-materials {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+}
+
+.alternative-stages {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed var(--border-color);
+}
+
+.alternative-header {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.alternative-stages .alternative-stages-scroll {
+  max-height: 200px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 0.5rem;
+}
+
+.alternative-stages-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.alternative-stages-scroll::-webkit-scrollbar-track {
+  background: var(--panel-bg);
+  border-radius: 3px;
+}
+
+.alternative-stages-scroll::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 3px;
+}
+
+.alternative-stages-scroll::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+.alternative-stages .alternative-item {
+  padding: 0.5rem;
+  background: var(--panel-bg);
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100%;
+  min-width: 0;
+}
+
+.alternative-stage-name {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 0.375rem;
+}
+
+.alternative-blueprints {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.375rem;
+  flex: 1;
+}
+
+.alternative-blueprints .material-chip {
+  padding: 0.25rem;
+}
+
+.alternative-blueprints .material-chip img {
+  width: 32px;
+  height: 32px;
 }
 
 @media (max-width: 1200px) {

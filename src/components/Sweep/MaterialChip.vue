@@ -1,11 +1,10 @@
 <template>
-  <div class="material-chip" @click="$emit('click')">
+  <div class="material-chip" @click="$emit('click')" :title="materialName">
     <img
       :src="getGearImageUrl(materialName)"
       :alt="materialName"
       @error="handleImageError"
     />
-    <span>{{ materialName }}</span>
   </div>
 </template>
 
@@ -30,30 +29,26 @@ function handleImageError(event: Event) {
 .material-chip {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 0.75rem;
+  justify-content: center;
+  padding: 0.375rem;
   background: var(--chip-bg);
   border: 1px solid var(--border-color);
-  border-radius: 50px;
-  font-size: 0.75rem;
-  color: var(--text-primary);
+  border-radius: 6px;
   transition: all 0.2s;
+  cursor: pointer;
 }
 
 .material-chip:hover {
   background: var(--chip-hover);
   border-color: var(--primary-color);
+  transform: scale(1.05);
 }
 
 .material-chip img {
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
-  flex-shrink: 0;
-}
-
-.material-chip span {
-  white-space: nowrap;
+  display: block;
 }
 </style>
 
