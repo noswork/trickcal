@@ -46,6 +46,10 @@
     "critResist": "暴击抵抗",
     "defense": "防御力"
   },
+  "board": {
+    "layerPanel": "层级选择",
+    "statsPanel": "统计信息"
+  },
   "panel": {
     "layerSummary": "层级总览",
     "activated": "已启动",
@@ -66,21 +70,9 @@
     "description": "点击角色图片设定为已拥有/未拥有",
     "resetAll": "重置全部",
     "close": "关闭",
-    "confirmReset": "确定要重置所有进度吗？",
-    "sortBy": "排序方式：",
-    "sortDefault": "预设顺序",
-    "sortStars": "星级",
-    "sortRole": "类型",
-    "sortPersonality": "性格",
-    "sortAttackType": "攻击类型",
-    "sortDeployRow": "部署列",
-    "sortRace": "种族",
-    "sortOrderAsc": "升序",
-    "sortOrderDesc": "降序"
+    "confirmReset": "确定要重置所有进度吗？"
   },
   "footer": {
-    "description": "此工具由 nos 创作",
-    "noCellsYet": "尚无格子",
     "costPerCell": "每格成本",
     "bonusPerCell": "每格加成",
     "totalBonus": "总加成",
@@ -94,17 +86,7 @@
     "page": "第 {current} / {total} 页",
     "searchLabel": "快速搜寻",
     "searchPlaceholder": "输入素材名称",
-    "clear": "清除选择",
-    "rankFilterLabel": "阶级筛选",
-    "selectAll": "全选",
-    "deselectAll": "全不选",
-    "rank1": "R1 基础材料",
-    "rank2": "R2 图纸",
-    "rank3": "R3 图纸",
-    "rank4": "R4 图纸",
-    "rank5": "R5 图纸",
-    "rank6": "R6 图纸",
-    "rank7": "R7 图纸"
+    "clear": "清除选择"
   },
   "plan": {
     "title": "最省体力方案",
@@ -113,25 +95,10 @@
     "detailSummary": "关卡细节",
     "energyPerStage": "体力 {energy}",
     "warning": "有 {count} 个素材无法匹配任一关卡，请检查数据",
-    "alternativeStagesHint": "💡 若想顺便刷其他装备图纸，可以考虑以下关卡：",
-    "blueprints": "装备图纸"
-  },
-  "loading": {
-    "data": "载入游戏数据..."
-  },
-  "common": {
-    "confirm": "确定",
-    "cancel": "取消",
-    "yes": "是",
-    "no": "否",
-    "save": "保存",
-    "close": "关闭"
+    "alternativeStagesHint": "💡 若想顺便刷其他装备图纸，可以考虑以下关卡："
   },
   "errors": {
-    "noData": "无数据可显示",
-    "noCellType": "无此格子类型",
-    "usingCachedData": "无法载入最新数据，正在使用缓存数据。",
-    "loadFailed": "载入数据失败，请检查网络连接后再试一次。"
+    "noData": "无数据可显示"
   },
   "food": {
     "characters": "角色",
@@ -141,23 +108,46 @@
     "searchCharacterPlaceholder": "输入角色名称",
     "searchFood": "搜索食物",
     "searchFoodPlaceholder": "输入食物名称",
-    "veryLike": "非常喜欢",
-    "like": "喜欢",
-    "dislike": "不喜欢"
+    "preferences": {
+      "veryLike": "非常喜欢",
+      "like": "喜欢",
+      "dislike": "不喜欢"
+    },
+    "items": {
+      "UFC炸胡蘿蔔": "UFC炸胡萝卜",
+      "一口草生菜包": "一口草生菜包",
+      "一碗米飯": "一碗米饭",
+      "南瓜濃湯": "南瓜浓汤",
+      "哈蜜瓜博孔奇尼起司": "哈密瓜博孔奇尼起司",
+      "太空食品": "太空食品",
+      "寶石塔": "宝石塔",
+      "巧克力冰淇淋": "巧克力冰淇淋",
+      "幽靈布丁": "幽灵布丁",
+      "扭結麵包": "扭结面包",
+      "棉花糖馬卡龍": "棉花糖马卡龙",
+      "椰子松針粥": "椰子松针粥",
+      "檸檬茶": "柠檬茶",
+      "海藻沙拉": "海藻沙拉",
+      "溫熱的冰美式咖啡": "温热的冰美式咖啡",
+      "烤漫畫肉": "烤漫画肉",
+      "焦糖布丁": "焦糖布丁",
+      "焦糖爆米花": "焦糖爆米花",
+      "獸糧罐頭": "兽粮罐头",
+      "石榴果實": "石榴果实",
+      "秘密葡萄汁": "秘密葡萄汁",
+      "空氣炸豬排": "空气炸猪排",
+      "肉桂口味糖果": "肉桂口味糖果",
+      "草莓蛋糕": "草莓蛋糕",
+      "薄荷巧克力冰淇淋": "薄荷巧克力冰淇淋",
+      "蜂蜜大蒜鮭魚": "蜂蜜大蒜鲑鱼",
+      "蜂蜜罐": "蜂蜜罐",
+      "金糖葫蘆": "金糖葫芦",
+      "麵茶": "面茶",
+      "龍族糖果": "龙族糖果"
+    }
   },
   "changelog": {
-    "title": "开发日志",
-    "description": "追踪项目的更新与改进",
-    "latestVersion": "最新版本",
-    "loading": "载入中...",
-    "error": "载入失败",
-    "noEntries": "目前没有开发日志",
-    "types": {
-      "feature": "新功能",
-      "fix": "修复",
-      "improvement": "改进",
-      "breaking": "重大变更"
-    }
+    "title": "开发日志"
   },
   "sync": {
     "signIn": "Google 登录",

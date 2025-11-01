@@ -70,21 +70,9 @@
     "description": "點擊角色圖片設定為已擁有/未擁有",
     "resetAll": "重置全部",
     "close": "關閉",
-    "confirmReset": "確定要重置所有進度嗎？",
-    "sortBy": "排序方式：",
-    "sortDefault": "預設順序",
-    "sortStars": "星級",
-    "sortRole": "類型",
-    "sortPersonality": "性格",
-    "sortAttackType": "攻擊類型",
-    "sortDeployRow": "部署列",
-    "sortRace": "種族",
-    "sortOrderAsc": "升序",
-    "sortOrderDesc": "降序"
+    "confirmReset": "確定要重置所有進度嗎？"
   },
   "footer": {
-    "description": "此工具由 nos 創作",
-    "noCellsYet": "尚無格子",
     "costPerCell": "每格成本",
     "bonusPerCell": "每格加成",
     "totalBonus": "總加成",
@@ -98,17 +86,7 @@
     "page": "第 {current} / {total} 頁",
     "searchLabel": "快速搜尋",
     "searchPlaceholder": "輸入素材名稱",
-    "clear": "清除選擇",
-    "rankFilterLabel": "階級篩選",
-    "selectAll": "全選",
-    "deselectAll": "全不選",
-    "rank1": "R1 基礎材料",
-    "rank2": "R2 圖紙",
-    "rank3": "R3 圖紙",
-    "rank4": "R4 圖紙",
-    "rank5": "R5 圖紙",
-    "rank6": "R6 圖紙",
-    "rank7": "R7 圖紙"
+    "clear": "清除選擇"
   },
   "plan": {
     "title": "最省體力方案",
@@ -117,25 +95,10 @@
     "detailSummary": "關卡細節",
     "energyPerStage": "體力 {energy}",
     "warning": "有 {count} 個素材無法匹配任一關卡，請檢查資料",
-    "alternativeStagesHint": "💡 若想順便刷其他裝備圖紙，可以考慮以下關卡：",
-    "blueprints": "裝備圖紙"
-  },
-  "loading": {
-    "data": "載入遊戲資料..."
-  },
-  "common": {
-    "confirm": "確定",
-    "cancel": "取消",
-    "yes": "是",
-    "no": "否",
-    "save": "保存",
-    "close": "關閉"
+    "alternativeStagesHint": "💡 若想順便刷其他裝備圖紙，可以考慮以下關卡："
   },
   "errors": {
-    "noData": "無資料可顯示",
-    "noCellType": "無此格子類型",
-    "usingCachedData": "無法載入最新資料，正在使用快取資料。",
-    "loadFailed": "載入資料失敗，請檢查網路連線後再試一次。"
+    "noData": "無資料可顯示"
   },
   "food": {
     "characters": "角色",
@@ -145,23 +108,46 @@
     "searchCharacterPlaceholder": "輸入角色名稱",
     "searchFood": "搜尋食物",
     "searchFoodPlaceholder": "輸入食物名稱",
-    "veryLike": "非常喜歡",
-    "like": "喜歡",
-    "dislike": "不喜歡"
+    "preferences": {
+      "veryLike": "非常喜歡",
+      "like": "喜歡",
+      "dislike": "不喜歡"
+    },
+    "items": {
+      "UFC炸胡蘿蔔": "UFC炸胡蘿蔔",
+      "一口草生菜包": "一口草生菜包",
+      "一碗米飯": "一碗米飯",
+      "南瓜濃湯": "南瓜濃湯",
+      "哈蜜瓜博孔奇尼起司": "哈蜜瓜博孔奇尼起司",
+      "太空食品": "太空食品",
+      "寶石塔": "寶石塔",
+      "巧克力冰淇淋": "巧克力冰淇淋",
+      "幽靈布丁": "幽靈布丁",
+      "扭結麵包": "扭結麵包",
+      "棉花糖馬卡龍": "棉花糖馬卡龍",
+      "椰子松針粥": "椰子松針粥",
+      "檸檬茶": "檸檬茶",
+      "海藻沙拉": "海藻沙拉",
+      "溫熱的冰美式咖啡": "溫熱的冰美式咖啡",
+      "烤漫畫肉": "烤漫畫肉",
+      "焦糖布丁": "焦糖布丁",
+      "焦糖爆米花": "焦糖爆米花",
+      "獸糧罐頭": "獸糧罐頭",
+      "石榴果實": "石榴果實",
+      "秘密葡萄汁": "秘密葡萄汁",
+      "空氣炸豬排": "空氣炸豬排",
+      "肉桂口味糖果": "肉桂口味糖果",
+      "草莓蛋糕": "草莓蛋糕",
+      "薄荷巧克力冰淇淋": "薄荷巧克力冰淇淋",
+      "蜂蜜大蒜鮭魚": "蜂蜜大蒜鮭魚",
+      "蜂蜜罐": "蜂蜜罐",
+      "金糖葫蘆": "金糖葫蘆",
+      "麵茶": "麵茶",
+      "龍族糖果": "龍族糖果"
+    }
   },
   "changelog": {
-    "title": "開發日誌",
-    "description": "記錄專案的更新與改進歷程",
-    "latestVersion": "最新版本",
-    "loading": "載入中...",
-    "error": "載入失敗",
-    "noEntries": "目前沒有開發日誌",
-    "types": {
-      "feature": "新功能",
-      "fix": "修復",
-      "improvement": "改進",
-      "breaking": "重大變更"
-    }
+    "title": "開發日誌"
   },
   "sync": {
     "signIn": "Google 登入",

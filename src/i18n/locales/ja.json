@@ -46,6 +46,10 @@
     "critResist": "クリティカル抵抗",
     "defense": "防御力"
   },
+  "board": {
+    "layerPanel": "レイヤーパネル",
+    "statsPanel": "統計パネル"
+  },
   "panel": {
     "layerSummary": "層の概要",
     "activated": "アクティブ",
@@ -66,21 +70,9 @@
     "description": "キャラクターをクリックして所有状態を切り替え",
     "resetAll": "すべてリセット",
     "close": "閉じる",
-    "confirmReset": "すべての進捗をリセットしますか？",
-    "sortBy": "並べ替え：",
-    "sortDefault": "デフォルト",
-    "sortStars": "星",
-    "sortRole": "役割",
-    "sortPersonality": "性格",
-    "sortAttackType": "攻撃タイプ",
-    "sortDeployRow": "配置列",
-    "sortRace": "種族",
-    "sortOrderAsc": "昇順",
-    "sortOrderDesc": "降順"
+    "confirmReset": "すべての進捗をリセットしますか？"
   },
   "footer": {
-    "description": "nos によって作成",
-    "noCellsYet": "セルなし",
     "costPerCell": "セルあたりのコスト",
     "bonusPerCell": "セルあたりのボーナス",
     "totalBonus": "合計ボーナス",
@@ -94,17 +86,7 @@
     "page": "{current} / {total} ページ",
     "searchLabel": "クイック検索",
     "searchPlaceholder": "素材名を入力",
-    "clear": "選択をクリア",
-    "rankFilterLabel": "ランクフィルター",
-    "selectAll": "すべて選択",
-    "deselectAll": "すべて解除",
-    "rank1": "R1 基本素材",
-    "rank2": "R2 設計図",
-    "rank3": "R3 設計図",
-    "rank4": "R4 設計図",
-    "rank5": "R5 設計図",
-    "rank6": "R6 設計図",
-    "rank7": "R7 設計図"
+    "clear": "選択をクリア"
   },
   "plan": {
     "title": "最適エネルギープラン",
@@ -113,25 +95,13 @@
     "detailSummary": "ステージ詳細",
     "energyPerStage": "エネルギー {energy}",
     "warning": "{count} 個の素材が一致しません、データを確認してください",
-    "alternativeStagesHint": "💡 装備設計図も一緒に集めたい場合は、以下のステージを検討してください：",
-    "blueprints": "装備設計図"
-  },
-  "loading": {
-    "data": "ゲームデータを読み込み中..."
-  },
-  "common": {
-    "confirm": "確認",
-    "cancel": "キャンセル",
-    "yes": "はい",
-    "no": "いいえ",
-    "save": "保存",
-    "close": "閉じる"
+    "alternativeStagesHint": "💡 装備設計図も一緒に集めたい場合は、以下のステージを検討してください："
   },
   "errors": {
-    "noData": "表示するデータがありません",
-    "noCellType": "セルタイプが見つかりません",
-    "usingCachedData": "最新データを読み込めません、キャッシュデータを使用しています。",
-    "loadFailed": "データの読み込みに失敗しました、接続を確認してもう一度お試しください。"
+    "noData": "表示するデータがありません"
+  },
+  "changelog": {
+    "title": "変更履歴"
   },
   "food": {
     "characters": "キャラクター",
@@ -141,9 +111,43 @@
     "searchCharacterPlaceholder": "キャラクター名を入力",
     "searchFood": "食べ物検索",
     "searchFoodPlaceholder": "食べ物名を入力",
-    "veryLike": "大好き",
-    "like": "好き",
-    "dislike": "嫌い"
+    "preferences": {
+      "veryLike": "大好き",
+      "like": "好き",
+      "dislike": "嫌い"
+    },
+    "items": {
+      "UFC炸胡蘿蔔": "UFC揚げニンジン",
+      "一口草生菜包": "草レタス包み",
+      "一碗米飯": "ご飯一杯",
+      "南瓜濃湯": "カボチャスープ",
+      "哈蜜瓜博孔奇尼起司": "メロンボッコンチーニチーズ",
+      "太空食品": "宇宙食",
+      "寶石塔": "宝石の塔",
+      "巧克力冰淇淋": "チョコレートアイス",
+      "幽靈布丁": "ゴーストプリン",
+      "扭結麵包": "プレッツェルパン",
+      "棉花糖馬卡龍": "マシュマロマカロン",
+      "椰子松針粥": "ココナッツ松葉粥",
+      "檸檬茶": "レモンティー",
+      "海藻沙拉": "海藻サラダ",
+      "溫熱的冰美式咖啡": "温かいアイスアメリカーノ",
+      "烤漫畫肉": "焼きマンガ肉",
+      "焦糖布丁": "キャラメルプリン",
+      "焦糖爆米花": "キャラメルポップコーン",
+      "獸糧罐頭": "獣飼料缶詰",
+      "石榴果實": "ザクロの実",
+      "秘密葡萄汁": "秘密のブドウジュース",
+      "空氣炸豬排": "エアフライポークカツ",
+      "肉桂口味糖果": "シナモンキャンディ",
+      "草莓蛋糕": "ストロベリーケーキ",
+      "薄荷巧克力冰淇淋": "ミントチョコアイス",
+      "蜂蜜大蒜鮭魚": "ハニーガーリックサーモン",
+      "蜂蜜罐": "ハチミツ瓶",
+      "金糖葫蘆": "金の飴細工",
+      "麵茶": "麦茶",
+      "龍族糖果": "ドラゴンキャンディ"
+    }
   },
   "sync": {
     "signIn": "Google でログイン",

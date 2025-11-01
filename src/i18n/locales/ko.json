@@ -46,6 +46,10 @@
     "critResist": "치명타 저항",
     "defense": "방어력"
   },
+  "board": {
+    "layerPanel": "레이어 패널",
+    "statsPanel": "통계 패널"
+  },
   "panel": {
     "layerSummary": "레이어 요약",
     "activated": "활성화됨",
@@ -66,42 +70,23 @@
     "description": "캐릭터를 클릭하여 소유 상태 전환",
     "resetAll": "모두 초기화",
     "close": "닫기",
-    "confirmReset": "모든 진행 상황을 초기화하시겠습니까?",
-    "sortBy": "정렬 기준:",
-    "sortDefault": "기본",
-    "sortStars": "별",
-    "sortRole": "역할",
-    "sortPersonality": "성격",
-    "sortAttackType": "공격 유형",
-    "sortDeployRow": "배치 행",
-    "sortRace": "종족",
-    "sortOrderAsc": "오름차순",
-    "sortOrderDesc": "내림차순"
+    "confirmReset": "모든 진행 상황을 초기화하시겠습니까?"
   },
   "footer": {
-    "description": "nos가 제작",
-    "noCellsYet": "셀 없음",
     "costPerCell": "셀당 비용",
     "bonusPerCell": "셀당 보너스",
     "totalBonus": "총 보너스",
-    "crayonsNeeded": "필요한 크레용"
+    "crayonsNeeded": "필요한 크레용",
+    "author": "작성자",
+    "copyright": "저작권",
+    "usageCount": "총 사용 횟수"
   },
   "catalog": {
     "title": "재료 카탈로그",
     "page": "{current} / {total} 페이지",
     "searchLabel": "빠른 검색",
     "searchPlaceholder": "재료 이름 입력",
-    "clear": "선택 지우기",
-    "rankFilterLabel": "등급 필터",
-    "selectAll": "모두 선택",
-    "deselectAll": "모두 해제",
-    "rank1": "R1 기본 재료",
-    "rank2": "R2 설계도",
-    "rank3": "R3 설계도",
-    "rank4": "R4 설계도",
-    "rank5": "R5 설계도",
-    "rank6": "R6 설계도",
-    "rank7": "R7 설계도"
+    "clear": "선택 지우기"
   },
   "plan": {
     "title": "최적 에너지 계획",
@@ -110,25 +95,13 @@
     "detailSummary": "스테이지 세부 정보",
     "energyPerStage": "에너지 {energy}",
     "warning": "{count} 개의 재료가 일치하지 않습니다, 데이터를 확인하세요",
-    "alternativeStagesHint": "💡 장비 설계도도 함께 수집하고 싶다면 다음 스테이지를 고려하세요:",
-    "blueprints": "장비 설계도"
-  },
-  "loading": {
-    "data": "게임 데이터 로딩 중..."
-  },
-  "common": {
-    "confirm": "확인",
-    "cancel": "취소",
-    "yes": "예",
-    "no": "아니오",
-    "save": "저장",
-    "close": "닫기"
+    "alternativeStagesHint": "💡 장비 설계도도 함께 수집하고 싶다면 다음 스테이지를 고려하세요:"
   },
   "errors": {
-    "noData": "표시할 데이터가 없습니다",
-    "noCellType": "셀 유형을 찾을 수 없습니다",
-    "usingCachedData": "최신 데이터를 로드할 수 없습니다, 캐시된 데이터를 사용합니다.",
-    "loadFailed": "데이터 로드 실패, 연결을 확인하고 다시 시도하세요."
+    "noData": "표시할 데이터가 없습니다"
+  },
+  "changelog": {
+    "title": "변경 로그"
   },
   "food": {
     "characters": "캐릭터",
@@ -138,9 +111,43 @@
     "searchCharacterPlaceholder": "캐릭터 이름 입력",
     "searchFood": "음식 검색",
     "searchFoodPlaceholder": "음식 이름 입력",
-    "veryLike": "매우 좋아함",
-    "like": "좋아함",
-    "dislike": "싫어함"
+    "preferences": {
+      "veryLike": "매우 좋아함",
+      "like": "좋아함",
+      "dislike": "싫어함"
+    },
+    "items": {
+      "UFC炸胡蘿蔔": "UFC 튀긴 당근",
+      "一口草生菜包": "한입 풀상추쌈",
+      "一碗米飯": "밥 한 그릇",
+      "南瓜濃湯": "호박 스프",
+      "哈蜜瓜博孔奇尼起司": "멜론 보코치니 치즈",
+      "太空食品": "우주 식품",
+      "寶石塔": "보석 탑",
+      "巧克力冰淇淋": "초콜릿 아이스크림",
+      "幽靈布丁": "유령 푸딩",
+      "扭結麵包": "프레첼 빵",
+      "棉花糖馬卡龍": "마시멜로 마카롱",
+      "椰子松針粥": "코코넛 솔잎죽",
+      "檸檬茶": "레몬차",
+      "海藻沙拉": "해조류 샐러드",
+      "溫熱的冰美式咖啡": "따뜻한 아이스 아메리카노",
+      "烤漫畫肉": "구운 만화 고기",
+      "焦糖布丁": "캐러멜 푸딩",
+      "焦糖爆米花": "캐러멜 팝콘",
+      "獸糧罐頭": "사료 캔",
+      "石榴果實": "석류 열매",
+      "秘密葡萄汁": "비밀 포도 주스",
+      "空氣炸豬排": "에어프라이 돈까스",
+      "肉桂口味糖果": "시나몬 사탕",
+      "草莓蛋糕": "딸기 케이크",
+      "薄荷巧克力冰淇淋": "민트초코 아이스크림",
+      "蜂蜜大蒜鮭魚": "허니갈릭 연어",
+      "蜂蜜罐": "꿀단지",
+      "金糖葫蘆": "황금 탕후루",
+      "麵茶": "밀차",
+      "龍族糖果": "드래곤 캔디"
+    }
   },
   "sync": {
     "signIn": "Google 로그인",

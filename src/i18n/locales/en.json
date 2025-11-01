@@ -12,7 +12,7 @@
     "homeDescription": "Tool Collection Homepage",
     "boardDescription": "Character Management & Cell Statistics",
     "sweepDescription": "Material Requirement Calculator",
-    "foodDescription": "Character Food Preferences Lookup"
+    "foodDescription": "Character Food Preference Query"
   },
   "hero": {
     "eyebrow": "Trickcal Tools",
@@ -46,6 +46,10 @@
     "critResist": "Crit Resist",
     "defense": "Defense"
   },
+  "board": {
+    "layerPanel": "Layer Panel",
+    "statsPanel": "Stats Panel"
+  },
   "panel": {
     "layerSummary": "Layer Summary",
     "activated": "Activated",
@@ -66,21 +70,9 @@
     "description": "Click character to toggle ownership",
     "resetAll": "Reset All",
     "close": "Close",
-    "confirmReset": "Reset all progress?",
-    "sortBy": "Sort by:",
-    "sortDefault": "Default",
-    "sortStars": "Stars",
-    "sortRole": "Role",
-    "sortPersonality": "Personality",
-    "sortAttackType": "Attack Type",
-    "sortDeployRow": "Deploy Row",
-    "sortRace": "Race",
-    "sortOrderAsc": "Ascending",
-    "sortOrderDesc": "Descending"
+    "confirmReset": "Reset all progress?"
   },
   "footer": {
-    "description": "Created by nos",
-    "noCellsYet": "No cells yet",
     "costPerCell": "Cost per Cell",
     "bonusPerCell": "Bonus per Cell",
     "totalBonus": "Total Bonus",
@@ -94,17 +86,7 @@
     "page": "Page {current} / {total}",
     "searchLabel": "Quick Search",
     "searchPlaceholder": "Enter material name",
-    "clear": "Clear Selection",
-    "rankFilterLabel": "Rank Filter",
-    "selectAll": "Select All",
-    "deselectAll": "Deselect All",
-    "rank1": "R1 Basic Materials",
-    "rank2": "R2 Blueprints",
-    "rank3": "R3 Blueprints",
-    "rank4": "R4 Blueprints",
-    "rank5": "R5 Blueprints",
-    "rank6": "R6 Blueprints",
-    "rank7": "R7 Blueprints"
+    "clear": "Clear Selection"
   },
   "plan": {
     "title": "Optimal Energy Plan",
@@ -113,25 +95,10 @@
     "detailSummary": "Stage Details",
     "energyPerStage": "Energy {energy}",
     "warning": "{count} materials cannot be matched, please check data",
-    "alternativeStagesHint": "💡 If you want to farm equipment blueprints too, consider these stages:",
-    "blueprints": "Equipment Blueprints"
-  },
-  "loading": {
-    "data": "Loading game data..."
-  },
-  "common": {
-    "confirm": "Confirm",
-    "cancel": "Cancel",
-    "yes": "Yes",
-    "no": "No",
-    "save": "Save",
-    "close": "Close"
+    "alternativeStagesHint": "💡 If you want to farm equipment blueprints too, consider these stages:"
   },
   "errors": {
-    "noData": "No data to display",
-    "noCellType": "Cell type not found",
-    "usingCachedData": "Cannot load latest data, using cached data.",
-    "loadFailed": "Failed to load data, please check your connection and try again."
+    "noData": "No data to display"
   },
   "food": {
     "characters": "Characters",
@@ -141,23 +108,46 @@
     "searchCharacterPlaceholder": "Enter character name",
     "searchFood": "Search Foods",
     "searchFoodPlaceholder": "Enter food name",
-    "veryLike": "Love",
-    "like": "Like",
-    "dislike": "Dislike"
+    "preferences": {
+      "veryLike": "Love",
+      "like": "Like",
+      "dislike": "Dislike"
+    },
+    "items": {
+      "UFC炸胡蘿蔔": "UFC Fried Carrot",
+      "一口草生菜包": "Grass Lettuce Wrap",
+      "一碗米飯": "Bowl of Rice",
+      "南瓜濃湯": "Pumpkin Soup",
+      "哈蜜瓜博孔奇尼起司": "Melon Bocconcini Cheese",
+      "太空食品": "Space Food",
+      "寶石塔": "Gem Tower",
+      "巧克力冰淇淋": "Chocolate Ice Cream",
+      "幽靈布丁": "Ghost Pudding",
+      "扭結麵包": "Pretzel Bread",
+      "棉花糖馬卡龍": "Marshmallow Macaron",
+      "椰子松針粥": "Coconut Pine Needle Porridge",
+      "檸檬茶": "Lemon Tea",
+      "海藻沙拉": "Seaweed Salad",
+      "溫熱的冰美式咖啡": "Warm Iced Americano",
+      "烤漫畫肉": "Grilled Manga Meat",
+      "焦糖布丁": "Caramel Pudding",
+      "焦糖爆米花": "Caramel Popcorn",
+      "獸糧罐頭": "Beast Feed Can",
+      "石榴果實": "Pomegranate Fruit",
+      "秘密葡萄汁": "Secret Grape Juice",
+      "空氣炸豬排": "Air-Fried Pork Cutlet",
+      "肉桂口味糖果": "Cinnamon Candy",
+      "草莓蛋糕": "Strawberry Cake",
+      "薄荷巧克力冰淇淋": "Mint Chocolate Ice Cream",
+      "蜂蜜大蒜鮭魚": "Honey Garlic Salmon",
+      "蜂蜜罐": "Honey Jar",
+      "金糖葫蘆": "Golden Candied Fruit",
+      "麵茶": "Wheat Tea",
+      "龍族糖果": "Dragon Candy"
+    }
   },
   "changelog": {
-    "title": "Changelog",
-    "description": "Track project updates and improvements",
-    "latestVersion": "Latest Version",
-    "loading": "Loading...",
-    "error": "Failed to load",
-    "noEntries": "No changelog entries yet",
-    "types": {
-      "feature": "Feature",
-      "fix": "Fix",
-      "improvement": "Improvement",
-      "breaking": "Breaking Change"
-    }
+    "title": "Changelog"
   },
   "sync": {
     "signIn": "Sign in with Google",
