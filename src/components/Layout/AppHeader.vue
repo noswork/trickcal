@@ -28,9 +28,14 @@
         <router-link to="/food" class="nav-link" active-class="active" @click="closeMobileMenu">
           {{ $t('nav.food') }}
         </router-link>
+        <div class="mobile-sync-section">
+          <GoogleSyncButton />
+        </div>
       </div>
 
       <div class="nav-actions">
+        <GoogleSyncButton class="desktop-only" />
+        
         <button 
           class="icon-btn" 
           @click="toggleTheme" 
@@ -70,6 +75,7 @@ import { useThemeStore } from '@/stores/theme'
 import LanguageSelector from './LanguageSelector.vue'
 import ToolSelector from './ToolSelector.vue'
 import UsageCounter from './UsageCounter.vue'
+import GoogleSyncButton from './GoogleSyncButton.vue'
 import { getAssetUrl } from '@/utils/assets'
 
 const themeStore = useThemeStore()
@@ -280,6 +286,14 @@ function closeMobileMenu() {
     font-size: 1rem;
     text-align: center;
     width: 100%;
+  }
+
+  .mobile-sync-section {
+    padding: 1rem;
+    margin-top: 0.5rem;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    justify-content: center;
   }
 
   .nav-actions {

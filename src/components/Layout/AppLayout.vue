@@ -5,12 +5,18 @@
       <slot />
     </main>
     <AppFooter />
+    
+    <!-- Google Drive 同步對話框 -->
+    <RestoreDialog />
+    <ConflictDialog />
   </div>
 </template>
 
 <script setup lang="ts">
 import AppHeader from './AppHeader.vue'
 import AppFooter from './AppFooter.vue'
+import RestoreDialog from './RestoreDialog.vue'
+import ConflictDialog from './ConflictDialog.vue'
 </script>
 
 <style scoped>

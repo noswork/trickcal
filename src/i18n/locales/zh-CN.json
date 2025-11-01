@@ -146,6 +146,21 @@
       "improvement": "改进",
       "breaking": "重大变更"
     }
+  },
+  "sync": {
+    "signIn": "Google 登录",
+    "signOut": "登出",
+    "syncing": "同步中...",
+    "lastSync": "最后同步：{time}",
+    "notSynced": "尚未同步",
+    "uploadToCloud": "备份到云端",
+    "restoreFromCloud": "从云端恢复",
+    "uploadSuccess": "备份成功！",
+    "uploadFailed": "备份失败：{error}",
+    "restoreSuccess": "恢复成功！",
+    "restoreFailed": "恢复失败：{error}",
+    "signInFailed": "登录失败：{error}",
+    "signOutFailed": "登出失败：{error}"
   }
 }
 

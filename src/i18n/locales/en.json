@@ -146,6 +146,21 @@
       "improvement": "Improvement",
       "breaking": "Breaking Change"
     }
+  },
+  "sync": {
+    "signIn": "Sign in with Google",
+    "signOut": "Sign out",
+    "syncing": "Syncing...",
+    "lastSync": "Last sync: {time}",
+    "notSynced": "Not synced yet",
+    "uploadToCloud": "Backup to Cloud",
+    "restoreFromCloud": "Restore from Cloud",
+    "uploadSuccess": "Backup successful!",
+    "uploadFailed": "Backup failed: {error}",
+    "restoreSuccess": "Restore successful!",
+    "restoreFailed": "Restore failed: {error}",
+    "signInFailed": "Sign in failed: {error}",
+    "signOutFailed": "Sign out failed: {error}"
   }
 }
 

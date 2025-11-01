@@ -150,6 +150,21 @@
       "improvement": "改進",
       "breaking": "重大變更"
     }
+  },
+  "sync": {
+    "signIn": "Google 登入",
+    "signOut": "登出",
+    "syncing": "同步中...",
+    "lastSync": "最後同步：{time}",
+    "notSynced": "尚未同步",
+    "uploadToCloud": "備份到雲端",
+    "restoreFromCloud": "從雲端恢復",
+    "uploadSuccess": "備份成功！",
+    "uploadFailed": "備份失敗：{error}",
+    "restoreSuccess": "恢復成功！",
+    "restoreFailed": "恢復失敗：{error}",
+    "signInFailed": "登入失敗：{error}",
+    "signOutFailed": "登出失敗：{error}"
   }
 }
 

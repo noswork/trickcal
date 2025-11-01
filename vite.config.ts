@@ -70,7 +70,12 @@ export default defineConfig({
   server: {
     port: 3000,
     host: true, // 允許從網絡訪問
-    open: true
+    open: true,
+    headers: {
+      // 允許 Google OAuth 彈出視窗通訊
+      'Cross-Origin-Opener-Policy': 'same-origin-allow-popups',
+      'Cross-Origin-Embedder-Policy': 'unsafe-none'
+    }
   }
 })
 

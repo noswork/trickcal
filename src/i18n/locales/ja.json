@@ -132,6 +132,21 @@
     "veryLike": "大好き",
     "like": "好き",
     "dislike": "嫌い"
+  },
+  "sync": {
+    "signIn": "Google でログイン",
+    "signOut": "ログアウト",
+    "syncing": "同期中...",
+    "lastSync": "最終同期：{time}",
+    "notSynced": "まだ同期していません",
+    "uploadToCloud": "クラウドにバックアップ",
+    "restoreFromCloud": "クラウドから復元",
+    "uploadSuccess": "バックアップ成功！",
+    "uploadFailed": "バックアップ失敗：{error}",
+    "restoreSuccess": "復元成功！",
+    "restoreFailed": "復元失敗：{error}",
+    "signInFailed": "ログイン失敗：{error}",
+    "signOutFailed": "ログアウト失敗：{error}"
   }
 }
 
