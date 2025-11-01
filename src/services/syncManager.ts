@@ -49,6 +49,8 @@ class SyncManager {
   private updateStatus(updates: Partial<SyncStatus>) {
     this.status = { ...this.status, ...updates }
     this.listeners.forEach((listener) => listener(this.status))
+    // 保存同步狀態到 localStorage
+    this.saveSyncStatus()
   }
 
   /**
@@ -59,10 +61,44 @@ class SyncManager {
   }
 
   /**
+   * 保存同步狀態到 localStorage
+   */
+  private saveSyncStatus() {
+    try {
+      const statusToSave = {
+        lastSyncTime: this.status.lastSyncTime,
+      }
+      localStorage.setItem('sync_status', JSON.stringify(statusToSave))
+    } catch (error) {
+      logger.error('保存同步狀態失敗:', error)
+    }
+  }
+
+  /**
+   * 從 localStorage 恢復同步狀態
+   */
+  private loadSyncStatus() {
+    try {
+      const savedStatus = localStorage.getItem('sync_status')
+      if (savedStatus) {
+        const status = JSON.parse(savedStatus)
+        if (status.lastSyncTime) {
+          this.status.lastSyncTime = status.lastSyncTime
+        }
+      }
+    } catch (error) {
+      logger.error('恢復同步狀態失敗:', error)
+    }
+  }
+
+  /**
    * 初始化同步管理器
    */
   async initialize() {
     try {
+      // 先恢復同步狀態
+      this.loadSyncStatus()
+      
       await googleDrive.init()
       const isSignedIn = googleDrive.checkSignedIn()
       
@@ -115,6 +151,8 @@ class SyncManager {
         lastSyncTime: null,
         lastError: null,
       })
+      // 清除保存的同步狀態
+      localStorage.removeItem('sync_status')
       logger.info('登出成功')
     } catch (error) {
       logger.error('登出失敗:', error)

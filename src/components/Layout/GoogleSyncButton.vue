@@ -358,8 +358,9 @@ function handleClickOutside(event: MouseEvent) {
 
 @media (max-width: 768px) {
   .google-signin-btn {
-    padding: 0.375rem 0.75rem;
+    padding: 0.375rem;
     font-size: 0.8125rem;
+    min-width: auto;
   }
 
   .google-signin-btn span {
@@ -371,8 +372,24 @@ function handleClickOutside(event: MouseEvent) {
     height: 20px;
   }
 
+  .user-button {
+    padding: 0.25rem;
+  }
+
+  .user-avatar,
+  .user-avatar-placeholder {
+    width: 28px;
+    height: 28px;
+    font-size: 0.75rem;
+  }
+
+  .dropdown-icon {
+    display: none;
+  }
+
   .dropdown-menu {
     min-width: 260px;
+    right: -0.5rem;
   }
 }
 </style>

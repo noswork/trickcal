@@ -28,13 +28,10 @@
         <router-link to="/food" class="nav-link" active-class="active" @click="closeMobileMenu">
           {{ $t('nav.food') }}
         </router-link>
-        <div class="mobile-sync-section">
-          <GoogleSyncButton />
-        </div>
       </div>
 
       <div class="nav-actions">
-        <GoogleSyncButton class="desktop-only" />
+        <GoogleSyncButton />
         
         <button 
           class="icon-btn" 
@@ -286,14 +283,6 @@ function closeMobileMenu() {
     font-size: 1rem;
     text-align: center;
     width: 100%;
-  }
-
-  .mobile-sync-section {
-    padding: 1rem;
-    margin-top: 0.5rem;
-    border-top: 1px solid var(--border-color);
-    display: flex;
-    justify-content: center;
   }
 
   .nav-actions {
