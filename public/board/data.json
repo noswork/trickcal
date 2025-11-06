@@ -1,5 +1,13 @@
 {
   "characterBoards": {
+    "愛麗絲": {
+      "layer1": [
+        "crit",
+        "hp"
+      ],
+      "layer2": [],
+      "layer3": []
+    },
     "阿萊特": {
       "layer1": [
         "crit",

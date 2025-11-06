@@ -1,4 +1,14 @@
 {
+  "愛麗絲": {
+    "name": "愛麗絲",
+    "en": "Alice",
+    "personality": "狂亂",
+    "stars": 3,
+    "attackType": "魔法",
+    "deployRow": "中排",
+    "role": "輸出",
+    "race": "幽靈"
+  },
   "阿萊特": {
     "name": "阿萊特",
     "en": "Allet",
