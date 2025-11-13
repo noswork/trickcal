@@ -149,9 +149,21 @@ function handleImageError(event: Event) {
   overflow: visible;
 }
 
+/* 未獲得角色卡片 - 淺色灰暗效果 */
+.character-card:not(.owned) {
+  opacity: 0.5;
+  filter: grayscale(0.6) brightness(0.7);
+}
+
 .character-card:hover {
   transform: translateY(-2px);
   border-color: var(--primary-color);
+}
+
+/* 未獲得卡片 hover 時稍微恢復亮度 */
+.character-card:not(.owned):hover {
+  opacity: 0.7;
+  filter: grayscale(0.4) brightness(0.85);
 }
 
 .character-card.owned {
