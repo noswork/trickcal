@@ -515,6 +515,14 @@
       ],
       "layer2": [],
       "layer3": []
+    },
+    "希爾德": {
+      "layer1": [
+        "hp",
+        "attack"
+      ],
+      "layer2": [],
+      "layer3": []
     }
   },
   "boardConfig": {

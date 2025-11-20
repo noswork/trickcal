@@ -548,5 +548,15 @@
     "deployRow": "後排",
     "role": "輸出",
     "race": "獸人"
+  },
+  "希爾德": {
+    "name": "希爾德",
+    "en": "Hilde",
+    "personality": "憂鬱",
+    "stars": 3,
+    "attackType": "魔法",
+    "deployRow": "中排",
+    "role": "輔助",
+    "race": "精靈"
   }
 }
