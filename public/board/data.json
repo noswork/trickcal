@@ -184,7 +184,7 @@
       "layer2": [
         "attack",
         "hp",
-        "critResist"
+        "defense"
       ],
       "layer3": [
         "attack",
