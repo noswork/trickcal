@@ -951,6 +951,23 @@
         "defense",
         "critResist"
       ]
+    },
+    "艾琳娜": {
+      "layer1": [
+        "attack",
+        "defense"
+      ],
+      "layer2": [
+        "attack",
+        "hp",
+        "defense"
+      ],
+      "layer3": [
+        "attack",
+        "crit",
+        "hp",
+        "critResist"
+      ]
     }
   },
   "boardConfig": {

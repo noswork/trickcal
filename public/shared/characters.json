@@ -558,5 +558,15 @@
     "deployRow": "中排",
     "role": "輔助",
     "race": "精靈"
+  },
+  "艾琳娜": {
+    "name": "艾琳娜",
+    "en": "Elena",
+    "personality": "冷靜",
+    "stars": 3,
+    "attackType": "物理",
+    "deployRow": "中排",
+    "role": "輸出",
+    "race": "精靈"
   }
 }
