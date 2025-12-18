@@ -568,5 +568,15 @@
     "deployRow": "中排",
     "role": "輸出",
     "race": "精靈"
+  },
+  "莉茲": {
+    "name": "莉茲",
+    "en": "Leets",
+    "personality": "狂亂",
+    "stars": 3,
+    "attackType": "物理",
+    "deployRow": "前排",
+    "role": "輸出",
+    "race": "龍族"
   }
 }

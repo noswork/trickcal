@@ -968,6 +968,23 @@
         "hp",
         "critResist"
       ]
+    },
+    "莉茲": {
+      "layer1": [
+        "attack",
+        "hp"
+      ],
+      "layer2": [
+        "attack",
+        "defense",
+        "critResist"
+      ],
+      "layer3": [
+        "attack",
+        "crit",
+        "defense",
+        "critResist"
+      ]
     }
   },
   "boardConfig": {
