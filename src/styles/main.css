@@ -115,6 +115,7 @@
 
 * {
   box-sizing: border-box;
+  cursor: url('/assets/cursors/cursor.png'), auto;
 }
 
 html {
@@ -131,6 +132,49 @@ body {
   color: var(--text-primary);
   font-family: var(--site-font);
   transition: background-color 0.3s, color 0.3s;
+}
+
+/* 可點擊元素使用 pointer cursor */
+a,
+button,
+[role="button"],
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+select,
+label[for],
+.tool-card,
+.character-card,
+.food-card,
+.material-card,
+.material-chip,
+.nav-link,
+.brand-link,
+.changelog-link,
+[onclick],
+[tabindex]:not([tabindex="-1"]) {
+  cursor: url('/assets/cursors/cursor.png'), pointer;
+}
+
+/* 禁用狀態 */
+button:disabled,
+input:disabled,
+select:disabled,
+[aria-disabled="true"],
+.disabled {
+  cursor: url('/assets/cursors/cursor.png'), not-allowed;
+}
+
+/* 文字輸入元素 */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
+textarea {
+  cursor: url('/assets/cursors/cursor.png'), text;
 }
 
 button,
@@ -290,4 +334,9 @@ textarea {
   transform: translateY(20px);
   opacity: 0;
 }
+
+
+
+
+
 

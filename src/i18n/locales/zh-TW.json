@@ -79,7 +79,13 @@
     "crayonsNeeded": "所需金蠟筆",
     "author": "工具製作",
     "copyright": "遊戲版權",
-    "usageCount": "總使用次數"
+    "usageCount": "總使用次數",
+    "wiki": "遊戲 Wiki"
+  },
+  "wiki": {
+    "title": "遊戲 Wiki",
+    "description": "由玩家製作的遊戲 Wiki 網站，包含角色圖鑑、道具圖鑑、攻略等豐富內容。",
+    "visit": "前往 Wiki"
   },
   "catalog": {
     "title": "素材圖鑑",

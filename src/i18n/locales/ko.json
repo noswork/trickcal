@@ -79,7 +79,13 @@
     "crayonsNeeded": "필요한 크레용",
     "author": "작성자",
     "copyright": "저작권",
-    "usageCount": "총 사용 횟수"
+    "usageCount": "총 사용 횟수",
+    "wiki": "게임 Wiki"
+  },
+  "wiki": {
+    "title": "게임 Wiki",
+    "description": "플레이어가 제작한 게임 Wiki 사이트로 캐릭터 도감, 아이템 도감, 공략 등 풍부한 내용을 포함합니다.",
+    "visit": "Wiki 방문"
   },
   "catalog": {
     "title": "재료 카탈로그",

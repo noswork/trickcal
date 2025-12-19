@@ -79,7 +79,13 @@
     "crayonsNeeded": "必要なクレヨン",
     "author": "作成者",
     "copyright": "版権",
-    "usageCount": "総使用回数"
+    "usageCount": "総使用回数",
+    "wiki": "ゲーム Wiki"
+  },
+  "wiki": {
+    "title": "ゲーム Wiki",
+    "description": "プレイヤーが制作したゲーム Wiki サイトで、キャラクター図鑑、アイテム図鑑、攻略などの豊富なコンテンツを含みます。",
+    "visit": "Wiki へ"
   },
   "catalog": {
     "title": "素材カタログ",

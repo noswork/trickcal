@@ -79,7 +79,13 @@
     "crayonsNeeded": "Crayons Needed",
     "author": "Author",
     "copyright": "Copyright",
-    "usageCount": "Total Usage"
+    "usageCount": "Total Usage",
+    "wiki": "Game Wiki"
+  },
+  "wiki": {
+    "title": "Game Wiki",
+    "description": "A player-made game Wiki website with character guides, item catalogs, strategies, and more.",
+    "visit": "Visit Wiki"
   },
   "catalog": {
     "title": "Material Catalog",

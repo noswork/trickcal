@@ -67,6 +67,7 @@
                 <p>{{ $t('tools.food.description') }}</p>
               </div>
             </router-link>
+
           </div>
         </section>
       </div>
@@ -292,4 +293,6 @@ function handleToolClick(toolName: string) {
   }
 }
 </style>
+
+
 

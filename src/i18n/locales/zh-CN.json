@@ -79,7 +79,13 @@
     "crayonsNeeded": "所需金蜡笔",
     "author": "工具制作",
     "copyright": "游戏版权",
-    "usageCount": "总使用次数"
+    "usageCount": "总使用次数",
+    "wiki": "游戏 Wiki"
+  },
+  "wiki": {
+    "title": "游戏 Wiki",
+    "description": "由玩家制作的游戏 Wiki 网站，包含角色图鉴、道具图鉴、攻略等丰富内容。",
+    "visit": "前往 Wiki"
   },
   "catalog": {
     "title": "素材图鉴",
