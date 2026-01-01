@@ -578,5 +578,15 @@
     "deployRow": "前排",
     "role": "輸出",
     "race": "龍族"
+  },
+  "艾皮卡": {
+    "name": "艾皮卡",
+    "en": "Epika",
+    "personality": "活潑",
+    "stars": 3,
+    "attackType": "物理",
+    "deployRow": "中排",
+    "role": "輸出",
+    "race": "獸人"
   }
 }

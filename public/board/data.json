@@ -985,6 +985,23 @@
         "defense",
         "critResist"
       ]
+    },
+    "艾皮卡": {
+      "layer1": [
+        "crit",
+        "critResist"
+      ],
+      "layer2": [
+        "crit",
+        "hp",
+        "critResist"
+      ],
+      "layer3": [
+        "crit",
+        "hp",
+        "defense",
+        "critResist"
+      ]
     }
   },
   "boardConfig": {
