@@ -1002,6 +1002,23 @@
         "defense",
         "critResist"
       ]
+    },
+    "布蘭切": {
+      "layer1": [
+        "crit",
+        "hp"
+      ],
+      "layer2": [
+        "crit",
+        "defense",
+        "critResist"
+      ],
+      "layer3": [
+        "attack",
+        "crit",
+        "hp",
+        "defense"
+      ]
     }
   },
   "boardConfig": {

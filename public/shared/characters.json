@@ -588,5 +588,15 @@
     "deployRow": "中排",
     "role": "輸出",
     "race": "獸人"
+  },
+  "布蘭切": {
+    "name": "布蘭切",
+    "en": "Blanchet",
+    "personality": "憂鬱",
+    "stars": 3,
+    "attackType": "魔法",
+    "deployRow": "中排",
+    "role": "輸出",
+    "race": "魔靈"
   }
 }
