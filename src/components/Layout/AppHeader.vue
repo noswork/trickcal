@@ -258,8 +258,7 @@ function closeMobileMenu() {
     left: 0;
     right: 0;
     flex-direction: column;
-    background: var(--header-bg);
-    backdrop-filter: blur(10px);
+    background: #e8eaed;
     border-bottom: 1px solid var(--border-color);
     padding: 1rem;
     gap: 0.5rem;
@@ -270,6 +269,10 @@ function closeMobileMenu() {
     z-index: 999;
     max-height: calc(100vh - 60px);
     overflow-y: auto;
+  }
+
+  [data-theme="dark"] .nav-links {
+    background: #1a1a1a;
   }
 
   .nav-links.mobile-open {

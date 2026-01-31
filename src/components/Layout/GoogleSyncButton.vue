@@ -257,7 +257,7 @@ function handleClickOutside(event: MouseEvent) {
   top: calc(100% + 0.5rem);
   right: 0;
   min-width: 280px;
-  background: var(--card-bg);
+  background: #e8eaed;
   border: 1px solid var(--border-color);
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
@@ -265,9 +265,17 @@ function handleClickOutside(event: MouseEvent) {
   overflow: hidden;
 }
 
+[data-theme="dark"] .dropdown-menu {
+  background: #1a1a1a;
+}
+
 .menu-header {
   padding: 1rem;
-  background: var(--hover-bg);
+  background: rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="dark"] .menu-header {
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .user-name {

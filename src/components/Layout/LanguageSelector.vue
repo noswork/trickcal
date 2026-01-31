@@ -135,12 +135,16 @@ const vClickOutside = {
   top: calc(100% + 0.5rem);
   right: 0;
   min-width: 150px;
-  background: var(--card-bg);
+  background: #e8eaed;
   border: 1px solid var(--border-color);
   border-radius: 8px;
   box-shadow: var(--shadow-md);
   z-index: 1000;
   overflow: hidden;
+}
+
+[data-theme="dark"] .language-dropdown {
+  background: #1a1a1a;
 }
 
 .language-option {

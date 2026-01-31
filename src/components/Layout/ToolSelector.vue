@@ -217,13 +217,17 @@ const vClickOutside = {
   left: 0;
   right: 0;
   margin-top: 0.5rem;
-  background: var(--card-bg);
+  background: #e8eaed;
   border: 2px solid var(--border-color);
   border-radius: 12px;
   box-shadow: var(--shadow-lg);
   z-index: 1000;
   overflow: hidden;
   min-width: 280px;
+}
+
+[data-theme="dark"] .tool-dropdown {
+  background: #1a1a1a;
 }
 
 .dropdown-header {
