@@ -388,8 +388,21 @@ function handleClickOutside(event: MouseEvent) {
   }
 
   .dropdown-menu {
-    min-width: 260px;
-    right: -0.5rem;
+    position: fixed;
+    top: 60px;
+    right: 0.5rem;
+    left: 0.5rem;
+    min-width: auto;
+    max-width: 320px;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .dropdown-menu {
+    right: 0.5rem;
+    left: 0.5rem;
+    max-width: none;
   }
 }
 </style>
