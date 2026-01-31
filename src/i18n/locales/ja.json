@@ -53,6 +53,7 @@
   "panel": {
     "layerSummary": "層の概要",
     "activated": "アクティブ",
+    "activationRate": "有効化",
     "totalBonus": "合計ボーナス",
     "ownershipStats": "所有統計",
     "ownedCharacters": "所有キャラクター",

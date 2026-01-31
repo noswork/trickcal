@@ -53,6 +53,7 @@
   "panel": {
     "layerSummary": "레이어 요약",
     "activated": "활성화됨",
+    "activationRate": "활성화",
     "totalBonus": "총 보너스",
     "ownershipStats": "소유 통계",
     "ownedCharacters": "소유 캐릭터",

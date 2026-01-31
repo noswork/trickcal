@@ -53,6 +53,7 @@
   "panel": {
     "layerSummary": "層級總覽",
     "activated": "已啟動",
+    "activationRate": "已啟動",
     "totalBonus": "層級總加成",
     "ownershipStats": "角色擁有概況",
     "ownedCharacters": "已擁有角色",

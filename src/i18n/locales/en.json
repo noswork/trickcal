@@ -53,6 +53,7 @@
   "panel": {
     "layerSummary": "Layer Summary",
     "activated": "Activated",
+    "activationRate": "Activated",
     "totalBonus": "Total Bonus",
     "ownershipStats": "Ownership Stats",
     "ownedCharacters": "Owned Characters",

@@ -16,6 +16,15 @@
     <div class="cell-stats">
       <div class="cell-count">{{ activated }} / {{ total }}</div>
       <div class="cell-sub">{{ $t('panel.activated') }}</div>
+      <div class="cell-percentages">
+        <span class="activation-rate">
+          {{ $t('panel.activationRate') }} {{ activationRate }}%
+        </span>
+        <span class="percentage-divider">·</span>
+        <span class="bonus-percent">
+          {{ $t('panel.totalBonus') }} +{{ totalBonusPercent }}%
+        </span>
+      </div>
     </div>
   </div>
 </template>
@@ -42,6 +51,19 @@ const cellTypeData = computed(() => {
     defense: { icon: 'assets/icons/board_def.webp', color: '#da77f2' }
   }
   return types[props.cellType] || { icon: '', color: '#666' }
+})
+
+// 激活率百分比
+const activationRate = computed(() => {
+  return props.total > 0
+    ? ((props.activated / props.total) * 100).toFixed(1)
+    : '0.0'
+})
+
+// 總加成百分比
+const totalBonusPercent = computed(() => {
+  const bonusPerCell = boardStore.boardData?.boardConfig[boardStore.currentLayer]?.bonusPerCell || 0
+  return (props.activated * bonusPerCell).toFixed(1)
 })
 
 function handleImageError(event: Event) {
@@ -113,6 +135,29 @@ function handleImageError(event: Event) {
   margin-top: 0.25rem;
 }
 
+.cell-percentages {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.25rem;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.activation-rate {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.bonus-percent {
+  color: var(--success-color);
+  font-weight: 600;
+}
+
+.percentage-divider {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .cell-header {
     flex-direction: column;
@@ -137,6 +182,26 @@ function handleImageError(event: Event) {
 
   .cell-title h3 {
     font-size: 1.125rem;
+  }
+
+  .cell-percentages {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.375rem;
+  }
+
+  .percentage-divider {
+    display: inline;
+    color: var(--text-secondary);
+    margin: 0 0.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cell-percentages {
+    font-size: 0.8125rem;
+    gap: 0.375rem;
   }
 }
 </style>
