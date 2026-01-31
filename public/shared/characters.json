@@ -598,5 +598,15 @@
     "deployRow": "中排",
     "role": "輸出",
     "race": "魔靈"
+  },
+  "艾舒爾": {
+    "name": "艾舒爾",
+    "en": "Ashur",
+    "personality": "憂鬱",
+    "stars": 3,
+    "attackType": "魔法",
+    "deployRow": "後排",
+    "role": "輸出",
+    "race": "妖精"
   }
 }
