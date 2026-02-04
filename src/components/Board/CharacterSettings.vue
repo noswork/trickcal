@@ -69,6 +69,7 @@
       </div>
       
       <div class="settings-actions">
+        <button class="btn btn-success" @click="handleSelectAll">{{ $t('settings.selectAll') }}</button>
         <button class="btn btn-secondary" @click="handleReset">{{ $t('settings.resetAll') }}</button>
         <button class="btn btn-primary" @click="emit('update:show', false)">{{ $t('settings.close') }}</button>
       </div>
@@ -103,6 +104,10 @@ function handleReset() {
   if (confirm(t('settings.confirmReset'))) {
     boardStore.resetAllProgress()
   }
+}
+
+function handleSelectAll() {
+  boardStore.selectAllCharacters()
 }
 
 function handleImageError(event: Event) {
@@ -368,6 +373,15 @@ function deployRowIcon(deployRow: string) {
 
 .btn-primary:hover {
   background: var(--primary-hover);
+}
+
+.btn-success {
+  background: var(--success-color);
+  color: white;
+}
+
+.btn-success:hover {
+  background: #45b359;
 }
 
 .btn-secondary {

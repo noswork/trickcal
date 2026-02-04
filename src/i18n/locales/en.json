@@ -69,6 +69,7 @@
   "settings": {
     "title": "Character Settings",
     "description": "Click character to toggle ownership",
+    "selectAll": "Select All",
     "resetAll": "Reset All",
     "close": "Close",
     "confirmReset": "Reset all progress?"
@@ -93,7 +94,11 @@
     "page": "Page {current} / {total}",
     "searchLabel": "Quick Search",
     "searchPlaceholder": "Enter material name",
-    "clear": "Clear Selection"
+    "clear": "Clear Selection",
+    "rankFilter": "Rank Filter",
+    "rankFilterToggle": "Toggle Filter",
+    "selectAllRanks": "All Ranks",
+    "selectRank": "Rank {rank}"
   },
   "plan": {
     "title": "Optimal Energy Plan",

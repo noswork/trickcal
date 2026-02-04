@@ -222,6 +222,14 @@ export const useBoardStore = defineStore('board', () => {
     saveUserProgress()
   }
 
+  // 全選所有角色
+  function selectAllCharacters() {
+    characters.value.forEach(char => {
+      userProgress.value.ownedCharacters.add(char.name)
+    })
+    saveUserProgress()
+  }
+
   // 計算統計數據
   const stats = computed(() => {
     if (characters.value.length === 0) return null
@@ -259,6 +267,7 @@ export const useBoardStore = defineStore('board', () => {
     saveUserProgress,
     toggleCharacterOwnership,
     toggleCellActivation,
-    resetAllProgress
+    resetAllProgress,
+    selectAllCharacters
   }
 })

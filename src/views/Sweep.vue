@@ -40,6 +40,51 @@
                 :placeholder="$t('catalog.searchPlaceholder')"
               />
             </div>
+
+            <!-- Rank 篩選區域 -->
+            <div class="rank-filter-section">
+              <button
+                class="rank-filter-toggle"
+                type="button"
+                @click="showRankFilter = !showRankFilter"
+                :aria-expanded="showRankFilter"
+              >
+                <span>{{ $t('catalog.rankFilter') }}</span>
+                <svg
+                  class="toggle-icon"
+                  :class="{ open: showRankFilter }"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+
+              <Transition name="rank-filter">
+                <div v-if="showRankFilter" class="rank-filter-content">
+                  <button
+                    class="rank-option all-ranks"
+                    type="button"
+                    :class="{ active: selectedRanks.size === 8 }"
+                    @click="toggleAllRanks"
+                  >
+                    {{ $t('catalog.selectAllRanks') }}
+                  </button>
+                  <button
+                    v-for="rank in [1, 2, 3, 4, 5, 6, 7, 8]"
+                    :key="rank"
+                    class="rank-option"
+                    type="button"
+                    :class="{ active: selectedRanks.has(rank) }"
+                    @click="toggleRank(rank)"
+                  >
+                    {{ $t('catalog.selectRank', { rank }) }}
+                  </button>
+                </div>
+              </Transition>
+            </div>
           </div>
 
           <div class="catalog-grid">
@@ -146,17 +191,78 @@ const searchTerm = ref('')
 const currentPage = ref(1)
 const pageSize = 24
 
+// Rank 篩選狀態
+const showRankFilter = ref(false)
+const selectedRanks = ref<Set<number>>(new Set())
+
+// 從 localStorage 加載 rank 篩選設置
+function loadRankFilter() {
+  const saved = localStorage.getItem('trickcal_sweep_rank_filter')
+  if (saved) {
+    try {
+      const ranks = JSON.parse(saved) as number[]
+      selectedRanks.value = new Set(ranks)
+    } catch (e) {
+      // 載入失敗，使用預設值（全選）
+      selectedRanks.value = new Set([1, 2, 3, 4, 5, 6, 7, 8])
+    }
+  } else {
+    // 預設全選
+    selectedRanks.value = new Set([1, 2, 3, 4, 5, 6, 7, 8])
+  }
+}
+
+// 保存 rank 篩選設置到 localStorage
+function saveRankFilter() {
+  const ranks = Array.from(selectedRanks.value).sort((a, b) => a - b)
+  localStorage.setItem('trickcal_sweep_rank_filter', JSON.stringify(ranks))
+}
+
+// 切換 rank 選擇
+function toggleRank(rank: number) {
+  if (selectedRanks.value.has(rank)) {
+    selectedRanks.value.delete(rank)
+  } else {
+    selectedRanks.value.add(rank)
+  }
+  // 觸發響應式更新
+  selectedRanks.value = new Set(selectedRanks.value)
+  saveRankFilter()
+  currentPage.value = 1
+}
+
+// 切換全選/全不選
+function toggleAllRanks() {
+  if (selectedRanks.value.size === 8) {
+    // 如果已全選，則清空
+    selectedRanks.value = new Set()
+  } else {
+    // 否則全選
+    selectedRanks.value = new Set([1, 2, 3, 4, 5, 6, 7, 8])
+  }
+  saveRankFilter()
+  currentPage.value = 1
+}
+
 const filteredMaterials = computed(() => {
-  // 根據搜索詞過濾
   let filtered = sweepStore.materials
-  
+
+  // 根據 rank 篩選
+  if (selectedRanks.value.size > 0 && selectedRanks.value.size < 8) {
+    filtered = filtered.filter(name => {
+      const materialInfo = sweepStore.materialData[name]
+      return materialInfo && selectedRanks.value.has(materialInfo.rank)
+    })
+  }
+
+  // 根據搜索詞過濾
   if (searchTerm.value) {
     const term = searchTerm.value.toLowerCase()
-    filtered = filtered.filter(name => 
+    filtered = filtered.filter(name =>
       name.toLowerCase().includes(term)
     )
   }
-  
+
   return filtered
 })
 
@@ -212,6 +318,7 @@ function getStageMaterials(stage: string) {
 
 onMounted(async () => {
   await sweepStore.loadData()
+  loadRankFilter()
 })
 
 // 追蹤搜索（使用 debounce 避免過多追蹤）
@@ -364,6 +471,106 @@ watch(searchTerm, (value) => {
 .search-row input:focus {
   outline: none;
   border-color: var(--primary-color);
+}
+
+/* Rank 篩選樣式 */
+.rank-filter-section {
+  margin-top: 1rem;
+}
+
+.rank-filter-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--button-bg);
+  color: var(--text-primary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.rank-filter-toggle:hover {
+  background: var(--button-hover);
+  border-color: var(--primary-color);
+}
+
+.rank-filter-toggle .toggle-icon {
+  transition: transform 0.2s;
+  color: var(--text-secondary);
+}
+
+.rank-filter-toggle .toggle-icon.open {
+  transform: rotate(180deg);
+}
+
+.rank-filter-content {
+  margin-top: 0.75rem;
+  padding: 1rem;
+  background: var(--panel-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 0.5rem;
+}
+
+.rank-option {
+  padding: 0.5rem 0.75rem;
+  border: 2px solid var(--border-color);
+  border-radius: 6px;
+  background: var(--card-bg);
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s;
+  text-align: center;
+}
+
+.rank-option:hover {
+  border-color: var(--primary-color);
+  color: var(--text-primary);
+}
+
+.rank-option.active {
+  border-color: var(--primary-color);
+  background: var(--primary-bg);
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.rank-option.all-ranks {
+  grid-column: 1 / -1;
+  background: var(--button-bg);
+}
+
+.rank-option.all-ranks.active {
+  background: var(--primary-bg);
+}
+
+/* Rank 篩選展開/收起動畫 */
+.rank-filter-enter-active,
+.rank-filter-leave-active {
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.rank-filter-enter-from,
+.rank-filter-leave-to {
+  opacity: 0;
+  max-height: 0;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.rank-filter-enter-to,
+.rank-filter-leave-from {
+  opacity: 1;
+  max-height: 300px;
 }
 
 .catalog-grid {
@@ -612,6 +819,17 @@ watch(searchTerm, (value) => {
   .search-row label {
     font-size: 0.8125rem;
   }
+
+  .rank-filter-content {
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    gap: 0.375rem;
+    padding: 0.75rem;
+  }
+
+  .rank-option {
+    padding: 0.375rem 0.5rem;
+    font-size: 0.8125rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -647,6 +865,22 @@ watch(searchTerm, (value) => {
 
   .page-indicator {
     font-size: 0.8125rem;
+  }
+
+  .rank-filter-toggle {
+    padding: 0.625rem;
+    font-size: 0.8125rem;
+  }
+
+  .rank-filter-content {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.375rem;
+    padding: 0.75rem;
+  }
+
+  .rank-option {
+    padding: 0.375rem 0.5rem;
+    font-size: 0.75rem;
   }
 }
 </style>

@@ -69,6 +69,7 @@
   "settings": {
     "title": "캐릭터 설정",
     "description": "캐릭터를 클릭하여 소유 상태 전환",
+    "selectAll": "모두 선택",
     "resetAll": "모두 초기화",
     "close": "닫기",
     "confirmReset": "모든 진행 상황을 초기화하시겠습니까?"
@@ -93,7 +94,11 @@
     "page": "{current} / {total} 페이지",
     "searchLabel": "빠른 검색",
     "searchPlaceholder": "재료 이름 입력",
-    "clear": "선택 지우기"
+    "clear": "선택 지우기",
+    "rankFilter": "Rank 필터",
+    "rankFilterToggle": "필터 토글",
+    "selectAllRanks": "모든 Rank",
+    "selectRank": "Rank {rank}"
   },
   "plan": {
     "title": "최적 에너지 계획",

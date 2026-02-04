@@ -69,6 +69,7 @@
   "settings": {
     "title": "角色设置",
     "description": "点击角色图片设定为已拥有/未拥有",
+    "selectAll": "全选",
     "resetAll": "重置全部",
     "close": "关闭",
     "confirmReset": "确定要重置所有进度吗？"
@@ -93,7 +94,11 @@
     "page": "第 {current} / {total} 页",
     "searchLabel": "快速搜寻",
     "searchPlaceholder": "输入素材名称",
-    "clear": "清除选择"
+    "clear": "清除选择",
+    "rankFilter": "Rank 筛选",
+    "rankFilterToggle": "展开/收起筛选",
+    "selectAllRanks": "全部 Rank",
+    "selectRank": "Rank {rank}"
   },
   "plan": {
     "title": "最省体力方案",

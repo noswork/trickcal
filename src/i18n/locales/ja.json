@@ -69,6 +69,7 @@
   "settings": {
     "title": "キャラクター設定",
     "description": "キャラクターをクリックして所有状態を切り替え",
+    "selectAll": "すべて選択",
     "resetAll": "すべてリセット",
     "close": "閉じる",
     "confirmReset": "すべての進捗をリセットしますか？"
@@ -93,7 +94,11 @@
     "page": "{current} / {total} ページ",
     "searchLabel": "クイック検索",
     "searchPlaceholder": "素材名を入力",
-    "clear": "選択をクリア"
+    "clear": "選択をクリア",
+    "rankFilter": "Rank フィルター",
+    "rankFilterToggle": "フィルター切替",
+    "selectAllRanks": "すべての Rank",
+    "selectRank": "Rank {rank}"
   },
   "plan": {
     "title": "最適エネルギープラン",
