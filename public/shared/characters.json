@@ -608,5 +608,15 @@
     "deployRow": "後排",
     "role": "輸出",
     "race": "妖精"
+  },
+  "洛涅": {
+    "name": "洛涅",
+    "en": "Rohne",
+    "personality": "天真",
+    "stars": 3,
+    "attackType": "物理",
+    "deployRow": "前排",
+    "role": "坦克",
+    "race": "精靈"
   }
 }

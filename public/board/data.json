@@ -1036,6 +1036,23 @@
         "defense",
         "critResist"
       ]
+    },
+    "洛涅": {
+      "layer1": [
+        "crit",
+        "hp"
+      ],
+      "layer2": [
+        "crit",
+        "defense",
+        "critResist"
+      ],
+      "layer3": [
+        "crit",
+        "hp",
+        "defense",
+        "attack"
+      ]
     }
   },
   "boardConfig": {
