@@ -618,5 +618,15 @@
     "deployRow": "前排",
     "role": "坦克",
     "race": "精靈"
+  },
+  "奈雅": {
+    "name": "奈雅",
+    "en": "Naia",
+    "personality": "天真",
+    "stars": 3,
+    "attackType": "魔法",
+    "deployRow": "中排",
+    "role": "輔助",
+    "race": "魔靈"
   }
 }

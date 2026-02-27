@@ -1053,6 +1053,23 @@
         "defense",
         "attack"
       ]
+    },
+    "奈雅": {
+      "layer1": [
+        "crit",
+        "hp"
+      ],
+      "layer2": [
+        "crit",
+        "defense",
+        "critResist"
+      ],
+      "layer3": [
+        "crit",
+        "hp",
+        "defense",
+        "attack"
+      ]
     }
   },
   "boardConfig": {
