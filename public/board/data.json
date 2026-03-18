@@ -1070,6 +1070,23 @@
         "defense",
         "attack"
       ]
+    },
+    "修帕": {
+      "layer1": [
+        "crit",
+        "critResist"
+      ],
+      "layer2": [
+        "crit",
+        "hp",
+        "critResist"
+      ],
+      "layer3": [
+        "crit",
+        "hp",
+        "defense",
+        "critResist"
+      ]
     }
   },
   "boardConfig": {

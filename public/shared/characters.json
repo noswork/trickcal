@@ -628,5 +628,15 @@
     "deployRow": "中排",
     "role": "輔助",
     "race": "魔靈"
+  },
+  "修帕": {
+    "name": "修帕",
+    "en": "Shoupan",
+    "personality": "活潑",
+    "stars": 3,
+    "attackType": "魔法",
+    "deployRow": "後排",
+    "role": "輔助",
+    "race": "妖精"
   }
 }
