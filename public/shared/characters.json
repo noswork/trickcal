@@ -638,5 +638,15 @@
     "deployRow": "後排",
     "role": "輔助",
     "race": "妖精"
+  },
+  "伊德": {
+    "name": "伊德",
+    "en": "Ed",
+    "personality": "冷靜",
+    "stars": 3,
+    "attackType": "魔法",
+    "deployRow": "前排",
+    "role": "坦克",
+    "race": "精靈"
   }
 }
