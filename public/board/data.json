@@ -1104,6 +1104,40 @@
         "crit",
         "critResist"
       ]
+    },
+    "Snorky": {
+      "layer1": [
+        "attack",
+        "defense"
+      ],
+      "layer2": [
+        "attack",
+        "hp",
+        "defense"
+      ],
+      "layer3": [
+        "attack",
+        "hp",
+        "crit",
+        "critResist"
+      ]
+    },
+    "Selline": {
+      "layer1": [
+        "attack",
+        "defense"
+      ],
+      "layer2": [
+        "attack",
+        "hp",
+        "defense"
+      ],
+      "layer3": [
+        "attack",
+        "hp",
+        "crit",
+        "critResist"
+      ]
     }
   },
   "boardConfig": {
