@@ -648,5 +648,25 @@
     "deployRow": "前排",
     "role": "坦克",
     "race": "精靈"
+  },
+  "Snorky": {
+    "name": "Snorky",
+    "en": "Snorky",
+    "personality": "憂鬱",
+    "stars": 3,
+    "attackType": "物理",
+    "deployRow": "前排",
+    "role": "坦克",
+    "race": "魔女"
+  },
+  "Selline": {
+    "name": "Selline",
+    "en": "Selline",
+    "personality": "活潑",
+    "stars": 3,
+    "attackType": "魔法",
+    "deployRow": "前排",
+    "role": "坦克",
+    "race": "幽靈"
   }
 }
